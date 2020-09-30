@@ -1,18 +1,6 @@
 const Discord = require("discord.js");
-const express = require('express');
 const res = require("./res.json");
-const app = express();
 const port = 3000;
-
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-})
-app.listen(port, () => {
-    console.log("OKEY");
-})
-
-
-
 const token = ".";
 const client = new Discord.Client();
 
