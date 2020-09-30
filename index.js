@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-//const auth = require("./auth.json");
 const res = require("./res.json");
 
 const token = ".";                                         
