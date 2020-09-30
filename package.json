@@ -2,7 +2,7 @@
 
     "name": "dis",                                                                                         "version": "1.0.0",                                                                                "description": "",
 
-    "main": "app.js",
+    "main": "index.js",
 
     "dependencies": {
 
@@ -11,14 +11,14 @@
     },
 
     "devDependencies": {                                                                                 "nodemon": "^2.0.4"
-
+        "discord.js": "^12.3.1"
     },
 
     "scripts": {
 
-        "start": "node app.js",
+        "start": "node index.js",
 
-        "dev": "nodemon app.js"
+        "dev": "nodemon index.js"
 
     },
 
