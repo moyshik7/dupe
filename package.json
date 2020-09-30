@@ -2,7 +2,7 @@
 
     "name": "dis",                                                                                         "version": "1.0.0",                                                                                "description": "",
 
-    "main": "index.js",
+    "main": "app.js",
 
     "dependencies": {
 
@@ -16,9 +16,9 @@
 
     "scripts": {
 
-        "start": "node index.js",
+        "start": "node app.js",
 
-        "dev": "nodemon index.js"
+        "dev": "nodemon app.js"
 
     },
 
