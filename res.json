@@ -1,193 +1,99 @@
 {
-
     "animes" : {
-
-    	"5cmpersecond" : {    		"episodes" : "3",
-
+    	"5cmpersecond" : {
+		"episodes" : "3",
     		"image" : "IMAGE_LINK_GOES_HERE",
-
     		"name" : "5 Centimetres Per Second",
-
     		"seasons" : "1",
-
     		"total" : "65:00",
-
     		"type" : "Movie"
-
     	},
-
     	"5centimeterspersecond" : {
-
     		"episodes" : "3",
-
     		"image" : "IMAGE_LINK_GOES_HERE",
-
     		"name" : "5 Centimetres Per Second",
-
     		"seasons" : "1",
-
     		"total" : "65:00",
-
     		"type" : "Movie"
-
     	},
-
     	"kiminonawa" : {
-
     		"episodes" : "1",
-
     		"image" : "IMAGE_LINK_GOES_HERE",
-
     		"name" : "Your Name - Kimi no na wa",
-
     		"seasons" : "1",
-
     		"total" : "107:00",
-
     		"type" : "Movie"
-
     	},
-
     	"yourname" : {
-
     		"episodes" : "1",
-
     		"image" : "IMAGE_LINK_GOES_HERE",
-
     		"name" : "Your Name - Kimi no na wa",
-
     		"seasons" : "1",
-
     		"total" : "107:00",
-
     		"type" : "Movie"
-
     	}
-
     },
-
     "cList" : [
-
     	"hentai",
-
     	"neko",
-
     	"wallpaper",
-
     	"wp"
-
     ],
-
     "colors" : [
-
     	"efc050",
-
     	"009b77",
-
     	"dd4124",
-
     	"a65b59",
-
     	"92a8d1",
-
     	"88b04b",
-
     	"b9d194",
-
     	"6b5b95",
-
     	"aba0c5",
-
     	"ff6f61",
-
     	"ffb9b3",
-
     	"d9ffb3",
-
     	"ffb366",
-
     	"ff66ff"
-
     ],
-
     "hentai" : [
-
     	"https://www.dropbox.com/s/xy5eef9zur1neyo/c0e4bea.jpg?dl=1",
-
     	"https://www.dropbox.com/s/n0llj5penpzmap2/c0f6abb.jpg?dl=1",
-
     	"https://www.dropbox.com/s/bqc34i83jaa5i3y/c4de7cc.jpg?dl=1",
-
     	"https://www.dropbox.com/s/5716kbckdud6p76/d44eafa.jpg?dl=1",
-
     	"https://www.dropbox.com/s/tzq6qbd9gnlcplr/eaa3e7c.jpg?dl=1",
-
     	"https://www.dropbox.com/s/mjrri15nxfk99bx/a33ccdd.jpg?dl=1",
-
     	"https://www.dropbox.com/s/dgmz2muprltx2ex/e98912b.jpg?dl=1",
-
     	"https://www.dropbox.com/s/5jzllpwzqod934b/e360b2a.jpg?dl=1",
-
     	"https://www.dropbox.com/s/a3i8ibb2m0so3vu/9bbab83.jpg?dl=1",
-
     	"https://www.dropbox.com/s/1xt77dfcjegpy7l/754bd81.jpg?dl=1",
-
     	"https://www.dropbox.com/s/wgpzhf4x05006oq/3559161.png?dl=1",
-
     	"https://www.dropbox.com/s/egu0s9zxdmoiz0s/aed3a60.jpg?dl=1",
-
     	"https://www.dropbox.com/s/3ctcece41j99nwl/9212c9f.jpg?dl=1",
-
     	"https://www.dropbox.com/s/q39gc3f7vbkftgw/42f495d.jpg?dl=1",
-
     	"https://www.dropbox.com/s/t6btwvln49yhclx/2d0e573.jpg?dl=1",
-
     	"https://www.dropbox.com/s/yuspxsqartiizf0/e1fa5fd.jpg?dl=1",
-
     	"https://www.dropbox.com/s/rjxyrg1u9u1nek9/684767d.jpg?dl=1",
-
     	"https://www.dropbox.com/s/pge407voz8hoxms/e37c0e8.jpg?dl=1",
-
     	"https://www.dropbox.com/s/st3qkupyhfm8723/b74d4ad.jpg?dl=1",
-
     	"https://www.dropbox.com/s/svl2d5ec7fvcgt9/883e905.jpg?dl=1",
-
     	"https://www.dropbox.com/s/g5r3uetmhdb7ap3/1a1c340.jpg?dl=1",
-
     	"https://www.dropbox.com/s/tqe0njhz5g1hzpi/8077c52.jpg?dl=1",
-
     	"https://www.dropbox.com/s/56bl14pt9t6nih8/65e0560.jpg?dl=1",
-
     	"https://www.dropbox.com/s/r863mimq0nb8t4v/c13be65.jpg?dl=1",
-
     	"https://www.dropbox.com/s/eizsv2fjfk4au3q/1c03f5a.jpg?dl=1",
-
     	"https://www.dropbox.com/s/f1kkoy4vfg26wsn/88ec8ca.jpg?dl=1",
-
     	"https://www.dropbox.com/s/yaqi4gwhwf2srzd/a54a265.jpg?dl=1",
-
     	"https://www.dropbox.com/s/7goshezc9hcrpsd/fbff15f.jpg?dl=1",
-
     	"https://www.dropbox.com/s/wea09bh6w8xfkr7/2bdd77d.jpg?dl=1",
-
     	"https://www.dropbox.com/s/yah45xiyce0ab4w/cf1a246.jpg?dl=1",
-
     	"https://www.dropbox.com/s/y5geldbtg5xxlny/43b34f8.jpg?dl=1",
-
     	"https://www.dropbox.com/s/pjslz2c48gk3qa6/caa3151.jpg?dl=1",
-
     	"https://www.dropbox.com/s/g62xbmu5zoy8169/a999d0c.jpg?dl=1",
-
     	"https://www.dropbox.com/s/p6ak3dneupy8ahl/3f25b15.jpg?dl=1",
-
     	"https://www.dropbox.com/s/81iuxlfsygd7qaw/b70b325.png?dl=1",
-
     	"https://www.dropbox.com/s/4076goydnd81jff/f8ff3b2.jpg?dl=1",
-
     	"https://www.dropbox.com/s/uz38gwau66nlkki/6ce3758.jpg?dl=1",
-
     	"https://www.dropbox.com/s/jk9em0wsc6a7wy7/5e1b761.jpg?dl=1",
-
     	"https://www.dropbox.com/s/ivgupzgwu18j76t/dcae9db.jpg?dl=1"
 
     ],
@@ -351,109 +257,56 @@
 		"https://i.imgur.com/kif8PSd.jpg",
 
 		"https://i.imgur.com/bsAkp9m.jpg",
-
 		"https://i.imgur.com/bfouaOG.jpg",
-
 		"https://i.imgur.com/A0HQGkx.jpg",
-
 		"https://i.imgur.com/A0XFksy.jpg",
-
 		"https://i.imgur.com/BMB89hb.jpg",
-
 		"https://i.imgur.com/abBjOZT.jpg",
-
 		"https://i.imgur.com/OSINxfp.jpg",
-
 		"https://i.imgur.com/AHEhH55.jpg",
-
 		"https://i.imgur.com/kIcB9qz.jpg",
-
 		"https://i.imgur.com/cKjcEgt.jpg",
-
 		"https://i.imgur.com/pCjW5p3.jpg",
-
 		"https://i.imgur.com/BlCHpch.jpg",
-
 		"https://i.imgur.com/LEBMzUg.jpg",
-
 		"https://i.imgur.com/pFDaKta.jpg",
-
 		"https://i.imgur.com/Hn4zI6q.jpg",
-
 		"https://i.imgur.com/YVh4Tyz.jpg",
-
 		"https://i.imgur.com/7SsnLnf.jpg",
-
 		"https://i.imgur.com/nRSuNrc.jpg",
-
 		"https://i.imgur.com/PKeNihT.jpg",
-
 		"https://i.imgur.com/U9KohMR.jpg",
-
 		"https://i.imgur.com/ZG00UNE.jpg",
-
 		"https://i.imgur.com/4wtiG3T.jpg",
-
 		"https://i.imgur.com/LmqdDKw.jpg",
-
 		"https://i.imgur.com/2L8t6if.jpg",
-
 		"https://i.imgur.com/Syiw65L.jpg",
-
 		"https://i.imgur.com/vSoHGw5.jpg",
-
 		"https://i.imgur.com/3WkYlef.jpg",
-
 		"https://i.imgur.com/mwLXPOE.jpg",
-
 		"https://i.imgur.com/dEUUOfk.jpg",
-
 		"https://i.imgur.com/DpxOQwd.jpg",
-
 		"https://i.imgur.com/60k5GbJ.jpg",
-
 		"https://i.imgur.com/XRgrhkc.jpg",
-
 		"https://i.imgur.com/kenDGin.jpg",
-
 		"https://i.imgur.com/pVgLkkA.jpg",
-
 		"https://i.imgur.com/8zGidmj.jpg",
-
 		"https://i.imgur.com/ymaiTMB.jpg",
-
 		"https://i.imgur.com/U76cMjI.jpg",
-
 		"https://i.imgur.com/k2Y6ss6.jpg",
-
 		"https://i.imgur.com/ZArVjX1.jpg",
-
 		"https://i.imgur.com/avKY1pJ.jpg",
-
 		"https://i.imgur.com/otKjdnX.jpg",
-
 		"https://i.imgur.com/LA5h9yl.jpg",
-
 		"https://i.imgur.com/zi1LBQA.jpg",
-
 		"https://i.imgur.com/nPe88EM.jpg",
-
 		"https://i.imgur.com/L3zf1hJ.jpg",
-
 		"https://i.imgur.com/MY6t7rE.jpg",
-
 		"https://i.imgur.com/gCmvLqS.jpg",
-
 		"https://i.imgur.com/AUXQzJm.jpg",
-
 		"https://i.imgur.com/AWaSoIL.jpg",
-
 		"https://i.imgur.com/zzVPA5c.jpg",
-
 		"https://i.imgur.com/1a4ag68.jpg",
-
 		"https://i.imgur.com/ybRb82f.jpg"
-
 	]
-
 }
