@@ -1,0 +1,20 @@
+{
+	"sfw": [
+		{
+			"episodes" : "3",
+			"image" : "IMAGE_LINK_GOES_HERE",
+			"name" : "5 Centimetres Per Second",
+			"seasons" : "1",
+			"total" : "65:00",
+			"type" : "Movie"
+		},
+		{
+			"episodes" : "1",
+			"image" : "IMAGE_LINK_GOES_HERE",
+			"name" : "Your Name - Kimi no na wa",
+			"seasons" : "1",
+			"total" : "107:00",
+			"type" : "Movie"
+		}
+	]
+}
