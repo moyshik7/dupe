@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const token = ".";
 const client = new Discord.Client();
-const cList = require("./commands.json");
+const cList = require("./res/commands.json");
 
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag}!`);
