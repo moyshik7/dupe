@@ -1,5 +1,5 @@
 # dupe  
-**Requirements**  
+**Requirements - dev**  
 ```
 npm install discord.js
 npm install nodemon
