@@ -9,9 +9,10 @@ npm run dev
   
 **Commands:**  
 
-`anime`  
-`hentai`  
-`neko`  
-`wallpaper`  
-`wp`  
+`.anime`  
+`.help`  
+`.hentai`  
+`.neko`  
+`.wallpaper`  
+`.wp`  
 
