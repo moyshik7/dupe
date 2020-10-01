@@ -8,10 +8,10 @@ npm run dev
   
   
 **Commands:**  
-```
-anime
-hentai
-neko
-wallpaper
-wp
-```
+
+`anime`  
+`hentai`  
+`neko`  
+`wallpaper`  
+`wp`  
+
