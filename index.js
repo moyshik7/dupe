@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const token = ".";
 const client = new Discord.Client();
-const cList = require("./commands.json");
+const cList = require("./res/commands.json");
 const commands = require("./res/action");
 
 client.on("ready", () => {
