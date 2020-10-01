@@ -1,4 +1,5 @@
 # Dupe  
+![NPM](https://img.shields.io/npm/l/express)  
 **Requirements - dev**  
 ```
 npm install discord.js
