@@ -1,4 +1,4 @@
-# dupe  
+# Dupe  
 **Requirements - dev**  
 ```
 npm install discord.js
