@@ -26,7 +26,7 @@ const bot = {
 			.addFields(
 				{ name: a, value: b}
 			)
-			.addDescription(e)
+			.setDescription(e)
 			.setFooter("Support us on Patreon","https://i.imgur.com/RKVSeIv.png")
 		message.channel.send(emb);
 	},
