@@ -21,7 +21,7 @@ const bot = {
 		}else{
 			let e = "Episodes: " + anm.episodes;
 		}
-		let emb = new Discord.MessageEmbed();
+		let emb = new Discord.MessageEmbed()
 			.setColor(ref.randArr(color))
 			.setTitle(anm.name)
 			.setImage(anm.image)
