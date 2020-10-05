@@ -17,7 +17,7 @@ npm run dev
 ```
 **Commands:**  
   
-`.anime` 
+`.anime`  
 `.catgirl`   
 `.help`  
 `.hentai`  
