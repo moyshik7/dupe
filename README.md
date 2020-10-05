@@ -18,7 +18,8 @@ npm run dev
 **Commands:**  
   
 `.anime`  
-`.catgirl`   
+`.catgirl` 
+`.h`  
 `.help`  
 `.hentai`  
 `.neko`  
