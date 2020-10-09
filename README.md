@@ -22,6 +22,8 @@ npm run dev
 `.h`  
 `.help`  
 `.hentai`  
+`.lewd`  
 `.neko`  
+`.ping`  
 `.wallpaper`  
 `.wp`  
