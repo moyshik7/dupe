@@ -18,12 +18,21 @@ npm run dev
 **Commands:**  
   
 `.anime`  
-`.catgirl`   
+`.catgirl`  
+`.define`  
+`.feet`  
+`.femdom`  
 `.h`  
 `.help`  
 `.hentai`  
 `.lewd`  
 `.neko`  
 `.ping`  
+`.poke`  
+`.slap`  
+`.spank`  
+`.tits`  
+`.waifu`  
 `.wallpaper`  
 `.wp`  
+`.yuri`  

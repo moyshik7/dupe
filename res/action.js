@@ -138,6 +138,11 @@ const bot = {
             console.log(err);
         }
     },
+    server: async(message, args) => {
+        if (message.guild.available) {
+            ref.embed(message, `${message.guild.name}`, `Members: ${message.guild.memberCount}\nCreated at: ${message.guild.createdAt}\nRegion: ${message.guild.region}\nAbout: ${message.guild.description}`, `${message.guild.icon}`, `${message.guild.id}`);
+        }
+    },
     slap: async(message, args) => {
         try {
             let s = await n.sfw.slap();
