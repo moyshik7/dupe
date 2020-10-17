@@ -29,6 +29,7 @@ npm run dev
 `.neko`  
 `.ping`  
 `.poke`  
+`.server`  
 `.slap`  
 `.spank`  
 `.tits`  
