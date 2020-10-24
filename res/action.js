@@ -60,7 +60,7 @@ const bot = {
         if (!args.length) {
             term = "^(°×°)^";
         } else {
-            for (let a = 0; a < args.length; a++) {
+            for (let a = 1; a < args.length; a++) {
                 if (args[a] != null || args[a] != false) {
                     term += args[a];
                     term += " ";
@@ -157,8 +157,11 @@ const bot = {
         }
     },
     server: async(message, args) => {
+    	let iuri = message.guild.iconURL();
+    	let a = message.guild.createdAt;
+    	let cat = a.getMonth()+ "/" + a.getDate()+ "/" +a.getFullYear() + "  "+ a.getHours()+ ":" +a.getMinutes()+ ":" +a.getSeconds();
         if (message.guild.available) {
-            ref.embed(message, `${message.guild.name}`, `Members: ${message.guild.memberCount}\nCreated at: ${message.guild.createdAt}\nRegion: ${message.guild.region}\nAbout: ${message.guild.description}`, `${message.guild.icon}`, `${message.guild.id}`);
+            ref.embed(message, `${message.guild.name}`, `Members: ${message.guild.memberCount}\nCreated at: ${cat}\nRegion: ${message.guild.region}\nAbout: ${message.guild.description}`, `${iuri}`, `${message.guild.id}`);
         }
     },
     slap: async(message, args) => {
@@ -239,5 +242,5 @@ module.exports = bot;
 const helpMessage = {
     normal: "Couldn't find your way back ?\n\n\n**For NSFW commands use**\n`.help`  `nsfw`\n\n\n**For SFW commands use**\n`.help`  `sfw`\n\n\n\n[The usage can be found here](https://moyshik7.github.io/dis/commands.html)",
     nsfw: "**perverted soul**\n\n\n```\n.catgirl\n.feet\n.femdom\n.hentai\n.kuni\n.lewd\n.neko\n.spank\n.tits\n.yuri```\n\n\n**NSFW content will be given only to NSFW channels**[The usage can be found here](https://moyshik7.github.io/dis/commands.html)",
-    sfw: "**heaven smiles**\n\n\n```\n.anime\n.catgirl\n.define\n.h\n.help\n.neko\n.ping\n.poke\n.slap\n.waifu\n.wallpaper\n.wp```\n[The usage can be found here](https://moyshik7.github.io/dis/commands.html)"
+    sfw: "**heaven smiles**\n\n\n```\n.anime\.baka\n.catgirl\n.define\n.h\n.help\n.neko\n.pat\n.ping\n.poke\n.slap\n.spank\n.tickle\n.waifu\n.wallpaper\n.wp```\n[The usage can be found here](https://moyshik7.github.io/dis/commands.html)"
 }

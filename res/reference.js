@@ -37,12 +37,13 @@ const ref = {
 					.setTitle(Title)
 					.setDescription(Description)
 					.setImage(ImageArray)
-			}else{
+			}else if (typeof(ImageArray) === "object")){
 				a = new Discord.MessageEmbed()
 					.setColor(ref.randArr(color))
 					.setTitle(Title)
 					.setDescription(Description)
 					.setImage(ref.randArr(ImageArray))
+			}else{
 			}
 		}
 		message.channel.send(a);
