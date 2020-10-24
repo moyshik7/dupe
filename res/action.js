@@ -287,5 +287,5 @@ module.exports = bot;
 const helpMessage = {
     normal: "Couldn't find your way back ?\n\n\n**For NSFW commands use**\n`.help`  `nsfw`\n\n\n**For SFW commands use**\n`.help`  `sfw`\n\n\n\n[The usage can be found here](https://moyshik7.github.io/dis/commands.html)",
     nsfw: "**perverted soul**\n\n\n```\n.catgirl\n.feet\n.femdom\n.hentai\n.kuni\n.lewd\n.neko\n.spank\n.tits\n.yuri```\n\n\n**NSFW content will be given only to NSFW channels**[The usage can be found here](https://moyshik7.github.io/dis/commands.html)",
-    sfw: "**heaven smiles**\n\n\n```\n.anime\.baka\n.catgirl\n.define\n.h\n.help\n.neko\n.pat\n.ping\n.poke\n.slap\n.spank\n.tickle\n.waifu\n.wallpaper\n.wp```\n[The usage can be found here](https://moyshik7.github.io/dis/commands.html)"
+    sfw: "**heaven smiles**\n\n\n```\n.anime\n.baka\n.cat\n.catgirl\n.define\n.fox\n.foxgirl\n.h\n.help\n.lizard\n.neko\n.pat\n.ping\n.poke\n.slap\n.spank\n.tickle\n.waifu\n.wallpaper\n.wp```\n[The usage can be found here](https://moyshik7.github.io/dis/commands.html)"
 }
