@@ -29,7 +29,7 @@ const bot = {
                 .setFooter("Support us on Patreon", "https://i.imgur.com/RKVSeIv.png")
             message.channel.send(emb);
         } else {
-            //https://api.jikan.moe/v3/search/anime?q=Kimi no na wa
+            //https://api.jikan.moe/v3/search/anime?q=Kimi%20no%20na%20wa
         }
     },
     baka: async(message, args) => {
@@ -63,6 +63,15 @@ const bot = {
             ref.embed(message, "Neko - Catgirl", "[Support us on Patreon](https://www.patreon.com/plubin)", h.url);
         }
     },
+    cuddle: async(message, args) => {
+        try {
+            let s = await n.sfw.cuddle();
+            s = eval(s);
+            ref.embed(message, "meow", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+        } catch (err) {
+            console.log(err);
+        }
+    },
     define: async(message, args) => {
         let res = await ref.urbanAPI(message, args);
         let term;
@@ -79,6 +88,15 @@ const bot = {
             term = term.trim();
         }
         ref.embed(message, term, res);
+    },
+    dog: async(message, args) => {
+        try {
+            let s = await n.sfw.woof();
+            s = eval(s);
+            ref.embed(message, "woof woof", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+        } catch (err) {
+            console.log(err);
+        }
     },
     feet: async(message, args) => {
         try {
@@ -120,6 +138,15 @@ const bot = {
             console.log(err);
         }
     },
+    goose: async(message, args) => {
+        try {
+            let s = await n.sfw.goose();
+            s = eval(s);
+            ref.embed(message, "Goose", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+        } catch (err) {
+            console.log(err);
+        }
+    },
     h: (message, args) => {
         bot.help(message, args);
     },
@@ -137,6 +164,15 @@ const bot = {
             let h = await ref.api("hentai", "nsfw");
             h = JSON.parse(h);
             ref.embed(message, "H E N T A I", "[Support us on Patreon](https://www.patreon.com/plubin)", h.url);
+        }
+    },
+    holo: async(message, args) => {
+        try {
+            let s = await n.sfw.holo();
+            s = eval(s);
+            ref.embed(message, "H O L O", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+        } catch (err) {
+            console.log(err);
         }
     },
     hug: async(message, args) => {
@@ -268,6 +304,15 @@ const bot = {
             console.log(err);
         }
     },
+    woof: async(message, args) => {
+        try {
+            let s = await n.sfw.woof();
+            s = eval(s);
+            ref.embed(message, "woof woof", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+        } catch (err) {
+            console.log(err);
+        }
+    },
     wp: async(message, args) => {
         bot.wallpaper(message, args);
     },
@@ -287,5 +332,5 @@ module.exports = bot;
 const helpMessage = {
     normal: "Couldn't find your way back ?\n\n\n**For NSFW commands use**\n`.help`  `nsfw`\n\n\n**For SFW commands use**\n`.help`  `sfw`\n\n\n\n[The usage can be found here](https://moyshik7.github.io/dis/commands.html)",
     nsfw: "**perverted soul**\n\n\n```\n.catgirl\n.feet\n.femdom\n.hentai\n.kuni\n.lewd\n.neko\n.spank\n.tits\n.yuri```\n\n\n**NSFW content will be given only to NSFW channels**[The usage can be found here](https://moyshik7.github.io/dis/commands.html)",
-    sfw: "**heaven smiles**\n\n\n```\n.anime\n.baka\n.cat\n.catgirl\n.define\n.fox\n.foxgirl\n.h\n.help\n.lizard\n.neko\n.pat\n.ping\n.poke\n.slap\n.spank\n.tickle\n.waifu\n.wallpaper\n.wp```\n[The usage can be found here](https://moyshik7.github.io/dis/commands.html)"
+    sfw: "**heaven smiles**\n\n\n```\n.anime\n.baka\n.cat\n.catgirl\n.cuddle\n.define\n.dog\n.fox\n.foxgirl\n.goose\n.h\n.help\n.holo\n.lizard\n.neko\n.pat\n.ping\n.poke\n.slap\n.spank\n.tickle\n.waifu\n.wallpaper\n.woof\n.wp```\n[The usage can be found here](https://moyshik7.github.io/dis/commands.html)"
 }

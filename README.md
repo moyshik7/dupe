@@ -21,7 +21,9 @@ npm run dev
 `.cat`  
 `.baka`  
 `.catgirl`  
+`.cuddle`  
 `.define`  
+`.dog`  
 `.feet`  
 `.femdom`  
 `.fox`  
@@ -30,6 +32,7 @@ npm run dev
 `.help`  
 `.hentai`  
 `.hug`  
+`.holo`  
 `.lewd`  
 `.lizard`  
 `.neko`  
@@ -43,6 +46,7 @@ npm run dev
 `.tits`  
 `.waifu`  
 `.wallpaper`  
+`.woof`  
 `.wp`  
 `.yuri`  
   
