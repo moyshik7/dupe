@@ -9,12 +9,14 @@
   
   
   
-**Requirements - dev**  
+## Requirements - dev  
+  
 ```bash
 npm install discord.js
 npm install nodemon
 npm run dev
 ```
+  
 **Commands:**  
   
 `.anime`  
@@ -33,6 +35,8 @@ npm run dev
 `.hentai`  
 `.hug`  
 `.holo`  
+`.kuni`  
+`.kitty`  
 `.lewd`  
 `.lizard`  
 `.neko`  

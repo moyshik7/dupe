@@ -184,6 +184,15 @@ const bot = {
             console.log(err);
         }
     },
+    kitty: async(message, args) => {
+        try {
+            let s = await n.sfw.meow();
+            s = eval(s);
+            ref.embed(message, "meaw", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+        } catch (err) {
+            console.log(err);
+        }
+    },
     kuni: async(message, args) => {
         try {
             if (message.channel.nsfw) {
