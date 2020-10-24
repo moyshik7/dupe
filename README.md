@@ -10,7 +10,7 @@
   
   
 **Requirements - dev**  
-```
+```bash
 npm install discord.js
 npm install nodemon
 npm run dev
@@ -18,15 +18,20 @@ npm run dev
 **Commands:**  
   
 `.anime`  
+`.cat`  
 `.baka`  
 `.catgirl`  
 `.define`  
 `.feet`  
 `.femdom`  
+`.fox`  
+`.foxgirl`  
 `.h`  
 `.help`  
 `.hentai`  
+`.hug`  
 `.lewd`  
+`.lizard`  
 `.neko`  
 `.pat`  
 `.ping`  
@@ -40,3 +45,4 @@ npm run dev
 `.wallpaper`  
 `.wp`  
 `.yuri`  
+  

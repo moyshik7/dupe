@@ -33,13 +33,22 @@ const bot = {
         }
     },
     baka: async(message, args) => {
-    	try {
-    		let s = await n.sfw.poke();
-    		s = eval(s);
-    		ref.embed(message, "Baka", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
-    	} catch (err) {
-    		console.log(err);
-    	}
+        try {
+            let s = await n.sfw.poke();
+            s = eval(s);
+            ref.embed(message, "Baka", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+        } catch (err) {
+            console.log(err);
+        }
+    },
+    cat: async(message, args) => {
+        try {
+            let s = await n.sfw.meow();
+            s = eval(s);
+            ref.embed(message, "meow", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+        } catch (err) {
+            console.log(err);
+        }
     },
     catgirl: async(message, args) => {
         if (message.channel.nsfw) {
@@ -93,6 +102,24 @@ const bot = {
             console.log(err);
         }
     },
+    fox: async(message, args) => {
+        try {
+            let s = await n.sfw.foxGirl();
+            s = eval(s);
+            ref.embed(message, "Foxy", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+        } catch (err) {
+            console.log(err);
+        }
+    },
+    foxgirl: async(message, args) => {
+        try {
+            let s = await n.sfw.foxGirl();
+            s = eval(s);
+            ref.embed(message, "Foxy", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+        } catch (err) {
+            console.log(err);
+        }
+    },
     h: (message, args) => {
         bot.help(message, args);
     },
@@ -110,6 +137,15 @@ const bot = {
             let h = await ref.api("hentai", "nsfw");
             h = JSON.parse(h);
             ref.embed(message, "H E N T A I", "[Support us on Patreon](https://www.patreon.com/plubin)", h.url);
+        }
+    },
+    hug: async(message, args) => {
+        try {
+            let s = await n.sfw.hug();
+            s = eval(s);
+            ref.embed(message, "H U G", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+        } catch (err) {
+            console.log(err);
         }
     },
     kuni: async(message, args) => {
@@ -131,17 +167,26 @@ const bot = {
             ref.embed(message, "L E W D", "[Support us on Patreon](https://www.patreon.com/plubin)", h.url);
         }
     },
+    lizard: async(message, args) => {
+        try {
+            let s = await n.sfw.lizard();
+            s = eval(s);
+            ref.embed(message, "Pisssh...", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+        } catch (err) {
+            console.log(err);
+        }
+    },
     neko: async(message, args) => {
         bot.catgirl(message, args);
     },
     pat: async(message, args) => {
-    	try {
-    		let s = await n.sfw.poke();
-    		s = eval(s);
-    		ref.embed(message, "P A T", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
-    	} catch (err) {
-    		console.log(err);
-    	}
+        try {
+            let s = await n.sfw.poke();
+            s = eval(s);
+            ref.embed(message, "P A T", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+        } catch (err) {
+            console.log(err);
+        }
     },
     ping: (message, args) => {
         let timeTaken = Date.now() - message.createdTimestamp;
@@ -157,9 +202,9 @@ const bot = {
         }
     },
     server: async(message, args) => {
-    	let iuri = message.guild.iconURL();
-    	let a = message.guild.createdAt;
-    	let cat = a.getMonth()+ "/" + a.getDate()+ "/" +a.getFullYear() + "  "+ a.getHours()+ ":" +a.getMinutes()+ ":" +a.getSeconds();
+        let iuri = message.guild.iconURL();
+        let a = message.guild.createdAt;
+        let cat = a.getMonth() + "/" + a.getDate() + "/" + a.getFullYear() + "  " + a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
         if (message.guild.available) {
             ref.embed(message, `${message.guild.name}`, `Members: ${message.guild.memberCount}\nCreated at: ${cat}\nRegion: ${message.guild.region}\nAbout: ${message.guild.description}`, `${iuri}`, `${message.guild.id}`);
         }
@@ -185,13 +230,13 @@ const bot = {
         }
     },
     tickle: async(message, args) => {
-    	try {
-    		let s = await n.sfw.poke();
-    		s = eval(s);
-    		ref.embed(message, "Tickle", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
-    	} catch (err) {
-    		console.log(err);
-    	}
+        try {
+            let s = await n.sfw.poke();
+            s = eval(s);
+            ref.embed(message, "Tickle", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+        } catch (err) {
+            console.log(err);
+        }
     },
     tits: async(message, args) => {
         try {
