@@ -28,6 +28,8 @@ npm run dev
 `.cs`  
 `.cumslut`  
 `.cumsluts`  
+`.ero`  
+`.erotic`  
 `.feet`  
 `.femdom`  
 `.hentai`  

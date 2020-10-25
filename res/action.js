@@ -185,7 +185,7 @@ const bot = {
             console.log(err);
         }
     },
-    erotic(message, args) => {
+    erotic: (message, args) => {
         bot.ero(message, args);
     },
     feet: async(message, args) => {
