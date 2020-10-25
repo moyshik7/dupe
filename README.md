@@ -31,6 +31,7 @@ npm run dev
 `.feet`  
 `.femdom`  
 `.hentai`  
+`.holo`  
 `.kuni`  
 `.lewd`  
 `.neko`  

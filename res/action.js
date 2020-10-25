@@ -91,16 +91,20 @@ const bot = {
         }
     },
     catgirl: async(message, args) => {
-        if (message.channel.nsfw) {
-            //For nsfw channels
-            let h = await ref.api("neko", "nsfw");
-            h = JSON.parse(h);
-            ref.embed(message, "Neko - Catgirl", "[Support us on Patreon](https://www.patreon.com/plubin)", h.url);
-        } else {
-            //For sfw channels
-            let h = await ref.api("neko", "sfw");
-            h = JSON.parse(h);
-            ref.embed(message, "Neko - Catgirl", "[Support us on Patreon](https://www.patreon.com/plubin)", h.url);
+        try {
+            if (message.channel.nsfw) {
+                //For nsfw channels
+                let h = await ref.api("neko", "nsfw");
+                h = JSON.parse(h);
+                ref.embed(message, "Neko - Catgirl", "[Support us on Patreon](https://www.patreon.com/plubin)", h.url);
+            } else {
+                //For sfw channels
+                let h = await ref.api("neko", "sfw");
+                h = JSON.parse(h);
+                ref.embed(message, "Neko - Catgirl", "[Support us on Patreon](https://www.patreon.com/plubin)", h.url);
+            }
+        } catch (err) {
+            console.log(err);
         }
     },
     classic: async(message, args) => {
@@ -156,13 +160,33 @@ const bot = {
                     term += " ";
                 }
             }
-            term = term[0].toUpperCase() + term.substring(1);
-            term = term.trim();
+            if (term.length) {
+                term = term[0].toUpperCase() + term.substring(1);
+                term = term.trim();
+            } else {
+                term = "";
+            }
         }
         ref.embed(message, term, res);
     },
     dog: async(message, args) => {
         bot.woof(message, args);
+    },
+    ero: async(message, args) => {
+        try {
+            if (message.channel.nsfw) {
+                let s = await n.nsfw.ero();
+                s = eval(s);
+                ref.embed(message, "Erotic", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            } else {
+                ref.embed(message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    },
+    erotic(message, args) => {
+        bot.ero(message, args);
     },
     feet: async(message, args) => {
         try {
@@ -208,6 +232,19 @@ const bot = {
             console.log(err);
         }
     },
+    gasm: async(message, args) => {
+        try {
+            if (message.channel.nsfw) {
+                let s = await n.nsfw.gasm();
+                s = eval(s);
+                ref.embed(message, "Orgasm", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            } else {
+                ref.embed(message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    },
     goose: async(message, args) => {
         try {
             let s = await n.sfw.goose();
@@ -240,9 +277,15 @@ const bot = {
     },
     holo: async(message, args) => {
         try {
-            let s = await n.sfw.holo();
-            s = eval(s);
-            ref.embed(message, "H O L O", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            if (message.channel.nsfw) {
+                let s = await n.nsfw.holo();
+                s = eval(s);
+                ref.embed(message, "H O L O", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            } else {
+                let s = await n.sfw.holo();
+                s = eval(s);
+                ref.embed(message, "H O L O", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            }
         } catch (err) {
             console.log(err);
         }
@@ -279,7 +322,6 @@ const bot = {
         }
     },
     lewd: async(message, args) => {
-        //same as H E N T A I
         try {
             if (message.channel.nsfw) {
                 let h = await ref.api("hentai", "nsfw");
@@ -307,6 +349,13 @@ const bot = {
     neko: async(message, args) => {
         bot.catgirl(message, args);
     },
+    orgasm: async(message, args) => {
+        try {
+            bot.gasm(message, args);
+        } catch (err) {
+            console.log(err);
+        }
+    },
     pat: async(message, args) => {
         try {
             let s = await n.sfw.poke();
@@ -332,6 +381,11 @@ const bot = {
     pussy: async(message, args) => {
         try {
             if (message.channel.nsfw) {
+                if (args.length) {
+                    let s = await n.nsfw.pussyArt();
+                    s = eval(s);
+                    ref.embed(message, "P U S S Y", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+                }
                 let s = await n.nsfw.pussy();
                 s = eval(s);
                 ref.embed(message, "P U S S Y", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
