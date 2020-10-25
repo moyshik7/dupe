@@ -7,8 +7,6 @@
 ![Change log](https://moyshik7.github.io/dis/changelog.svg)  
 [![Patreon](https://moyshik7.github.io/dis/patreon.svg)](https://www.patreon.com/plubin)  
   
-  
-  
 ## Requirements - dev  
   
 ```bash
@@ -17,7 +15,33 @@ npm install nodemon
 npm run dev
 ```
   
-**Commands:**  
+## Commands:  
+  
+### NSFW:  
+  
+`.anal`  
+`.avatar`  
+`.bj`  
+`.blowjob`  
+`.catgirl`  
+`.classic`  
+`.cs`  
+`.cumslut`  
+`.cumsluts`  
+`.feet`  
+`.femdom`  
+`.hentai`  
+`.kuni`  
+`.lewd`  
+`.neko`  
+`.pussy`  
+`.solo`  
+`.spank`  
+`.tits`  
+`.trap`  
+`.yuri`  
+  
+### SFW:  
   
 `.anime`  
 `.cat`  
@@ -26,8 +50,6 @@ npm run dev
 `.cuddle`  
 `.define`  
 `.dog`  
-`.feet`  
-`.femdom`  
 `.fox`  
 `.foxgirl`  
 `.h`  
@@ -35,9 +57,7 @@ npm run dev
 `.hentai`  
 `.hug`  
 `.holo`  
-`.kuni`  
 `.kitty`  
-`.lewd`  
 `.lizard`  
 `.neko`  
 `.pat`  
@@ -45,12 +65,9 @@ npm run dev
 `.poke`  
 `.server`  
 `.slap`  
-`.spank`  
 `.tickle`  
-`.tits`  
 `.waifu`  
 `.wallpaper`  
 `.woof`  
 `.wp`  
-`.yuri`  
   

@@ -8,6 +8,17 @@ const anime = require("./anime.json");
 const color = require("./color.json");
 
 const bot = {
+    anal: async(message, args) => {
+        try {
+            if (message.channel.nsfw) {
+                let s = await n.nsfw.anal();
+                s = eval(s);
+                ref.embed(message, "A N A L", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    },
     anime: async(message, args) => {
         if (!args.length) {
             let anm = ref.randArr(anime.sfw);
@@ -32,11 +43,44 @@ const bot = {
             //https://api.jikan.moe/v3/search/anime?q=Kimi%20no%20na%20wa
         }
     },
+    avatar: async(message, args) => {
+        try {
+            if (message.channel.nsfw) {
+                let s = await n.nsfw.avatar();
+                s = eval(s);
+                ref.embed(message, "Cum Sluts", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    },
     baka: async(message, args) => {
         try {
             let s = await n.sfw.poke();
             s = eval(s);
             ref.embed(message, "Baka", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+        } catch (err) {
+            console.log(err);
+        }
+    },
+    bj: async(message, args) => {
+        try {
+            if (message.channel.nsfw) {
+                let s = await n.nsfw.bJ();
+                s = eval(s);
+                ref.embed(message, "BlowJob", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    },
+    blowjob: async(message, args) => {
+        try {
+            if (message.channel.nsfw) {
+                let s = await n.nsfw.bJ();
+                s = eval(s);
+                ref.embed(message, "BlowJob", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            }
         } catch (err) {
             console.log(err);
         }
@@ -63,11 +107,55 @@ const bot = {
             ref.embed(message, "Neko - Catgirl", "[Support us on Patreon](https://www.patreon.com/plubin)", h.url);
         }
     },
+    classic: async(message, args) => {
+        try {
+            if (message.channel.nsfw) {
+                let s = await n.nsfw.classic();
+                s = eval(s);
+                ref.embed(message, "Classic", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    },
+    cs: async(message, args) => {
+        try {
+            if (message.channel.nsfw) {
+                let s = await n.nsfw.cumsluts();
+                s = eval(s);
+                ref.embed(message, "Cum Sluts", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    },
     cuddle: async(message, args) => {
         try {
             let s = await n.sfw.cuddle();
             s = eval(s);
             ref.embed(message, "meow", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+        } catch (err) {
+            console.log(err);
+        }
+    },
+    cumslut: async(message, args) => {
+        try {
+            if (message.channel.nsfw) {
+                let s = await n.nsfw.cumsluts();
+                s = eval(s);
+                ref.embed(message, "Cum Sluts", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    },
+    cumsluts: async(message, args) => {
+        try {
+            if (message.channel.nsfw) {
+                let s = await n.nsfw.cumsluts();
+                s = eval(s);
+                ref.embed(message, "Cum Sluts", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            }
         } catch (err) {
             console.log(err);
         }
@@ -246,6 +334,17 @@ const bot = {
             console.log(err);
         }
     },
+    pussy: async(message, args) => {
+        try {
+            if (message.channel.nsfw) {
+                let s = await n.nsfw.pussy();
+                s = eval(s);
+                ref.embed(message, "P U S S Y", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    },
     server: async(message, args) => {
         let iuri = message.guild.iconURL();
         let a = message.guild.createdAt;
@@ -259,6 +358,23 @@ const bot = {
             let s = await n.sfw.slap();
             s = eval(s);
             ref.embed(message, "Slap", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+        } catch (err) {
+            console.log(err);
+        }
+    },
+    solo: async(message, args) => {
+        try {
+            if (message.channel.nsfw) {
+                if (args[0] == "gif" || args[0] == "g") {
+                    let s = await n.nsfw.girlSoloGif();
+                    s = eval(s);
+                    ref.embed(message, "Solo Girl", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+                } else {
+                    let s = await n.nsfw.girlSolo();
+                    s = eval(s);
+                    ref.embed(message, "Solo Girl", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+                }
+            }
         } catch (err) {
             console.log(err);
         }
@@ -289,6 +405,17 @@ const bot = {
                 let s = await n.nsfw.tits();
                 s = eval(s);
                 ref.embed(message, "T I T S", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    },
+    trap: async(message, args) => {
+        try {
+            if (message.channel.nsfw) {
+                let s = await n.nsfw.trap();
+                s = eval(s);
+                ref.embed(message, "Trap", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
             }
         } catch (err) {
             console.log(err);
