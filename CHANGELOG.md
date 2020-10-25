@@ -1,0 +1,47 @@
+# Changelogs
+  
+- Added even more commands and separated sfw and nsfw
+- fixed more bugs
+- added more commands
+- fixed bugs
+- added more colors
+- added more commands
+- Added more commands
+- Fixed bugs
+- Added new commands and fixed bugs
+- Delete commands.json
+- Delete action.js
+- Added new commands
+- Delete README.md
+- Added new features
+- updated server command
+- Welcome v1.2
+- Fixed bugs
+- Added more commands
+- Delete commands.json
+- Delete LICENSE
+- Delete action.js
+- Delete wallpaper.json
+- Delete reference.js
+- Added nekos.life
+- Delete package.json
+- Add files via upload
+- Update README.md
+- Removed reference object and added it as module.
+- Delete index.js
+- Added node-fetch dependency
+- Delete package.json
+- Using API now
+- Delete neko.json
+- Delete hentai.json
+- Delete reference.js
+- Delete action.js
+- Added 50 Mose nsfw
+- Delete hentai.json
+- Update README.md
+- Update README.md
+- Added line break that was missed
+- Added 100 new ;)
+- Add files via upload
+- Initial commit
+  

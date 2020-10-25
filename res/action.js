@@ -14,6 +14,8 @@ const bot = {
                 let s = await n.nsfw.anal();
                 s = eval(s);
                 ref.embed(message, "A N A L", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            } else {
+                ref.embed(message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
         } catch (err) {
             console.log(err);
@@ -49,6 +51,8 @@ const bot = {
                 let s = await n.nsfw.avatar();
                 s = eval(s);
                 ref.embed(message, "Cum Sluts", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            } else {
+                ref.embed(message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
         } catch (err) {
             console.log(err);
@@ -64,15 +68,7 @@ const bot = {
         }
     },
     bj: async(message, args) => {
-        try {
-            if (message.channel.nsfw) {
-                let s = await n.nsfw.bJ();
-                s = eval(s);
-                ref.embed(message, "BlowJob", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
-            }
-        } catch (err) {
-            console.log(err);
-        }
+        bot.blowjob(message, args);
     },
     blowjob: async(message, args) => {
         try {
@@ -113,21 +109,15 @@ const bot = {
                 let s = await n.nsfw.classic();
                 s = eval(s);
                 ref.embed(message, "Classic", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            } else {
+                ref.embed(message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
         } catch (err) {
             console.log(err);
         }
     },
     cs: async(message, args) => {
-        try {
-            if (message.channel.nsfw) {
-                let s = await n.nsfw.cumsluts();
-                s = eval(s);
-                ref.embed(message, "Cum Sluts", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
-            }
-        } catch (err) {
-            console.log(err);
-        }
+        bot.cumsluts(message, args);
     },
     cuddle: async(message, args) => {
         try {
@@ -139,15 +129,7 @@ const bot = {
         }
     },
     cumslut: async(message, args) => {
-        try {
-            if (message.channel.nsfw) {
-                let s = await n.nsfw.cumsluts();
-                s = eval(s);
-                ref.embed(message, "Cum Sluts", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
-            }
-        } catch (err) {
-            console.log(err);
-        }
+        bot.cumsluts(message, args);
     },
     cumsluts: async(message, args) => {
         try {
@@ -155,6 +137,8 @@ const bot = {
                 let s = await n.nsfw.cumsluts();
                 s = eval(s);
                 ref.embed(message, "Cum Sluts", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            } else {
+                ref.embed(message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
         } catch (err) {
             console.log(err);
@@ -178,13 +162,7 @@ const bot = {
         ref.embed(message, term, res);
     },
     dog: async(message, args) => {
-        try {
-            let s = await n.sfw.woof();
-            s = eval(s);
-            ref.embed(message, "woof woof", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
-        } catch (err) {
-            console.log(err);
-        }
+        bot.woof(message, args);
     },
     feet: async(message, args) => {
         try {
@@ -192,6 +170,8 @@ const bot = {
                 let s = await n.nsfw.feet();
                 s = eval(s);
                 ref.embed(message, "F E E T", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            } else {
+                ref.embed(message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
         } catch (err) {
             console.log(err);
@@ -203,6 +183,8 @@ const bot = {
                 let s = await n.nsfw.femdom();
                 s = eval(s);
                 ref.embed(message, "F E M D O M", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            } else {
+                ref.embed(message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
         } catch (err) {
             console.log(err);
@@ -252,6 +234,8 @@ const bot = {
             let h = await ref.api("hentai", "nsfw");
             h = JSON.parse(h);
             ref.embed(message, "H E N T A I", "[Support us on Patreon](https://www.patreon.com/plubin)", h.url);
+        } else {
+            ref.embed(message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
         }
     },
     holo: async(message, args) => {
@@ -287,6 +271,8 @@ const bot = {
                 let s = await n.nsfw.kuni();
                 s = eval(s);
                 ref.embed(message, "K U N I", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            } else {
+                ref.embed(message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
         } catch (err) {
             console.log(err);
@@ -294,10 +280,16 @@ const bot = {
     },
     lewd: async(message, args) => {
         //same as H E N T A I
-        if (message.channel.nsfw) {
-            let h = await ref.api("hentai", "nsfw");
-            h = JSON.parse(h);
-            ref.embed(message, "L E W D", "[Support us on Patreon](https://www.patreon.com/plubin)", h.url);
+        try {
+            if (message.channel.nsfw) {
+                let h = await ref.api("hentai", "nsfw");
+                h = JSON.parse(h);
+                ref.embed(message, "L E W D", "[Support us on Patreon](https://www.patreon.com/plubin)", h.url);
+            } else {
+                ref.embed(message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
+            }
+        } catch (err) {
+            console.log(err);
         }
     },
     lizard: async(message, args) => {
@@ -308,6 +300,9 @@ const bot = {
         } catch (err) {
             console.log(err);
         }
+    },
+    meow: async(message, args) => {
+        bot.cat(message, args);
     },
     neko: async(message, args) => {
         bot.catgirl(message, args);
@@ -340,6 +335,8 @@ const bot = {
                 let s = await n.nsfw.pussy();
                 s = eval(s);
                 ref.embed(message, "P U S S Y", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            } else {
+                ref.embed(message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
         } catch (err) {
             console.log(err);
@@ -374,6 +371,8 @@ const bot = {
                     s = eval(s);
                     ref.embed(message, "Solo Girl", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
                 }
+            } else {
+                ref.embed(message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
         } catch (err) {
             console.log(err);
@@ -385,6 +384,8 @@ const bot = {
                 let s = await n.nsfw.spank();
                 s = eval(s);
                 ref.embed(message, "S P A N K", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            } else {
+                ref.embed(message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
         } catch (err) {
             console.log(err);
@@ -405,6 +406,8 @@ const bot = {
                 let s = await n.nsfw.tits();
                 s = eval(s);
                 ref.embed(message, "T I T S", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            } else {
+                ref.embed(message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
         } catch (err) {
             console.log(err);
@@ -416,6 +419,8 @@ const bot = {
                 let s = await n.nsfw.trap();
                 s = eval(s);
                 ref.embed(message, "Trap", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            } else {
+                ref.embed(message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
         } catch (err) {
             console.log(err);
@@ -458,6 +463,8 @@ const bot = {
                 let s = await n.nsfw.yuri();
                 s = eval(s);
                 ref.embed(message, "Y U R I", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            } else {
+                ref.embed(message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
         } catch (err) {
             console.log(err);
@@ -466,7 +473,7 @@ const bot = {
 }
 module.exports = bot;
 const helpMessage = {
-    normal: "Couldn't find your way back ?\n\n\n**For NSFW commands use**\n`.help`  `nsfw`\n\n\n**For SFW commands use**\n`.help`  `sfw`\n\n\n\n[The usage can be found here](https://moyshik7.github.io/dis/commands.html)",
-    nsfw: "**perverted soul**\n\n\n```\n.catgirl\n.feet\n.femdom\n.hentai\n.kuni\n.lewd\n.neko\n.spank\n.tits\n.yuri```\n\n\n**NSFW content will be given only to NSFW channels**[The usage can be found here](https://moyshik7.github.io/dis/commands.html)",
+    normal: "Couldn't find your way around ?\n\n\n**For NSFW commands use**\n`.help`  `nsfw`\n\n\n**For SFW commands use**\n`.help`  `sfw`\n\n\n\n[The usage can be found here](https://moyshik7.github.io/dis/commands.html)",
+    nsfw: "**perverted soul** \n\n\n ``` .anal\n.avatar\n.bj\n.blowjob\n.catgirl\n.classic\n.cs\n.cumslut\n.cumsluts\n.feet\n.femdom\n.hentai\n.kuni\n.lewd\n.neko\n.pussy\n.solo\n.spank\n.tits\n.trap\n.yuri ```\n\n\n**NSFW content will be given only to NSFW channels**[The usage can be found here](https://moyshik7.github.io/dis/commands.html)",
     sfw: "**heaven smiles**\n\n\n```\n.anime\n.baka\n.cat\n.catgirl\n.cuddle\n.define\n.dog\n.fox\n.foxgirl\n.goose\n.h\n.help\n.holo\n.lizard\n.neko\n.pat\n.ping\n.poke\n.slap\n.spank\n.tickle\n.waifu\n.wallpaper\n.woof\n.wp```\n[The usage can be found here](https://moyshik7.github.io/dis/commands.html)"
 }

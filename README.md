@@ -15,9 +15,9 @@ npm install nodemon
 npm run dev
 ```
   
-## Commands:  
+## Commands  
   
-### NSFW:  
+### NSFW  
   
 `.anal`  
 `.avatar`  
@@ -41,7 +41,7 @@ npm run dev
 `.trap`  
 `.yuri`  
   
-### SFW:  
+### SFW  
   
 `.anime`  
 `.cat`  
