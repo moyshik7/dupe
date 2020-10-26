@@ -7,17 +7,17 @@
 ![Change log](https://moyshik7.github.io/dis/changelog.svg)  
 [![Patreon](https://moyshik7.github.io/dis/patreon.svg)](https://www.patreon.com/plubin)  
   
-## Requirements - dev  
+## Requirements - dev
   
 ```bash
-npm install discord.js
-npm install nodemon
-npm run dev
+npm install discord.js  
+npm install nodemon  
+npm run dev  
 ```
   
 ## Commands  
   
-### NSFW  
+<h3 style="color:red">NSFW</h3>  
   
 `.anal`  
 `.avatar`  
@@ -32,11 +32,13 @@ npm run dev
 `.erotic`  
 `.feet`  
 `.femdom`  
+`.gasm`  
 `.hentai`  
 `.holo`  
 `.kuni`  
 `.lewd`  
 `.neko`  
+`.orgasm`  
 `.pussy`  
 `.solo`  
 `.spank`  
@@ -44,7 +46,7 @@ npm run dev
 `.trap`  
 `.yuri`  
   
-### SFW  
+<h3 style="color:lime;" >SFW</h3>
   
 `.anime`  
 `.cat`  
