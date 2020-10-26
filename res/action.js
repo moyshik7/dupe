@@ -50,7 +50,7 @@ const bot = {
             if (message.channel.nsfw) {
                 let s = await n.nsfw.avatar();
                 s = eval(s);
-                ref.embed(message, "Cum Sluts", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+                ref.embed(message, "Avatar", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
             } else {
                 ref.embed(message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
