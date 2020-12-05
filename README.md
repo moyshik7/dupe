@@ -7,17 +7,17 @@
 ![Change log](https://moyshik7.github.io/dis/changelog.svg)  
 [![Patreon](https://moyshik7.github.io/dis/patreon.svg)](https://www.patreon.com/plubin)  
   
-## Requirements - dev
+## Requirements - dev  
   
 ```bash
-npm install discord.js  
-npm install nodemon  
-npm run dev  
+npm install discord.js
+npm install nodemon
+npm run dev
 ```
   
 ## Commands  
   
-<h3 style="color:red">NSFW</h3>  
+### NSFW  
   
 `.anal`  
 `.avatar`  
@@ -46,20 +46,19 @@ npm run dev
 `.trap`  
 `.yuri`  
   
-<h3 style="color:lime;" >SFW</h3>
+### SFW  
   
-`.anime`  
-`.cat`  
+`.anime`    
 `.baka`  
+`.cat`  
 `.catgirl`  
 `.cuddle`  
-`.define`  
+X `.define`  
 `.dog`  
 `.fox`  
 `.foxgirl`  
 `.h`  
 `.help`  
-`.hentai`  
 `.hug`  
 `.holo`  
 `.kitty`  
@@ -72,7 +71,9 @@ npm run dev
 `.slap`  
 `.tickle`  
 `.waifu`  
-`.wallpaper`  
+X `.wallpaper`  
 `.woof`  
-`.wp`  
+X `.wp`  
+  
+X => Deprecated and will be removed from 4 November 2020, GMT +0600  
   
