@@ -1,4 +1,4 @@
-.{
+{
     "nsfw":[
         {
             "episodes":"",
@@ -13,24 +13,10 @@
     ],
     "sfw":[
         {
-            "episodes":"3",
-            "image":"https://i.imgur.com/5LJe4ct.jpg",
-            "jp":"???????",
-            "name":"5 Centimetres Per Second",
-            "seasons":"1",
-            "total":"65:00",
-            "type":"Movie",
-            "year":"2007"
+            "name":"5 Centimetres Per Second"
         },
         {
-            "episodes":"1",
-            "image":"https://i.imgur.com/cMIcF9g.jpg",
-            "jp":"Koe no katachi",
-            "name":"A Silent Voice",
-            "seasons":"1",
-            "total":"130:00",
-            "type":"Movie",
-            "year":"2016"
+            "name":"A Silent Voice"
         },
         {
             "episodes":"1",
