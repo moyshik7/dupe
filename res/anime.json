@@ -1,4 +1,4 @@
-{
+.{
     "nsfw":[
         {
             "episodes":"",
@@ -15,6 +15,7 @@
         {
             "episodes":"3",
             "image":"https://i.imgur.com/5LJe4ct.jpg",
+            "jp":"???????",
             "name":"5 Centimetres Per Second",
             "seasons":"1",
             "total":"65:00",
