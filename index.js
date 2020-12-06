@@ -8,25 +8,24 @@ const commands = require("./res/action");
 const ref = require("./res/reference");
 
 client.once("ready", () => {
-    console.log(`Logged in as ${client.user.tag}!`); //Show this message when logged in
+    console.log(`Logged in as ${client.user.tag}!`);
     client.user.setActivity('Apex Legends');
 });
 client.on("message", (message) => {
+    if (message.author.bot) return;
     let msg = message.content;
     if (msg[0] === token) {
-        let command = msg.slice(1); //remove the token
+        let command = msg.slice(1);
         command = ref.formatArr(command.split(" "));
-        args = command.slice(1); //only takes the arguments
+        args = command.slice(1);
         command = command[0];
         if (cList.indexOf(command) != -1) {
-            let myf = commands[command]; //Init the function
-            myf(message, args); //Call the function
+            let myf = commands[command];
+            myf(message, args);
         }
     }
 });
-client.login(process.env.BOT_TOKEN); //Login using the environment variable
-
-
+client.login(process.env.BOT_TOKEN);
 server.all('/', (req, res) => {
     res.send('Plubin is up');
 });
