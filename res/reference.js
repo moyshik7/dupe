@@ -2,7 +2,6 @@ const Discord = require("discord.js");
 const fetch = require('node-fetch');
 const qs = require('querystring');
 
-//const anime = require("./anime.json");
 const color = require("./color.json");
 
 const ref = {
