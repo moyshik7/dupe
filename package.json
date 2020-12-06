@@ -1,8 +1,11 @@
 {
-	"name": "Plubin",
-	"version": "1.2.8",
+	"name": "plubin",
+	"version": "1.2.7",
 	"description": "",
 	"main": "index.js",
+	"engines" : {
+		"node" : ">=0.12"
+	},
 	"dependencies": {
 		"discord.js": "^12.3.1",
 		"express": "^4.17.1",
