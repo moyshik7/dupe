@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const fetch = require('node-fetch');
 const qs = require('querystring');
 
 const color = require("./color.json");
@@ -14,7 +13,7 @@ const ref = {
             }
             let query = qs.stringify(data);
             let list = await fetch(`http://plupi.myartsonline.com?${query}`)
-                .then(response => response.text());
+            .then(response => response.text());
             if (list.length) {
                 return list;
             }
@@ -26,34 +25,34 @@ const ref = {
         let a;
         if (typeof(ImageArray) === "string") {
             a = new Discord.MessageEmbed()
-                .setColor(ref.randArr(color))
-                .setTitle(Title)
-                .setImage(ImageArray)
-                .setFooter("Support us on Patreon", "https://i.imgur.com/RKVSeIv.png")
+            .setColor(ref.randArr(color))
+            .setTitle(Title)
+            .setImage(ImageArray)
+            .setFooter("Support us on Patreon", "https://i.imgur.com/RKVSeIv.png")
         } else if (typeof(ImageArray) === "object") {
             a = new Discord.MessageEmbed()
-                .setColor(ref.randArr(color))
-                .setTitle(Title)
-                .setImage(ref.randArr(ImageArray))
-                .setFooter("Support us on Patreon", "https://i.imgur.com/RKVSeIv.png")
+            .setColor(ref.randArr(color))
+            .setTitle(Title)
+            .setImage(ref.randArr(ImageArray))
+            .setFooter("Support us on Patreon", "https://i.imgur.com/RKVSeIv.png")
         } else {}
         message.channel.send(a);
     },
-    embedDes : (message,Title,Description,Footer) => {
-    	let emb;
-    	if(Footer == false || Footer == undefined){
-    		emb = new Discord.MessageEmbed()
-    			.setColor(ref.randArr(color))
-    			.setTitle(Title)
-    			.setDescription(Description)
-    	}else{
-    		emb = new Discord.MessageEmbed()
-    			.setColor(ref.randArr(color))
-    			.setTitle(Title)
-    			.setDescription(Description)
-    			.setFooter(Footer)
-    	}
-    	message.channel.send(emb);
+    embedDes: (message, Title, Description, Footer) => {
+        let emb;
+        if (Footer == false || Footer == undefined) {
+            emb = new Discord.MessageEmbed()
+            .setColor(ref.randArr(color))
+            .setTitle(Title)
+            .setDescription(Description)
+        } else {
+            emb = new Discord.MessageEmbed()
+            .setColor(ref.randArr(color))
+            .setTitle(Title)
+            .setDescription(Description)
+            .setFooter(Footer)
+        }
+        message.channel.send(emb);
     },
     formatArr: (givenArray) => {
         let finale = [];
@@ -74,23 +73,10 @@ const ref = {
         return (a);
     },
     randBool: () => {
-    	return(Math.random() < 0.5);
+        return(Math.random() < 0.5);
     },
     randArr: (givenArray) => {
         return (givenArray[Math.floor(Math.random() * givenArray.length)]);
-    },
-    urbanAPI: async(message, args) => {
-        if (!args.length) {
-            return ("Provide a term to define");
-        } else {
-            let query = qs.stringify({ term: args.join(' ') });
-            let { list } = await fetch(`https://api.urbandictionary.com/v0/define?${query}`).then(response => response.json());
-            if (!list.length) {
-                return ("No results found");
-            } else {
-                return (list[0].definition);
-            }
-        }
     }
 }
 module.exports = ref;
