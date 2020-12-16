@@ -1,5 +1,7 @@
 # Changelogs
   
+- Cheated Reddit
+- Addeed more commands
 - Fixed puss and art
 - Added holo for nsfw
 - Added even more commands and separated sfw and nsfw
