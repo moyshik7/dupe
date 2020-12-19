@@ -3,8 +3,8 @@
     "version": "1.2.7",
     "description": "",
     "main": "index.js",
-    "engines" : {
-        "node" : ">=12.0.0"
+    "engines": {
+        "node": ">=12.0.0"
     },
     "dependencies": {
         "discord.js": "^12.3.1",
@@ -22,8 +22,7 @@
     },
     "scripts": {
         "start": "node index.js",
-        "dev": "nodemon index.js",
-        "install": "npm install"
+        "dev": "nodemon index.js"
     },
     "repository": {
         "type": "git",

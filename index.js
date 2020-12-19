@@ -16,7 +16,7 @@ client.once("ready", () => {
 });
 client.on("message", (message) => {
     if (message.author.bot) {
-        return(false);
+        return (false);
     } else {
         let msg = message.content;
         if (msg[0] === token) {
@@ -25,13 +25,16 @@ client.on("message", (message) => {
             args = command.slice(1);
             command = command[0];
             if (cList.indexOf(command) != -1) {
-                let myf = commands[command];
-                myf(message, args);
+                bot.bd.message = message;
+                bot.bd.args = args;
+                bot.bd.client = client;
+                let myf = bot[command];
+                myf();
             }
         }
     }
 });
-client.login(process.env.BOT_TOKEN); //Login using the environment variable
+client.login(process.env.BOT_TOKEN);
 
 
 server.all('/', (req, res) => {
