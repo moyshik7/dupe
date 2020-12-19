@@ -1,74 +1,179 @@
 # Changelogs
   
-- Cheated Reddit
-- Addeed more commands
-- Fixed puss and art
-- Added holo for nsfw
+- Merge branch 'master' of https://github.com/moyshik7/dupe into master
+- Update commands.json
+- Added more commands
+- Create .gitignore
+- Added more commands
+- Fixed commit
+- Added some racist commands : Forgive me
+- Added japanese and korean
+- Fixed issue with clients
+- Fixed changelog
+- Once I deploy this app, I'll Start studying
+- Delete anime.json
+- finalized v2
+- finalized
+- fixed bit issue
+- update reference.js
+- update reference.js
+- fixed a whole hell of bugs
+- forced node version
+- Update anime.json
+- Update package.json
+- Update package.json
+- Update anime.json
+- fixing anime
+- Rename res/anime.js to res/commands/anime.js
+- Fix
+- Updated to latest
+- Added gasm and orgasm
+- Fixed bug with avatar
+- fixed bugs
+- Fixed bugs and added more commands
+- Fixed issue with channel types
 - Added even more commands and separated sfw and nsfw
-- Fixed more bugs
+- fixed more bugs
 - added more commands
-- Fixed bugs
+- fixed bugs
 - added more colors
+- added more commands
 - Added more commands
 - Fixed bugs
 - Added new commands and fixed bugs
 - Delete commands.json
 - Delete action.js
-- Fixed bugs
-- Added more commands
 - Added new commands
 - Delete README.md
 - Added new features
 - updated server command
-- Created few commands
-- Added more commands
 - Welcome v1.2
 - Fixed bugs
 - Added more commands
-- Fixed bugs
 - Delete commands.json
-- Enabled copyright protection
 - Delete LICENSE
 - Delete action.js
 - Delete wallpaper.json
 - Delete reference.js
-- Using Nekos api
 - Added nekos.life
 - Delete package.json
-- Added more commands
 - Add files via upload
 - Update README.md
 - Removed reference object and added it as module.
 - Delete index.js
-- Added more commands
 - Added node-fetch dependency
-- Using Api
 - Delete package.json
 - Using API now
 - Delete neko.json
-- Fixed bugs
-- Added more commands
 - Delete hentai.json
-- Added Gif options
 - Delete reference.js
 - Delete action.js
-- Added more commands
-- Added more commands
-- Added sfw
-- Added 50 More nsfw
+- Added 50 Mose nsfw
 - Delete hentai.json
-- Fixed bugs
-- Changed index to md5 hashes
 - Update README.md
 - Update README.md
 - Added line break that was missed
-- Added index
-- Added more commands
-- Fixed bugs
 - Added 100 new ;)
-- Fixed Bugs
-- Added more commands
 - Add files via upload
-- Added more commands
+- Delete reference.js
+- Delete action.js
+- Added Badges
+- Delete README.md
+- Updated Commands
+- Delete README.md
+- Add files via upload
+- Delete anime.json
+- Fixed bugs again after again
+- Fixed bugs again
+- Delete action.js
+- Fixed more bugs
+- Delete action.js
+- Delete anime.json
+- Fixed bugs
+- Add files via upload
+- Delete reference.js
+- Add files via upload
+- Delete action.js
+- Finally fixed bugs
+- Delete reference.js
+- Fixed bug
+- Delete reference.js
+- Added a new feature
+- Delete action.js
+- Fixed bugs
+- Add files via upload
+- Delete action.js
+- Update package.json
+- Update README.md
+- Update README.md
+- Update README.md
+- Update README.md
+- Update README.md
+- Update index.js
+- Update README.md
+- Babbbyy...... Pushhhhhhhhh............
+- Delete action.js
+- Update README.md
+- Complete index.js
+- Delete index.js
+- Update index.js
+- Add files via upload
+- Delete action.js
+- Add files via upload
+- Delete index.js
+- Full update of index.js
+- Delete index.js
+- Add anime.json
+- Delete res.json
+- Add action.js
+- Update index.js
+- Delete index.js
+- Update res.json
+- Delete res.json
+- Update index.js
+- Delete index.js
+- Update command.json
+- Update wallpaper.json
+- Update color.json
+- Update README.md
+- Update README.md
+- Update README.md
+- Add files via upload
+- Delete res.json
+- Add files via upload
+- Delete package.json
+- Update index.js
+- Delete index.js
+- Update neko.json
+- Update Index.js
+- Delete index.js
+- Add files via upload
+- Create readme.txt
+- Update index.js
+- Delete index.js
+- Add files via upload
+- Delete index.js
+- Update res.json
+- Delete res.json
+- Update index.js
+- Update index.js
+- Update package.json
+- Update res.json
+- Delete auth.json
+- Update index.js
+- Update index.js
+- Create Procfile
+- Delete app.js
+- Update package.json
+- Update package.json
+- Update package.json
+- Create app.js
+- Update auth.json
+- Create res.json
+- Create index.js
+- Delete index.js
+- Update README.md
+- Create package.json
+- Create auth.json
+- Create index.js
 - Initial commit
-  
