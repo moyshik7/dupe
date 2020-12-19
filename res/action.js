@@ -897,4 +897,8 @@ module.exports = bot;
 
 const helpMessage = {
     normal: "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands:\n\n**Image and Gif:**\n**SFW**\n`baka ` `cat ` `catgirl ` `cuddle ` `dog ` `fox ` `foxgirl ` `goose ` `hug ` `kitty ` `lizard ` `meme ` `memes ` `meow ` `neko ` `pat ` `puppy ` `slap ` `tickle ` `waifu ` `wallpaper ` `woof ` `wp `\n\n**NSFW**\n`anal ` `asian ` `asians ` `avatar ` `bj ` `blowjob ` `boob ` `boobs ` `butt ` `butts ` `catgirl ` `celebrity ` `classic ` `cs ` `cumslut ` `cumsluts ` `dickgirl ` `dickgirls ` `ebony ` `ero ` `erotic ` `feet ` `femdom ` `filipino ` `gasm ` `glass ` `glasses ` `hentai ` `holo ` `indian ` `japanese ` `korean ` `kuni  ` `lewd ` `milf ` `milfs ` `neko ` `oil `  `orgasm ` `pussy ` `spank ` `tan ` `thick ` `tits ` `tiny ` `trap ` `yaoi ` `yuri `\n\n\n**Search:**\n`anime ` `comic ` `define ` `lyrics ` `manga `\n\n\n**Maintenance:**\n`emoji ` `h ` `help ` `invite ` `ping ` `server `\n\n\n**Fun:**\n`peanus ` `penis ` `pp `\n\n\n**Others:**\n `qr ` \n\n\nNote: NSFW commands are for NSFW channels only"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 97131fec4b1274fb44c3f25bf5634a7d94b96e6d
