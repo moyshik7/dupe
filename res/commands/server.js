@@ -1,6 +1,4 @@
 const Discord = require("discord.js");
-const KitsuAPI = require('kitsu-node-js');
-const kitsu = new KitsuAPI(debug = false);
 
 const ref = require("./../reference");
 
@@ -21,19 +19,19 @@ const all = {
                     value: `\t${cat}`
                 }, {
                     name: "<a:headbump:760437043938852885> Members:",
-                    value: `\t${message.guild.memberCount}`
+                    value: `\t${message.guild.memberCount || "N/A"}`
                 }, {
                     name: "<a:earth:779933308468461599> Server region:",
-                    value: `\t${message.guild.region}`
+                    value: `\t${message.guild.region || "N/A"}`
                 }, {
                     name: "<a:blob:779938621687201812> Description:",
                     value: `\t${message.guild.description || "Not Provided"}`
                 }, {
                     name: "👑 Owner:",
-                    value: `\t${message.guild.owner.user.username || "Access Denied"}`
+                    value: `\t${message.guild.owner.user.username || "N/A"}`
                 }, {
                     name: "💬 Total channels:",
-                    value: `\t${message.guild.channels.cache.size}`
+                    value: `\t${message.guild.channels.cache.size || "N/A"}`
                 }, {
                     name: "🏓 Ping :",
                     value: `\t${timeTaken} ms`
