@@ -388,10 +388,42 @@ const bot = {
             console.log(err);
         }
     },
+    japanese: async() => {
+        try {
+            if (bot.bd.message.channel.nsfw) {
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["japaneseporn2"]
+                });
+                ref.embed(bot.bd.message, "Japanese", "", h[0].image);
+            } else {
+                ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    },
     kitty: async() => {
         try {
             let s = await n.sfw.meow();
             ref.embed(bot.bd.message, "meaw", "", s.url);
+        } catch (err) {
+            console.log(err);
+        }
+    },
+    korean: async() => {
+        try {
+            if (bot.bd.message.channel.nsfw) {
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["koreanhotties"]
+                });
+                ref.embed(bot.bd.message, "Korean", "", h[0].image);
+            } else {
+                ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
+            }
         } catch (err) {
             console.log(err);
         }
