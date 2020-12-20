@@ -1,4 +1,4 @@
-<center><h1>Plubin</h1><h4>Dupe</h4><h1>Bot</h1></center>  
+<center><h1>Plubin <sub>(Dupe)</sub> Bot</h1></center>  
   
 ![Version](https://moyshik7.github.io/dis/version.svg)  
 ![MIT License](https://moyshik7.github.io/dis/license.svg)  
@@ -9,6 +9,7 @@
   
   
   
+<hr/>
 ## Commands
   
 ### Image and Gif
@@ -38,4 +39,4 @@
 `qr `  
   
   
-<h4 style="color:red;">Note: NSFW commands are for NSFW channels only</h4>
+<h3 style="color:red;">Note: NSFW commands are for NSFW channels only</h3>
