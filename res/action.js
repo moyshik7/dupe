@@ -72,8 +72,40 @@ const bot = {
             console.log(err);
         }
     },
+    bbc: async() => {
+        try {
+            if (bot.bd.message.channel.nsfw) {
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["bbcsluts"]
+                });
+                ref.embed(bot.bd.message, "B B C", "", h[0].image);
+            } else {
+                ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    },
     bj: async() => {
         bot.blowjob();
+    },
+    black: async() => {
+        try {
+            if (bot.bd.message.channel.nsfw) {
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["blackchickswhitedicks"]
+                });
+                ref.embed(bot.bd.message, "Black life matters", "", h[0].image);
+            } else {
+                ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
+            }
+        } catch (err) {
+            console.log(err);
+        }
     },
     blowjob: async() => {
         try {
@@ -165,6 +197,9 @@ const bot = {
         } catch (err) {
             console.log(err);
         }
+    },
+    christmas: () => {
+        bot.xmas();
     },
     classic: async() => {
         try {
@@ -396,6 +431,41 @@ const bot = {
     h: () => {
         bot.help();
     },
+    hal: () => {
+        bot.halloween();
+    },
+    halloween: async() => {
+        try {
+            if (bot.bd.message.channel.nsfw) {
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["HalloweenNSFW"]
+                });
+                ref.embed(bot.bd.message, "Wanna dress up ?", "", h[0].image);
+            } else {
+                ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    },
+    hardcore: async() => {
+        try {
+            if (bot.bd.message.channel.nsfw) {
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["nsfwhardcore"]
+                });
+                ref.embed(bot.bd.message, "Asian", "", h[0].image);
+            } else {
+                ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    },
     help: () => {
         try {
             ref.embedDes(bot.bd.message, "Welcome mortals", helpMessage.normal);
@@ -544,6 +614,25 @@ const bot = {
         } catch (err) {
             console.log(err);
         }
+    },
+    long: async() => {
+        try {
+            if (bot.bd.message.channel.nsfw) {
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["longhairnsfw"]
+                });
+                ref.embed(bot.bd.message, "How long ?", "", h[0].image);
+            } else {
+                ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    },
+    longhair: () => {
+        bot.long();
     },
     lyric: () => {
         bot.lyrics();
@@ -696,6 +785,25 @@ const bot = {
     },
     server: async() => {
         server.server(bot.bd.message, bot.bd.args);
+    },
+    short: async() => {
+        try {
+            if (bot.bd.message.channel.nsfw) {
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["shorthairchicks"]
+                });
+                ref.embed(bot.bd.message, "You want em shorter ?", "", h[0].image);
+            } else {
+                ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    },
+    shorthair: () => {
+        bot.short();
     },
     slap: async() => {
         try {
@@ -871,6 +979,22 @@ const bot = {
     wp: async() => {
         bot.wallpaper();
     },
+    xmas: async() => {
+        try {
+            if (bot.bd.message.channel.nsfw) {
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["xmasgirls"]
+                });
+                ref.embed(bot.bd.message, "Ho Ho Ho ...", "", h[0].image);
+            } else {
+                ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    },
     yaoi: async() => {
         if (bot.bd.message.channel.nsfw) {
             let h = await rf.fetch({
@@ -899,5 +1023,5 @@ const bot = {
 module.exports = bot;
 
 const helpMessage = {
-    normal: "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands:\n\n**Image and Gif:**\n**SFW**\n`baka ` `cat ` `catgirl ` `cuddle ` `dog ` `fox ` `foxgirl ` `goose ` `hug ` `kitty ` `lizard ` `meme ` `memes ` `meow ` `neko ` `pat ` `puppy ` `slap ` `tickle ` `waifu ` `wallpaper ` `woof ` `wp `\n\n**NSFW**\n`anal ` `asian ` `asians ` `avatar ` `bj ` `blowjob ` `boob ` `boobs ` `butt ` `butts ` `catgirl ` `celebrity ` `classic ` `cs ` `cumslut ` `cumsluts ` `dickgirl ` `dickgirls ` `ebony ` `ero ` `erotic ` `feet ` `femdom ` `filipino ` `gasm ` `glass ` `glasses ` `hentai ` `holo ` `indian ` `japanese ` `korean ` `kuni  ` `lewd ` `milf ` `milfs ` `neko ` `oil `  `orgasm ` `pussy ` `spank ` `tan ` `thick ` `tits ` `tiny ` `trap ` `yaoi ` `yuri `\n\n\n**Search:**\n`anime ` `comic ` `define ` `lyrics ` `manga `\n\n\n**Maintenance:**\n`emoji ` `h ` `help ` `invite ` `ping ` `server `\n\n\n**Fun:**\n`peanus ` `penis ` `pp `\n\n\n**Others:**\n `qr ` \n\n\nNote: NSFW commands are for NSFW channels only"
+    normal: "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands:\n\n**Image and Gif:**\n**SFW**\n`baka ` `cat ` `catgirl ` `cuddle ` `dog ` `fox ` `foxgirl ` `goose ` `hug ` `kitty ` `lizard ` `meme ` `memes ` `meow ` `neko ` `pat ` `puppy ` `slap ` `tickle ` `waifu ` `wallpaper ` `woof ` `wp `\n\n**NSFW**\n`anal ` `asian ` `asians ` `avatar ` `bbc ` `bj ` `black ` `blowjob ` `boob ` `boobs ` `butt ` `butts ` `catgirl ` `celebrity ` `christmas ` `classic ` `cs ` `cumslut ` `cumsluts ` `dickgirl ` `dickgirls ` `ebony ` `ero ` `erotic ` `feet ` `femdom ` `filipino ` `gasm ` `glass ` `glasses ` `hal ` `halloween ` `hardcore ` `hentai ` `holo ` `indian ` `japanese ` `korean ` `kuni  ` `lewd ` `long ` `longhair ` `milf ` `milfs ` `neko ` `oil `  `orgasm ` `pussy ` `short ` `shorthair ` `spank ` `tan ` `thick ` `tits ` `tiny ` `trap ` `xmas ` `yaoi ` `yuri `\n\n\n**Search:**\n`anime ` `comic ` `define ` `lyrics ` `manga `\n\n\n**Maintenance:**\n`emoji ` `h ` `help ` `invite ` `ping ` `server `\n\n\n**Fun:**\n`peanus ` `penis ` `pp `\n\n\n**Others:**\n `qr ` \n\n\nNote: NSFW commands are for NSFW channels only"
 }
