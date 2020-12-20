@@ -69,7 +69,7 @@ const ref = {
     randBool: () => {
         return (Math.random() < 0.5);
     },
-    randInt: (min, max) => {
+    randInt: (min, max) => { //No more python shit
         return (Math.floor(Math.random() * (max - min + 1)) + min);
     }
 }
