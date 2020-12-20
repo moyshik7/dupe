@@ -5,7 +5,7 @@ let app = {
     pp: (message, args) => {
         try {
             let ym = ref.randInt(0, 12);
-            let yp = "";
+            let yp = "8";
             if (ym == 0) {
                 yp = "{(•)}\n\nIt dosen't exist bish";
                 ref.embedDes(message, "PP measurement :", yp, "Women are also part of our community");
