@@ -3,6 +3,9 @@ const express = require("express");
 const server = new express();
 const token = ".";
 const client = new Discord.Client();
+const DBL = require("dblapi.js");
+const dbl = new DBL(process.env.TOP_GG_TOKEN, client);
+
 const cList = require("./res/commands.json");
 const bot = require("./res/action");
 const ref = require("./res/reference");
@@ -41,6 +44,15 @@ client.on("message", (message) => {
 });
 client.login(process.env.BOT_TOKEN);
 //Just adding a comment
+
+client.on('ready', () => {
+    setInterval(() => {
+        dbl.postStats(client.guilds.size, client.shards.Id, client.shards.total);
+    }, 300000);
+});
+dbl.on('error', e => {
+    console.log(`Oops! ${e}`);
+})
 
 server.all('/', (req, res) => {
     res.send('Plubin is up');
