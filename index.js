@@ -49,10 +49,10 @@ client.on('ready', () => {
     setInterval(() => {
         try{
             dbl.postStats(client.guilds.size, client.shards.Id, client.shards.total);
-    }, 300000);
         } catch (err) {
             console.log(err);
         }
+    }, 300000);
 });
 dbl.on('error', e => {
     console.log(`Oops! ${e}`);
