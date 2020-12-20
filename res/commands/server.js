@@ -5,12 +5,12 @@ const ref = require("./../reference");
 const all = {
     server: async(message, args) => {
         try {
-            let timeTaken = Date.now() - bot.bd.message.createdTimestamp;
+            let timeTaken = Date.now() - message.createdTimestamp;
             let a = message.guild.createdAt;
             let cat = a.getMonth() + "/" + a.getDate() + "/" + a.getFullYear() + "  " + a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
-            let embb = new Discord.messageEmbed()
-                .setTitle(`${bot.bd.message.guild.name}`)
-                .setThumbnail(`${bot.bd.message.guild.iconURL()}`)
+            let embb = new Discord.MessageEmbed()
+                .setTitle(`${message.guild.name}`)
+                .setThumbnail(`${message.guild.iconURL()}`)
                 .addFields({
                     name: '\u200B',
                     value: '\u200B'
@@ -46,3 +46,4 @@ const all = {
         }
     }
 }
+module.exports = all;

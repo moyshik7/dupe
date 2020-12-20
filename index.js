@@ -4,7 +4,7 @@ const server = new express();
 const token = ".";
 const client = new Discord.Client();
 const cList = require("./res/commands.json");
-const commands = require("./res/action");
+const bot = require("./res/action");
 const ref = require("./res/reference");
 
 client.once("ready", () => {
