@@ -15,23 +15,28 @@ client.once("ready", () => {
     client.user.setStatus('idle');
 });
 client.on("message", (message) => {
-    if (message.author.bot) {
-        return (false);
-    } else {
-        let msg = message.content;
-        if (msg[0] === token) {
-            let command = msg.slice(1);
-            command = ref.formatArr(command.split(" "));
-            args = command.slice(1);
-            command = command[0];
-            if (cList.indexOf(command) != -1) {
-                bot.bd.message = message;
-                bot.bd.args = args;
-                bot.bd.client = client;
-                let myf = bot[command];
-                myf();
+    try {
+        if (message.author.bot) {
+            return (false);
+        } else {
+            let msg = message.content;
+            if (msg[0] === token) {
+                let command = msg.slice(1);
+                command = ref.formatArr(command.split(" "));
+                args = command.slice(1);
+                command = command[0];
+                if (cList.indexOf(command) != -1) {
+                    console.log(`${command} requested by ${message.author.user.username}`);
+                    bot.bd.message = message;
+                    bot.bd.args = args;
+                    bot.bd.client = client;
+                    let myf = bot[command];
+                    myf();
+                }
             }
         }
+    } catch (err) {
+        console.log(err);
     }
 });
 client.login(process.env.BOT_TOKEN);
