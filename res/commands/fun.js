@@ -33,4 +33,4 @@ let app = {
         }
     }
 }
-module.extends = app;
+module.exports = app;
