@@ -47,8 +47,12 @@ client.login(process.env.BOT_TOKEN);
 
 client.on('ready', () => {
     setInterval(() => {
-        dbl.postStats(client.guilds.size, client.shards.Id, client.shards.total);
+        try{
+            dbl.postStats(client.guilds.size, client.shards.Id, client.shards.total);
     }, 300000);
+        } catch (err) {
+            console.log(err);
+        }
 });
 dbl.on('error', e => {
     console.log(`Oops! ${e}`);
