@@ -66,7 +66,7 @@ const bot = {
     },
     baka: async() => {
         try {
-            let s = await n.sfw.poke();
+            let s = await n.sfw.baka();
             ref.embed(bot.bd.message, "Baka", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
         } catch (err) {
             console.log(err);
@@ -141,7 +141,7 @@ const bot = {
                     total: 1,
                     subreddit: ["nekohentai"]
                 });
-                ref.embed(bot.bd.message, "nya", "", h[0].image);
+                ref.embed(bot.bd.message, "n y a", "", h[0].image);
             } else {
                 let s = await n.sfw.neko();
                 ref.embed(bot.bd.message, "n y a", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
@@ -524,9 +524,12 @@ const bot = {
     lewd: async() => {
         try {
             if (bot.bd.message.channel.nsfw) {
-                let h = await ref.api("hentai", "nsfw");
-                h = JSON.parse(h);
-                ref.embed(bot.bd.message, "L E W D", "", h.url);
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["hentai"]
+                });
+                ref.embed(bot.bd.message, "L e w d", "", h[0].image);
             } else {
                 ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
@@ -577,7 +580,7 @@ const bot = {
                     total: 1,
                     subreddit: ["milf"]
                 });
-                ref.embed(bot.bd.message, "Milf", "", h[0].image);
+                ref.embed(bot.bd.message, "M i l f", "", h[0].image);
             } else {
                 ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }

@@ -4,55 +4,46 @@ const qs = require('querystring');
 const color = require("./color.json");
 
 const ref = {
-    api: async(cat, typ) => {
+    embed: (message, Title, Description, ImageArray) => {
         try {
-            let data = {
-                "catagory": cat,
-                "key": process.env.PLUPI_KEY,
-                "type": typ
-            }
-            let query = qs.stringify(data);
-            let list = await fetch(`http://plupi.myartsonline.com?${query}`)
-            .then(response => response.text());
-            if (list.length) {
-                return list;
-            }
+            let a;
+            if (typeof(ImageArray) === "string") {
+                a = new Discord.MessageEmbed()
+                    .setColor(ref.randArr(color))
+                    .setTitle(Title)
+                    .setImage(ImageArray)
+                    .setFooter("Support us on Patreon", "https://i.imgur.com/RKVSeIv.png")
+            } else if (typeof(ImageArray) === "object") {
+                a = new Discord.MessageEmbed()
+                    .setColor(ref.randArr(color))
+                    .setTitle(Title)
+                    .setImage(ref.randArr(ImageArray))
+                    .setFooter("Support us on Patreon", "https://i.imgur.com/RKVSeIv.png")
+            } else {}
+            message.channel.send(a);
         } catch (err) {
             console.log(err);
         }
     },
-    embed: (message, Title, Description, ImageArray) => {
-        let a;
-        if (typeof(ImageArray) === "string") {
-            a = new Discord.MessageEmbed()
-            .setColor(ref.randArr(color))
-            .setTitle(Title)
-            .setImage(ImageArray)
-            .setFooter("Support us on Patreon", "https://i.imgur.com/RKVSeIv.png")
-        } else if (typeof(ImageArray) === "object") {
-            a = new Discord.MessageEmbed()
-            .setColor(ref.randArr(color))
-            .setTitle(Title)
-            .setImage(ref.randArr(ImageArray))
-            .setFooter("Support us on Patreon", "https://i.imgur.com/RKVSeIv.png")
-        } else {}
-        message.channel.send(a);
-    },
     embedDes: (message, Title, Description, Footer) => {
-        let emb;
-        if (Footer == false || Footer == undefined) {
-            emb = new Discord.MessageEmbed()
-            .setColor(ref.randArr(color))
-            .setTitle(Title)
-            .setDescription(Description)
-        } else {
-            emb = new Discord.MessageEmbed()
-            .setColor(ref.randArr(color))
-            .setTitle(Title)
-            .setDescription(Description)
-            .setFooter(Footer)
+        try {
+            let emb;
+            if (Footer == false || Footer == undefined) {
+                emb = new Discord.MessageEmbed()
+                    .setColor(ref.randArr(color))
+                    .setTitle(Title)
+                    .setDescription(Description)
+            } else {
+                emb = new Discord.MessageEmbed()
+                    .setColor(ref.randArr(color))
+                    .setTitle(Title)
+                    .setDescription(Description)
+                    .setFooter(Footer)
+            }
+            message.channel.send(emb);
+        } catch (err) {
+            console.log(err);
         }
-        message.channel.send(emb);
     },
     formatArr: (givenArray) => {
         let finale = [];
@@ -72,11 +63,14 @@ const ref = {
         a = a.trim();
         return (a);
     },
-    randBool: () => {
-        return(Math.random() < 0.5);
-    },
     randArr: (givenArray) => {
         return (givenArray[Math.floor(Math.random() * givenArray.length)]);
+    },
+    randBool: () => {
+        return (Math.random() < 0.5);
+    },
+    randInt: (min, max) => {
+        return (Math.floor(Math.random() * (max - min + 1)) + min);
     }
 }
 module.exports = ref;
