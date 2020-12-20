@@ -475,7 +475,7 @@ const bot = {
                 let h = await rf.fetch({
                     type: 'custom',
                     total: 1,
-                    subreddit: ["japaneseporn2"]
+                    subreddit: ["nsfw_japan"]
                 });
                 ref.embed(bot.bd.message, "Japanese", "", h[0].image);
             } else {
