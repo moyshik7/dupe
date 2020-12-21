@@ -1162,4 +1162,4 @@ const helpMessage = {
         "\n" +
         "\n**Others:**\n `qr `\n" +
         "\n\nNote: NSFW commands are for NSFW channels only"
-}
+};
