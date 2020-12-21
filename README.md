@@ -39,4 +39,4 @@
 `qr `  
   
   
-<h3 style="color:red;">Note: NSFW commands are for NSFW channels only</h3>
+<h3 style="color:red;">Note: NSFW commands are for NSFW channels only and no loli</h3>
