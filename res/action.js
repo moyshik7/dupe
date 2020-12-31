@@ -891,6 +891,18 @@ const bot = {
     redheads: () => {
         bot.red();
     },
+    say: () => {
+	try{
+            if(!bot.bd.args.length){
+                bot.bd.message.channel.send("Nothing to say");
+	    }else{
+	        let t = bot.bd.args.join(" ");
+	        bot.bd.message.channel.send(t);
+	    }
+	}catch(err){
+	    console.log(err);
+	}
+    },
     server: async() => {
         server.server(bot.bd.message, bot.bd.args);
     },
