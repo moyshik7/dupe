@@ -29,7 +29,7 @@ client.on("message", (message) => {
                 args = command.slice(1);
                 command = command[0];
                 if (cList.indexOf(command) != -1) {
-                    console.log(`${command} requested by ${message.author.tag} at server ${message.guild}`);
+                    console.log(`${command} requested by ${message.author.tag} at server ${message.guild || "DM"}`);
                     bot.bd.message = message;
                     bot.bd.args = args;
                     bot.bd.client = client;
