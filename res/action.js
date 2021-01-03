@@ -20,7 +20,7 @@ const bot = {
     },
     allservers: () => {
 	if(bot.bd.message.author.id == 584309117380853770){
-	    client.guilds.cache.forEach( a => {
+	    bot.bd.client.guilds.cache.forEach( a => {
 	        bot.bd.message.channel.send(a.name);
 	    });
         }
