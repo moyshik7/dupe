@@ -904,7 +904,7 @@ const bot = {
 	}
     },
     server: async() => {
-        server.server(bot.bd.message, bot.bd.args);
+        server.server(bot.bd.message, bot.bd.args, bot.bd.client);
     },
     short: async() => {
         try {

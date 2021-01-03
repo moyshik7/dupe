@@ -3,11 +3,12 @@ const Discord = require("discord.js");
 const ref = require("./../reference");
 
 const all = {
-    server: async(message, args) => {
+    server: async(message, args, client) => {
         try {
             let timeTaken = Date.now() - message.createdTimestamp;
             let a = message.guild.createdAt;
             let cat = a.getMonth() + "/" + a.getDate() + "/" + a.getFullYear() + "  " + a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
+	    let owner = await client.users.fetch(message.guild.ownerID);
             let embb = new Discord.MessageEmbed()
                 .setTitle(`${message.guild.name}`)
                 .setThumbnail(`${message.guild.iconURL()}`)
