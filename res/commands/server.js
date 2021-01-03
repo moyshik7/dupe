@@ -28,7 +28,7 @@ const all = {
                     value: `\t${message.guild.description || "Not Provided"}`
                 }, {
                     name: "👑 Owner:",
-                    value: `\t${message.guild.owner.user.username || "N/A"}`
+                    value: `\t${message.guild.owner || "N/A"}`
                 }, {
                     name: "💬 Total channels:",
                     value: `\t${message.guild.channels.cache.size || "N/A"}`
