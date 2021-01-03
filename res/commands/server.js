@@ -8,9 +8,8 @@ const all = {
             let timeTaken = Date.now() - message.createdTimestamp;
             let a = message.guild.createdAt;
             let cat = a.getMonth() + "/" + a.getDate() + "/" + a.getFullYear() + "  " + a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
-	    let ooo;
-	    let owner = await client.users.fetch(message.guild.ownerID).then((gg) => {
-		console.log(gg);
+	    let owner;
+	    let ooo = await client.users.fetch(message.guild.ownerID).then((gg) => {
 		ooo = gg;
 	    });
             let embb = new Discord.MessageEmbed()
@@ -33,7 +32,7 @@ const all = {
                     value: `\t${message.guild.description || "Not Provided"}`
                 }, {
                     name: "👑 Owner:",
-                    value: `\t${ooo.username || "N/A"}`
+                    value: `\t${owner.username || "N/A"}`
                 }, {
                     name: "💬 Total channels:",
                     value: `\t${message.guild.channels.cache.size || "N/A"}`
