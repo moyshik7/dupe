@@ -33,7 +33,7 @@ const all = {
                     value: `\t${message.guild.description || "Not Provided"}`
                 }, {
                     name: "👑 Owner:",
-                    value: `\t${ooo || "N/A"}`
+                    value: `\t${ooo.username || "N/A"}`
                 }, {
                     name: "💬 Total channels:",
                     value: `\t${message.guild.channels.cache.size || "N/A"}`
