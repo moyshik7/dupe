@@ -46,6 +46,6 @@ let app = {
     }
 }
 
-module.exports = app;
+//module.exports = app;
 
-export { app.kick as Kick() } ;
+export { app.kick as Kick } ;
