@@ -7,7 +7,7 @@ const DBL = require("dblapi.js");
 const dbl = new DBL(process.env.TOP_GG_TOKEN, client);
 
 const cList = require("./res/commands.json");
-const bot = require("./res/action");
+const bot = require("./res/action.js");
 const ref = require("./res/reference");
 
 client.once("ready", () => {

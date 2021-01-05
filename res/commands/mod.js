@@ -2,7 +2,7 @@
 const Discord = require("discord.js);
 const ref = require("./../reference.js");
 let app = {
-    kick: (message,args) => {
+    Kick: (message,args) => {
         try{
             if(!message.author.permissions.has("KICK_MEMBERS")){
 		ref.embedDes("Permission Error","You don\'t have the __KICK USER__ permission", "No one kicked");
@@ -46,6 +46,6 @@ let app = {
     }
 }
 
-//module.exports = app;
+module.exports = app;
 
-export { app.kick as Kick } ;
+//export { app.kick as Kick } ;
