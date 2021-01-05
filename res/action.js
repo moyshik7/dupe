@@ -9,6 +9,7 @@ const dic = require("./commands/define.js");
 const qrc = require("./commands/qr.js");
 const fun = require("./commands/fun.js");
 const server = require("./commands/server");
+const mod = require("./commands/mod");
 
 const n = new nLife();
 
@@ -616,6 +617,9 @@ const bot = {
         } catch (err) {
             console.log(err);
         }
+    },
+    kick: () => {
+        mod.Kick(bot.bd.message, bot.bd.args);
     },
     kitty: async() => {
         try {
