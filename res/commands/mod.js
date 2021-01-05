@@ -11,7 +11,7 @@ let app = {
 		ref.embedDes(message, "No user to kick","__**USAGE**__\n `.kick` ` <mention_user> ` ` [Reason(optional)] `\nOr,\n `.kick` ` <User ID> ` ` [Reason(optional)] `", "No one kicked");
 		return(false);
 	    }
-            let k = message.mentions.first();
+            let k = message.mentions.members.first();
 	    if(!k){
 		if(!parseInt(args[0])){
 		    ref.embedDes(message, "Invalid User ID or mention","Invalid User ID provided", "No one kicked");
