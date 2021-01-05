@@ -13,7 +13,7 @@ const server = require("./commands/server");
 const n = new nLife();
 
 
-import {Kick} from "./commands/mod";
+import {Kick} from "./commands/mod.mjs";
 
 
 const bot = {
