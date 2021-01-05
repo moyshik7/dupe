@@ -13,7 +13,7 @@ let app = {
 	    }
             let k = message.mentions.first();
 	    if(!k){
-		if(!parseInt(args[0]){
+		if(!parseInt(args[0])){
 		    ref.embedDes(message, "Invalid User ID or mention","Invalid User ID provided", "No one kicked");
 		    return(false);
 	        }else{
