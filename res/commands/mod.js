@@ -4,7 +4,7 @@ const ref = require("./../reference.js");
 let app = {
     Kick: (message,args) => {
         try{
-            if(!message.author.permissions.has("KICK_MEMBERS")){
+            if(!message.author.hasPermission("KICK_MEMBERS")){
 		ref.embedDes(message, "Permission Error","You don\'t have the __KICK USER__ permission", "No one kicked");
 	    }
 	    if(!args.length){
@@ -29,7 +29,7 @@ let app = {
 		    }
 		}
 	    } 
-	    if(message.guild.me.permissions.has("KICK_MEMBERS")){
+	    if(message.guild.me.hasPermission("KICK_MEMBERS")){
 		let reason = args.join(" ");
 	        if(!reason.length || reason.length >= 1000){
 		    reason = "No valid reason specified";
@@ -47,5 +47,3 @@ let app = {
 }
 
 module.exports = app;
-
-//export { app.kick as Kick } ;
