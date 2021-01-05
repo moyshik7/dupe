@@ -5,6 +5,7 @@ const token = ".";
 const client = new Discord.Client();
 const DBL = require("dblapi.js");
 const dbl = new DBL(process.env.TOP_GG_TOKEN, client);
+const PORT = process.env.PORT || 3000;
 
 const cList = require("./res/commands.json");
 const bot = require("./res/action");
@@ -61,6 +62,6 @@ dbl.on('error', e => {
 server.all('/', (req, res) => {
     res.send('Plubin is up');
 });
-server.listen(3000, () => {
-    console.log('Server is up');
+server.listen(PORT, () => {
+    console.log(`Server is up on port : ${PORT}`);
 });
