@@ -61,6 +61,6 @@ dbl.on('error', e => {
 server.all('/', (req, res) => {
     res.send('Plubin is up');
 });
-server.listen(3000, () => {
+server.listen(process.env.PORT, () => {
     console.log('Server is up');
 });
