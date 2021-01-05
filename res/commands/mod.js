@@ -4,7 +4,7 @@ const ref = require("./../reference.js");
 let app = {
     Kick: (message,args) => {
         try{
-            if(!message.author.hasPermission("KICK_MEMBERS")){
+            if(!message.member.hasPermission("KICK_MEMBERS")){
 		ref.embedDes(message, "Permission Error","You don\'t have the __KICK USER__ permission", "No one kicked");
 	    }
 	    if(!args.length){
