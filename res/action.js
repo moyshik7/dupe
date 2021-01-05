@@ -12,6 +12,10 @@ const server = require("./commands/server");
 
 const n = new nLife();
 
+
+import { Kick } from "./commands/mod.js";
+
+
 const bot = {
     bd: {
         message: {},
@@ -616,6 +620,9 @@ const bot = {
         } catch (err) {
             console.log(err);
         }
+    },
+    kick: () => {
+        Kick(bot.bd.message, bot.bd.args);
     },
     kitty: async() => {
         try {
