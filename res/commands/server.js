@@ -10,7 +10,7 @@ const all = {
             let cat = a.getMonth() + "/" + a.getDate() + "/" + a.getFullYear() + "  " + a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
 	    let owner;
 	    let ooo = await client.users.fetch(message.guild.ownerID).then((gg) => {
-		ooo = gg;
+		owner = gg;
 	    });
             let embb = new Discord.MessageEmbed()
                 .setTitle(`${message.guild.name}`)

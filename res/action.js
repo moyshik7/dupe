@@ -19,11 +19,15 @@ const bot = {
         client: ""
     },
     allservers: () => {
-	if(bot.bd.message.author.id == 584309117380853770){
-	    bot.bd.client.guilds.cache.forEach( a => {
-	        bot.bd.message.channel.send(a.name);
-	    });
-        }
+	try{
+	    if(bot.bd.message.author.id == 584309117380853770){
+	        bot.bd.client.guilds.cache.forEach( a => {
+	            bot.bd.message.channel.send(`__Guild:__ ${a.name} \n__Total members:__  ${a.memberCount || "N/A"}`);
+		});
+            }
+	} catch(err){
+	    console.log(err);
+	}
     },
     anal: async() => {
         try {
