@@ -18,11 +18,6 @@ let app = {
 		    return(false);
 	        }else{
 		    k = message.guild.members.catche.get(args[0]);
-		    if(args.length > 1){
-			args = args.slice(1);
-		    }else{
-			args = [];
-		    }
 		    if(!k){
 			ref.embedDes(message, "Invalid User ID or mention","Invalid User ID provided", "No one kicked");
 			return(false);
@@ -30,11 +25,16 @@ let app = {
 		}
 	    } 
 	    if(message.guild.me.hasPermission("KICK_MEMBERS")){
+		if(args.length > 1){
+		    args = args.slice(1);
+		}else{
+		    args = [];
+		}
 		let reason = args.join(" ");
 	        if(!reason.length || reason.length >= 1000){
 		    reason = "No valid reason specified";
 		}
-		let kName = k.username;
+		let kName = k.user.username;
 		k.kick();
 		ref.embedDes(message, `${kName} was kicked`,`__REASON :__  ${reason}`, "User removed from server");
 	    }else{
