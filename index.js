@@ -62,10 +62,6 @@ dbl.on('error', e => {
 server.all('/', (req, res) => {
     res.send('Plubin is up');
 });
-server.all('/favicon.ico' , (req,res) => {
-    res.send('Not provided');
-});
 server.listen(PORT, (a) => {
     console.log(`Server is up on port : ${PORT}`);
-    console.log(a);
 });
