@@ -17,7 +17,7 @@ let app = {
 		    ref.embedDes(message, "Invalid User ID or mention","Invalid User ID provided", "No one kicked");
 		    return(false);
 	        }else{
-		    k = message.guild.members.cache.get(args[0]);
+		    k = message.guild.members.cache.get(parseInt(args[0]));
 		    if(!k){
 			ref.embedDes(message, "Invalid User ID or mention","Invalid User ID provided", "No one kicked");
 			return(false);
