@@ -35,8 +35,13 @@ let app = {
 		    reason = "No valid reason specified";
 		}
 		let kName = k.user.username;
-		k.kick();
-		ref.embedDes(message, `${kName} was kicked`,`__REASON :__  ${reason}`, "User removed from server");
+		k.kick()
+		    .then( () => {
+		        ref.embedDes(message, `${kName} was kicked`,`__REASON :__  ${reason}`, "User removed from server");
+		    })
+		    .error((err) => {
+			console.log(err);
+		    })
 	    }else{
 		ref.embedDes(message, "Permission Error","I don\'t have the __KICK USER__ permission", "No one kicked");
 	    }
