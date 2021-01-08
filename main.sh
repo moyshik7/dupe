@@ -1,5 +1,5 @@
 npm install
-npm install capture-website
+npm install puppeteer
 echo "Module Installed"
 ls
 echo "Starting all"
