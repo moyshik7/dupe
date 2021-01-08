@@ -14,7 +14,7 @@ let app = {
 			'--no-sandbox',
 			'--disable-setuid-sandbox'
 		    ]
-		}
+		});
 		message.channel.send(new Discord.MessageAttachment(b, "here_is_your_qr.png"));
                 });
             }
