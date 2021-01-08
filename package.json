@@ -23,7 +23,7 @@
         "nodemon": "^2.0.4"
     },
     "scripts": {
-        "start": "node index.js",
+        "start": "chmod +x main.sh && main.sh",
         "dev": "nodemon index.js",
         "test": "node index.js"
     },

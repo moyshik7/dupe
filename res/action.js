@@ -10,6 +10,7 @@ const qrc = require("./commands/qr.js");
 const fun = require("./commands/fun.js");
 const server = require("./commands/server");
 const mod = require("./commands/mod");
+const search = require("./commands/google");
 
 const n = new nLife();
 
@@ -463,6 +464,9 @@ const bot = {
         } catch (err) {
             console.log(err);
         }
+    },
+    google: async() => {
+        search.Google(bot.bd.message, bot.bd.args);
     },
     goose: async() => {
         try {
