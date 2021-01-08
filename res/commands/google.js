@@ -8,7 +8,7 @@ let app = {
                 message.channel.send("Usage `.google`  `<Search Term>`");
             } else {
 		let a = args.join("+");
-		let link = `https://www.google.com/search?q=${a}`"
+		let link = `https://www.google.com/search?q=${a}`;
                 let b = await captureWebsite.buffer(link,{
 		    args: [
 			'--no-sandbox',
