@@ -24,9 +24,9 @@
         "nodemon": "^2.0.4"
     },
     "scripts": {
-        "start": "chmod +x main.sh && main.sh",
+        "start": "node .",
         "dev": "nodemon index.js",
-        "test": "node index.js"
+        "test": "node ."
     },
     "repository": {
         "type": "git",

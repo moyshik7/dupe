@@ -1,1 +1,1 @@
-worker: bash main.sh
+worker: node index.js
