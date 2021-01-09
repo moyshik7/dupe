@@ -1,4 +1,4 @@
-const captureWebsite = require('capture-website');
+const puppeteer = require("puppeteer");
 const Discord = require("discord.js");
 
 let app = {
@@ -9,13 +9,12 @@ let app = {
             } else {
 		let a = args.join("+");
 		let link = `https://www.google.com/search?q=${a}`;
-                let b = await captureWebsite.buffer(link,{
-		    args: [
-			'--no-sandbox',
-			'--disable-setuid-sandbox'
-		    ]
+                let browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox']});
+		const page = await browser.newPage();
+		await page.goto(link);
+		await page.screenshot().then((buff) => {
+		    message.channel.send(new Discord.MessageAttachment(buff, "google.png"));
 		});
-		message.channel.send(new Discord.MessageAttachment(b, "here_is_your_qr.png"));
             }
         } catch(err) {
             console.log(err);
