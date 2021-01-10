@@ -16,7 +16,7 @@ let app = {
 		const page = await browser.newPage();
 		await page.setViewport({ width: 1080, height: 720});
 		await page.goto(link);
-		await page.waitFor(1000);
+		await page.waitForTimeout(1000);
 		await page.screenshot().then((buff) => {
 		    message.channel.send(new Discord.MessageAttachment(buff, "google_search.png"));
 		});
