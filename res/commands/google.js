@@ -14,7 +14,9 @@ let app = {
 		let link = `https://www.google.com/search?q=${a}`;
                 let browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox']});
 		const page = await browser.newPage();
+		await page.setViewport({ width: 1080, height: 720});
 		await page.goto(link);
+		await page.waitFor(1000);
 		await page.screenshot().then((buff) => {
 		    message.channel.send(new Discord.MessageAttachment(buff, "google_search.png"));
 		});
