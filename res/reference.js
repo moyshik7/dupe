@@ -77,7 +77,7 @@ const ref = {
 	    return(" ");
 	}else{
 	    let sanitized = "";
-	    let escaped = ["'", "$", "&", "@", "?", "*", ";", ":", "`", "•", "%"]
+	    let escaped = ["'", "$", "&", "@", "?", "*", ";", ":", "`", "•", "%"]; //Add the oposite of `
 	    for(let i=0; i<str.length; i++){
 		if(escaped.indexOf(str[i]) == -1){
 		    sanitized += str[i];
@@ -87,7 +87,18 @@ const ref = {
 	}
     },
     SanitizeArray: (arr) => {
-	
+	if(!arr.length){
+	    return([]);
+	} else {
+	    let sanitized = [];
+	    for(let i=0; i<arr.length; i++){
+		let s = ref.Sanitize(arr[i]);
+		if(s.length){
+		    sanitized.push(s);
+		}
+	    }
+	    return(sanitized);
+	}
     }
 }
 module.exports = ref;
