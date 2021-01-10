@@ -1,6 +1,6 @@
 {
     "name": "plubinbot",
-    "version": "1.2.8",
+    "version": "1.2.8.3",
     "description": "",
     "main": "index.js",
     "engines": {
@@ -20,9 +20,6 @@
         "reddit-image-fetcher": "^2.0.5",
         "slyrics": "^0.1.42",
         "urban-dictionary": "^2.2.1"
-    },
-    "devDependencies": {
-        "nodemon": "^2.0.4"
     },
     "scripts": {
         "start": "node .",
