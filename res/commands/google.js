@@ -1,5 +1,7 @@
 const puppeteer = require("puppeteer");
 const Discord = require("discord.js");
+const imgur = require("./../imgur");
+const ref = require("./../reference");
 
 const ref = require("./../reference.js");
 
@@ -18,7 +20,9 @@ let app = {
 		await page.goto(link);
 		await page.waitForTimeout(1000);
 		await page.screenshot().then((buff) => {
-		    message.channel.send(new Discord.MessageAttachment(buff, "google_search.png"));
+		    //message.channel.send(new Discord.MessageAttachment(buff, "google_search.png"));
+		    let upload = await imgur.Upload(buff, "Google ScreenShot");
+		   ref.embed(message, a, "", upload.link); 
 		});
             }
         } catch(err) {
