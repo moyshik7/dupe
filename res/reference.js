@@ -71,6 +71,23 @@ const ref = {
     },
     randInt: (min, max) => { //No more python shit
         return (Math.floor(Math.random() * (max - min + 1)) + min);
+    },
+    Sanitize: (str) => {
+        if(!str.length){
+	    return(" ");
+	}else{
+	    let sanitized = "";
+	    let escaped = ["'", "$", "&", "@", "?", "*", ";", ":", "`", "•", "%"]
+	    for(let i=0; i<str.length; i++){
+		if(escaped.indexOf(str[i]) == -1){
+		    sanitized += str[i];
+		}
+	    }
+	    return(sanitized);
+	}
+    },
+    SanitizeArray: (arr) => {
+	
     }
 }
 module.exports = ref;
