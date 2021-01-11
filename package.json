@@ -1,6 +1,6 @@
 {
     "name": "plubinbot",
-    "version": "1.2.8.3",
+    "version": "1.2.13",
     "description": "",
     "main": "index.js",
     "engines": {
@@ -11,7 +11,7 @@
         "dblapi.js": "^2.4.1",
         "discord.js": "^12.5.1",
         "express": "^4.17.1",
-        "imgur-uploader": "^4.2.1",
+        "imgur": "^0.3.1",
         "kitsu-node-js": "^1.0.2",
         "nekos.life": "^2.0.7",
         "puppeteer": "^5.5.0",

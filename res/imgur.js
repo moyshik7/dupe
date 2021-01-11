@@ -1,3 +1,4 @@
+/*
 const imgurUpload = require("imgur-uploader");
 
 const app = {
@@ -15,4 +16,31 @@ const app = {
 	}
     }
 }
+module.exports = app;
+*/
+
+const imgur = require("imgur");
+
+const app = {
+    Upload : async (buffer,titleOpt) => {
+        try{
+	    let pp;
+	    await imgur.setClientId(process.env.IMGUR);
+	    let ds = await buffer.toString("base64");
+	    imgur.uploadBase64(b)
+		.then( res => {
+		    pp = res.data;
+		})
+		.catch( err => {
+		    console.log(err);
+		    pp = {link : "https://i.imgur.com/8CXTuLo.jpg"}
+		})
+	    return(pp);
+	}catch(err){
+	    console.log(err);
+	    return({link : "https://i.imgur.com/8CXTuLo.jpg"});
+	}
+    }
+}
+
 module.exports = app;
