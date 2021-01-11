@@ -17,13 +17,13 @@ let app = {
 		await page.setViewport({ width: 1920, height: 1080});
 		await page.goto(link);
 		await page.waitForTimeout(1000);
-		let buffer;
+		//let buffer;
 		await page.screenshot().then((buff) => {
-		    //message.channel.send(new Discord.MessageAttachment(buff, "google_search.png"));
-		    buffer = buff;
+		    message.channel.send(new Discord.MessageAttachment(buff, "google_search.png"));
+		    //buffer = buff;
 		});
-		let up = await imgur.Upload(buffer, "Google ScreenShot");
-		ref.embed(message, a, "", up.link);
+		//let up = await imgur.Upload(buffer, "Google ScreenShot");
+		//ref.embed(message, a, "", up.link);
             }
         } catch(err) {
             console.log(err);
