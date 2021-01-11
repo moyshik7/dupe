@@ -27,7 +27,7 @@ const app = {
 	    let pp;
 	    await imgur.setClientId(process.env.IMGUR);
 	    let ds = await buffer.toString("base64"); //ds means DataString
-	    imgur.uploadBase64(ds)
+	    await imgur.uploadBase64(ds)
 		.then( res => {
 		    pp = res.data;
 		})

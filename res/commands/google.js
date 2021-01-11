@@ -22,8 +22,8 @@ let app = {
 		    //message.channel.send(new Discord.MessageAttachment(buff, "google_search.png"));
 		    buffer = buff;
 		});
-		let upload = await imgur.Upload(buffer, "Google ScreenShot");
-		ref.embed(message, a, "", upload.link);
+		let up = await imgur.Upload(buffer, "Google ScreenShot");
+		ref.embed(message, a, "", up.link);
             }
         } catch(err) {
             console.log(err);
