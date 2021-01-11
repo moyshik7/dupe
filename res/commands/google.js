@@ -1,9 +1,7 @@
 const puppeteer = require("puppeteer");
 const Discord = require("discord.js");
 const imgur = require("./../imgur");
-let ref = require("./../reference");
-
-const ref = require("./../reference.js");
+const ref = require("./../reference");
 
 let app = {
     Google: async (message, args) => {
