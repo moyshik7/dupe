@@ -7,10 +7,6 @@ const app = {
 	        .then( data => {
 		    return(data);
 	        })
-		.error( err => {
-		    console.log(err);
-		    return(false);
-		})
 	} catch (err){
 	        console.log(err);
 	        return(false);
