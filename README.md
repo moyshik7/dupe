@@ -24,7 +24,7 @@
   
 #### Search
 
-`anime ` `comic ` `define ` `lyrics ` `manga `
+`anime ` `comic ` `define ` `google ` `lyrics ` `manga `
   
 #### Maintenance
 
