@@ -17,11 +17,13 @@ let app = {
 		await page.setViewport({ width: 1920, height: 1080});
 		await page.goto(link);
 		await page.waitForTimeout(1000);
+		let buffer;
 		await page.screenshot().then((buff) => {
 		    //message.channel.send(new Discord.MessageAttachment(buff, "google_search.png"));
-		    let upload = await imgur.Upload(buff, "Google ScreenShot");
-		   ref.embed(message, a, "", upload.link); 
+		    buffer = buff;
 		});
+		let upload = await imgur.Upload(buffer, "Google ScreenShot");
+		ref.embed(message, a, "", upload.link);
             }
         } catch(err) {
             console.log(err);
