@@ -3,13 +3,15 @@ const imgurUpload = require("imgur-uploader");
 const app = {
     Upload : async (buffer,titleOpt) => {
 	try{
-	    imgurUpload(buffer, { title : `${titleOpt || "Random Upload"}`, token : `${process.env.IMGUR}` })
+	    let d;
+	    await imgurUpload(buffer, { title : `${titleOpt || "Random Upload"}`, token : `${process.env.IMGUR}` })
 	        .then( data => {
-		    return(data);
-	        })
+		    d = data
+	        });
+	    return(d);
 	} catch (err){
 	        console.log(err);
-	        return(false);
+	        return({ link : "https://i.imgur.com/8CXTuLo.jpg"});
 	}
     }
 }
