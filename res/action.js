@@ -720,7 +720,7 @@ const bot = {
                 total: 1,
                 subreddit: ["memes"]
             });
-            ref.embed(bot.bd.message, "Here's your meme", "", h[0].image);
+            ref.embed(bot.bd.message, h[0].title, "", h[0].image);
         } catch (err) {
             console.log(err);
         }
