@@ -7,7 +7,7 @@ let app = {
 	const avatarEmbed = new Discord.MessageEmbed()
             .setColor("#ff9900")
             .setTitle(user.username)
-            .setImage(user.avatarURL)
+            .setImage(user.avatarURL({size : 512,format : "png",dynamic : true}))
         message.channel.send(avatarEmbed);
     },
     Kick: (message,args) => {
