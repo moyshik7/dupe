@@ -1174,11 +1174,11 @@ module.exports = bot;
 const helpMessage = {
     normal: "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands:\n" +
         "\n**Image and Gif:**\n**SFW**\n`baka ` `cat ` `catgirl ` `cuddle ` `dog ` `fox ` `foxgirl ` `goose ` `hug ` `kitty ` `lizard ` `meme ` `memes ` `meow ` `neko ` `pat ` `puppy ` `slap ` `tickle ` `waifu ` `wallpaper ` `woof ` `wp `\n" +
-        "\n**NSFW**\n`anal ` `asian ` `asians ` `avatar ` `bbc ` `bdsm ` `bj ` `black ` `blonde ` `blowjob ` `boob ` `boobs ` `butt ` `butts ` `catgirl ` `celebrity ` `christmas ` `classic ` `cs ` `cumslut ` `cumsluts ` `dickgirl ` `dickgirls ` `ebony ` `ero ` `erotic ` `feet ` `femdom ` `filipino ` `gasm ` `glass ` `glasses ` `hal ` `halloween ` `hardcore ` `heel ` `heels ` `hentai ` `holo ` `indian ` `japanese ` `korean ` `kuni  ` `lewd ` `long ` `longhair ` `milf ` `milfs ` `mom ` `moms ` `neko ` `oil `  `orgasm ` `pawg ` `pussy ` `red ` `redhead ` `redheads ` `short ` `shorthair ` `spank ` `tan ` `tentacle ` `tentacles ` `thick ` `tits ` `tiny ` `trap ` `xmas ` `yaoi ` `yuri `\n" +
+        "\n**NSFW**\n`anal ` `asian ` `asians ` `bbc ` `bdsm ` `bj ` `black ` `blonde ` `blowjob ` `boob ` `boobs ` `butt ` `butts ` `catgirl ` `celebrity ` `christmas ` `classic ` `cs ` `cumslut ` `cumsluts ` `dickgirl ` `dickgirls ` `ebony ` `ero ` `erotic ` `feet ` `femdom ` `filipino ` `gasm ` `glass ` `glasses ` `hal ` `halloween ` `hardcore ` `heel ` `heels ` `hentai ` `holo ` `indian ` `japanese ` `korean ` `kuni  ` `lewd ` `long ` `longhair ` `milf ` `milfs ` `mom ` `moms ` `neko ` `oil `  `orgasm ` `pawg ` `pussy ` `red ` `redhead ` `redheads ` `short ` `shorthair ` `spank ` `tan ` `tentacle ` `tentacles ` `thick ` `tits ` `tiny ` `trap ` `xmas ` `yaoi ` `yuri `\n" +
         "\n" +
         "\n**Search:**\n`anime ` `comic ` `define ` `google ` `lyrics ` `manga `\n" +
         "\n" +
-        "\n**Maintenance:**\n`emoji ` `h ` `help ` `invite ` `ping ` `server `\n" +
+        "\n**Maintenance:**\n`avatar ` `emoji ` `help / h ` `invite ` `ping ` `server `\n" +
         "\n" +
         "\n**Fun:**\n`peanus ` `penis ` `pp `\n" +
         "\n" +
