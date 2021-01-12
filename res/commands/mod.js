@@ -2,6 +2,14 @@
 const Discord = require("discord.js");
 const ref = require("./../reference.js");
 let app = {
+    Avatar: (message) => {
+	let user = message.mentions.users.first() || message.authori;
+	const avatarEmbed = new Discord.MessageEmbed()
+            .setColor("#ff9900")
+            .setTitle(user.username)
+            .setImage(user.avatarURL)
+        message.channel.send(avatarEmbed);
+    },
     Kick: (message,args) => {
         try{
             if(!message.member.hasPermission("KICK_MEMBERS")){

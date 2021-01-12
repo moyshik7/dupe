@@ -65,17 +65,8 @@ const bot = {
     asians: () => {
         bot.asian();
     },
-    avatar: async() => {
-        try {
-            if (bot.bd.message.channel.nsfw) {
-                let s = await n.nsfw.avatar();
-                ref.embed(bot.bd.message, "Avatar", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
-            } else {
-                ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
-            }
-        } catch (err) {
-            console.log(err);
-        }
+    avatar: () => {
+        mod.Avatar(bot.bd.message);
     },
     baka: async() => {
         try {
