@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 const ref = require("./../reference.js");
 let app = {
     Avatar: (message) => {
-	let user = message.mentions.users.first() || message.authori;
+	let user = message.mentions.users.first() || message.author;
 	const avatarEmbed = new Discord.MessageEmbed()
             .setColor("#ff9900")
             .setTitle(user.username)
