@@ -19,7 +19,11 @@
         "querystring": "^0.2.0",
         "reddit-image-fetcher": "^2.0.5",
         "slyrics": "^0.1.42",
-        "urban-dictionary": "^2.2.1"
+        "urban-dictionary": "^2.2.1",
+	"@discordjs/opus": "^0.3.3",
+        "ffmpeg-static": "^4.2.7",
+        "opus": "0.0.0",
+        "ytdl-core": "^4.4.3"
     },
     "scripts": {
         "start": "node .",
