@@ -23,9 +23,14 @@ const bot = {
     allservers: () => {
 	try{
 	    if(bot.bd.message.author.id == 584309117380853770){
+		let totalServers = 0;
+		let totalUsers = 0;
 	        bot.bd.client.guilds.cache.forEach( a => {
 	            bot.bd.message.channel.send(`__Guild:__ ${a.name} \n__Total members:__  ${a.memberCount || "N/A"}`);
+		    totalServers ++ ;
+		    totalUsers += a.memberCount || 0;
 		});
+		bot.bd.message.channel.send(`__**TOTAL SERVERS :**__ ${totalServers} \n__**TOTAL USERS :**__ ${totalUsers}` );
             }
 	} catch(err){
 	    console.log(err);
