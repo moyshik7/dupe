@@ -4,6 +4,21 @@ const ytdl = require("ytdl-core");
 
 
 const app = {
+    Disconnect: (message,args) => {
+        try{
+	    let vc = message.guild.me.voice.channel;
+	    let userVC =  message.member.voice.channel;
+            if(!vc){
+                //I am not connected to a channel lol;
+            } else if(vc == userVC){
+                vc.leave();
+            }else {
+                //You are not connected to the same channel Bitch;
+            }
+	} catch(err){
+	    console.log(err);
+	}
+    },
     Play: (message,args) => {
 	try{
             let vc = message.member.voice.channel;
