@@ -17,7 +17,7 @@ const app = {
 	    } else if (selfVC != vc) {
 	        message.channel.send("Sorry I am already connected to another channel");
 	    } else{
-		//error
+		//error can't play
 	    }
 	}catch(err){
 	    console.log(err);
