@@ -8,8 +8,7 @@ const app = {
 	try{
             let vc = message.member.voice.channel;
 	    let selfVC = message.guild.me.voice.channel;
-	    
-	    if(vc && !selfVC){
+	    if(vc && (!selfVC || selfVC == vc)){
 	        vc.join().then(connection => {
 	            const stream = ytdl('https://youtu.be/BVwAVbKYYeM', { filter: 'audioonly' });
 	            const dispatcher = connection.play(stream);
@@ -18,7 +17,7 @@ const app = {
 	    } else if (selfVC != vc) {
 	        message.channel.send("Sorry I am already connected to another channel");
 	    } else{
-		//hshdhdg
+		//error
 	    }
 	}catch(err){
 	    console.log(err);
@@ -27,10 +26,11 @@ const app = {
     Join: (message,args) => {
 	try{
 	    let vc = message.member.voice.channel;
-	    if(vc) {
+	    let selfVC = message.guild.me.voice.channel;
+	    if(vc & !selfVC) {
 	        vc.join();
 	    } else {
-	        //-£--£
+	        //I am already connected
 	    }
 	} catch(err){
 	    console.log(err);
