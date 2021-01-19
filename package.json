@@ -28,7 +28,7 @@
     "scripts": {
         "start": "node .",
         "dev": "nodemon index.js",
-        "test": "node ."
+        "test": "node test.js"
     },
     "repository": {
         "type": "git",

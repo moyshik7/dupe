@@ -2,7 +2,7 @@
 // Testing Dupe / Plubin
 // Script:
 // npm install
-// node test.js
+// npm run test
 
 const Discord = require("discord.js");
 const Express = require("express");
