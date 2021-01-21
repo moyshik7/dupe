@@ -910,12 +910,12 @@ const bot = {
     pussy: async() => {
         try {
             if (bot.bd.message.channel.nsfw) {
-                if (bot.bd.args.length) {
-                    let s = await n.nsfw.pussyArt();
-                    ref.embed(bot.bd.message, "P U S S Y", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
-                }
-                let s = await n.nsfw.pussy();
-                ref.embed(bot.bd.message, "P U S S Y", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["pussy"]
+                });
+                ref.embed(bot.bd.message, "Spread it wider", "", h[0].image);
             } else {
                 ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
