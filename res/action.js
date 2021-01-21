@@ -39,8 +39,12 @@ const bot = {
     anal: async() => {
         try {
             if (bot.bd.message.channel.nsfw) {
-                let s = await n.nsfw.anal();
-                ref.embed(bot.bd.message, "A N A L", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["analhentai", "anal", "anal_gifs"]
+                });
+                ref.embed(bot.bd.message, "The Backdoor", "", h[0].image);
             } else {
                 ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel`);
             }
