@@ -417,8 +417,12 @@ const bot = {
     femdom: async() => {
         try {
             if (bot.bd.message.channel.nsfw) {
-                let s = await n.nsfw.femdom();
-                ref.embed(bot.bd.message, "F E M D O M", "", s.url);
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["femdom_gifs","hentaifemdom"]
+                });
+                ref.embed(bot.bd.message, "Asian", "", h[0].image);
             } else {
                 ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
