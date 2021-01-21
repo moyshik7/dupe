@@ -155,8 +155,12 @@ const bot = {
     blowjob: async() => {
         try {
             if (bot.bd.message.channel.nsfw) {
-                let s = await n.nsfw.bJ();
-                ref.embed(bot.bd.message, `Plubin gave blowjob to ${bot.bd.message.author.username}`, "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["blowjobhentai", "blowjob", "blowjobs", "blowjobgifs"]
+                });
+                ref.embed(bot.bd.message, "Blow Me Babe", "", h[0].image);
             } else {
                 ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
