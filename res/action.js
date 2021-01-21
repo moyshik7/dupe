@@ -617,7 +617,7 @@ const bot = {
             } else {
                 let s = await n.sfw.hug();
                 let pe = bot.bd.message.mentions.members.first().user.username;
-                ref.embed(bot.bd.message, `${bot.bd.message.author.username} hugged ${pe} tightly ♥️`, "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+                ref.embed(bot.bd.message, `${bot.bd.message.author.username} hugged ${pe} tightly ♥️`, "", s.url);
             }
         } catch (err) {
             console.log(err);
@@ -641,7 +641,7 @@ const bot = {
     },
     invite: () => {
         try {
-            ref.embedDes(bot.bd.message, "Invite me to your server", "https://discord.com/oauth2/authorize?client_id=748160981766635540&scope=bot", "Use .help to get started");
+            ref.embedDes(bot.bd.message, "Invite me to your server", "[Invite Link : https://discord.com/oauth2/authorize?client_id=748160981766635540&scope=bot&permissions=51200](https://discord.com/oauth2/authorize?client_id=748160981766635540&scope=bot&permissions=51200)", "Use .help to get started");
         } catch (err) {
             console.log(err);
         }
