@@ -1222,7 +1222,7 @@ const helpMessage = {
         "\n" +
         "\n**Search:**\n`anime ` `comic ` `define ` `google ` `lyrics ` `manga `\n" +
         "\n" +
-        "\n**Maintenance:**\n`avatar ` `emoji ` `help / h ` `invite ` `ping ` `server `\n" +
+        "\n**Maintenance:**\n`avatar ` `emojis ` `help / h ` `invite ` `ping ` `server `\n" +
         "\n" +
         "\n**Fun:**\n`peanus ` `penis ` `pp `\n" +
         "\n" +
