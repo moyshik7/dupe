@@ -257,8 +257,12 @@ const bot = {
     classic: async() => {
         try {
             if (bot.bd.message.channel.nsfw) {
-                let s = await n.nsfw.classic();
-                ref.embed(bot.bd.message, "Classic", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["classic"]
+                });
+                ref.embed(bot.bd.message, "Old school", "", h[0].image);
             } else {
                 ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
