@@ -283,11 +283,11 @@ const bot = {
         try {
             if (!bot.bd.args.length) {
                 let s = await n.sfw.cuddle();
-                ref.embed(bot.bd.message, "I will cuddle you", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+                ref.embed(bot.bd.message, `${bot.bd.message.author.username} is cuddling me`, "", s.url);
             } else {
                 let s = await n.sfw.cuddle();
                 let pe = bot.bd.message.mentions.members.first().user.username || bot.bd.args.join(" ");
-                ref.embed(bot.bd.message, `${bot.bd.message.author.username} cuddled ${pe}`, "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+                ref.embed(bot.bd.message, `${bot.bd.message.author.username} cuddled ${pe}`, "", s.url);
             }
         } catch (err) {
             console.log(err);
