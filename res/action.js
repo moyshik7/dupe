@@ -401,9 +401,13 @@ const bot = {
     feet: async() => {
         try {
             if (bot.bd.message.channel.nsfw) {
-                let s = await n.nsfw.feet();
-                ref.embed(bot.bd.message, "F E E T", "", s.url);
-            } else {
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["feet","feethentai"]
+                });
+                ref.embed(bot.bd.message, "Feet", "", h[0].image);
+	    } else {
                 ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
         } catch (err) {
