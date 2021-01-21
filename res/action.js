@@ -1124,8 +1124,12 @@ const bot = {
     trap: async() => {
         try {
             if (bot.bd.message.channel.nsfw) {
-                let s = await n.nsfw.trap();
-                ref.embed(bot.bd.message, "Did you fell for it ?", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["traphentai","trapgifs"]
+                });
+                ref.embed(bot.bd.message, "Wanna join ?", "", h[0].image);
             } else {
                 ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
