@@ -828,11 +828,7 @@ const bot = {
         }
     },
     orgasm: async() => {
-        try {
-            bot.gasm();
-        } catch (err) {
-            console.log(err);
-        }
+        bot.gasm();
     },
     pat: async() => {
         try {
@@ -844,9 +840,11 @@ const bot = {
                 let pe = bot.bd.message.mentions.members.first();
                 if (pe != undefined) {
                     pe = pe.user.username;
-                } else {
+                } else if(args.length){
                     pe = bot.bd.args.join(" ");
-                }
+                } else{
+		    pe = "Plubin's";
+		}
                 ref.embed(bot.bd.message, `${bot.bd.message.author.username} is patting ${pe}'s head litely`, "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
             }
         } catch (err) {
@@ -1005,13 +1003,12 @@ const bot = {
     solo: async() => {
         try {
             if (bot.bd.message.channel.nsfw) {
-                if (bot.bd.args[0] == "gif" || bot.bd.args[0] == "g") {
-                    let s = await n.nsfw.girlSoloGif();;
-                    ref.embed(bot.bd.message, "Solo Girl", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
-                } else {
-                    let s = await n.nsfw.girlSolo();;
-                    ref.embed(bot.bd.message, "Solo Girl", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
-                }
+		let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["solo"]
+                });
+                ref.embed(bot.bd.message, "Solo", "", h[0].image);
             } else {
                 ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
