@@ -422,7 +422,7 @@ const bot = {
                     total: 1,
                     subreddit: ["femdom_gifs","hentaifemdom"]
                 });
-                ref.embed(bot.bd.message, "Asian", "", h[0].image);
+                ref.embed(bot.bd.message, "Femdom", "", h[0].image);
             } else {
                 ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
@@ -465,8 +465,12 @@ const bot = {
     gasm: async() => {
         try {
             if (bot.bd.message.channel.nsfw) {
-                let s = await n.nsfw.gasm();
-                ref.embed(bot.bd.message, "Orgasm", "", s.url);
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["orgasm"]
+                });
+                ref.embed(bot.bd.message, "Orgasm", "", h[0].image);
             } else {
                 ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
