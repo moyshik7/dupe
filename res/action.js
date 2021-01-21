@@ -208,8 +208,12 @@ const bot = {
     },
     cat: async() => {
         try {
-            let s = await n.sfw.meow();
-            ref.embed(bot.bd.message, "meow", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
+            let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["cats"]
+            });
+            ref.embed(bot.bd.message, "Meow", "", h[0].image);
         } catch (err) {
             console.log(err);
         }
