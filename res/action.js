@@ -616,7 +616,8 @@ const bot = {
                 ref.embed(bot.bd.message, "H U G", "", s.url);
             } else {
                 let s = await n.sfw.hug();
-                let pe = bot.bd.message.mentions.members.first().user.username;
+                let pe = bot.bd.message.mentions.members.first();
+		pe = pe ? pe.user.username : bot.bd.args.join(" ");
                 ref.embed(bot.bd.message, `${bot.bd.message.author.username} hugged ${pe} tightly ♥️`, "", s.url);
             }
         } catch (err) {
