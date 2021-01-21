@@ -353,7 +353,7 @@ const bot = {
             console.log(err);
         }
     },
-    emoji: () => {
+    emojis: () => {
         try {
             let el = bot.bd.message.guild.emojis.cache;
             let mm = "";
