@@ -382,8 +382,12 @@ const bot = {
     ero: async() => {
         try {
             if (bot.bd.message.channel.nsfw) {
-                let s = await n.nsfw.ero();
-                ref.embed(bot.bd.message, "Erotic", "", s.url);
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["nsfw_plowcam"]
+                });
+                ref.embed(bot.bd.message, "Erotic !?", "", h[0].image);
             } else {
                 ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
