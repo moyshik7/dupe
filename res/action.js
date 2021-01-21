@@ -1119,16 +1119,7 @@ const bot = {
         }
     },
     tits: async() => {
-        try {
-            if (bot.bd.message.channel.nsfw) {
-                let s = await n.nsfw.tits();
-                ref.embed(bot.bd.message, "T I T T I E S", "", s.url);
-            } else {
-                ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
-            }
-        } catch (err) {
-            console.log(err);
-        }
+	bot.boob();
     },
     trap: async() => {
         try {
