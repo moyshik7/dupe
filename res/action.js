@@ -591,11 +591,19 @@ const bot = {
     holo: async() => {
         try {
             if (bot.bd.message.channel.nsfw) {
-                let s = await n.nsfw.holo();
-                ref.embed(bot.bd.message, "H O L O", "", s.url);
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["hololewd"]
+                });
+                ref.embed(bot.bd.message, "Holo", "", h[0].image);
             } else {
-                let s = await n.sfw.holo();
-                ref.embed(bot.bd.message, "H O L O", "", s.url);
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["holo","hololiveyuri"]
+                });
+                ref.embed(bot.bd.message, "Holo", "", h[0].image);
             }
         } catch (err) {
             console.log(err);
