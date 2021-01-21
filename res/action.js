@@ -692,8 +692,7 @@ const bot = {
     kuni: async() => {
         try {
             if (bot.bd.message.channel.nsfw) {
-                let s = await n.nsfw.kuni();
-                ref.embed(bot.bd.message, "K U N I", "", s.url);
+                ref.embedDes(bot.bd.message, "Sorrrryyy....","This command is under maintenence and will be up from 31 January 2021", "Sorry for inconvinence");
             } else {
                 ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
