@@ -299,8 +299,12 @@ const bot = {
     cumsluts: async() => {
         try {
             if (bot.bd.message.channel.nsfw) {
-                let s = await n.nsfw.cumsluts();
-                ref.embed(bot.bd.message, "Cum Sluts", "", s.url);
+	        let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["cumsluts"]
+                });
+                ref.embed(bot.bd.message, "Cum Sluts", "", h[0].image);
             } else {
                 ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
