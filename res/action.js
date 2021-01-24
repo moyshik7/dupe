@@ -21,20 +21,20 @@ const bot = {
         client: ""
     },
     allservers: () => {
-	try{
-	    if(bot.bd.message.author.id == 584309117380853770){
-		let totalServers = 0;
-		let totalUsers = 0;
-	        bot.bd.client.guilds.cache.forEach( a => {
-	            bot.bd.message.channel.send(`__Guild:__ ${a.name} \n__Total members:__  ${a.memberCount || "N/A"}`);
-		    totalServers ++ ;
-		    totalUsers += a.memberCount || 0;
-		});
-		bot.bd.message.channel.send(`__**TOTAL SERVERS :**__ ${totalServers} \n__**TOTAL USERS :**__ ${totalUsers}` );
+        try {
+            if (bot.bd.message.author.id == 584309117380853770) {
+                let totalServers = 0;
+                let totalUsers = 0;
+                bot.bd.client.guilds.cache.forEach(a => {
+                    bot.bd.message.channel.send(`__Guild:__ ${a.name} \n__Total members:__  ${a.memberCount || "N/A"}`);
+                    totalServers++;
+                    totalUsers += a.memberCount || 0;
+                });
+                bot.bd.message.channel.send(`__**TOTAL SERVERS :**__ ${totalServers} \n__**TOTAL USERS :**__ ${totalUsers}`);
             }
-	} catch(err){
-	    console.log(err);
-	}
+        } catch (err) {
+            console.log(err);
+        }
     },
     anal: async() => {
         try {
@@ -209,9 +209,9 @@ const bot = {
     cat: async() => {
         try {
             let h = await rf.fetch({
-                    type: 'custom',
-                    total: 1,
-                    subreddit: ["cats"]
+                type: 'custom',
+                total: 1,
+                subreddit: ["cats"]
             });
             ref.embed(bot.bd.message, "Meow", "", h[0].image);
         } catch (err) {
@@ -299,7 +299,7 @@ const bot = {
     cumsluts: async() => {
         try {
             if (bot.bd.message.channel.nsfw) {
-	        let h = await rf.fetch({
+                let h = await rf.fetch({
                     type: 'custom',
                     total: 1,
                     subreddit: ["cumsluts"]
@@ -404,10 +404,10 @@ const bot = {
                 let h = await rf.fetch({
                     type: 'custom',
                     total: 1,
-                    subreddit: ["feet","feethentai"]
+                    subreddit: ["feet", "feethentai"]
                 });
                 ref.embed(bot.bd.message, "Feet", "", h[0].image);
-	    } else {
+            } else {
                 ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
         } catch (err) {
@@ -420,7 +420,7 @@ const bot = {
                 let h = await rf.fetch({
                     type: 'custom',
                     total: 1,
-                    subreddit: ["femdom_gifs","hentaifemdom"]
+                    subreddit: ["femdom_gifs", "hentaifemdom"]
                 });
                 ref.embed(bot.bd.message, "Femdom", "", h[0].image);
             } else {
@@ -497,9 +497,9 @@ const bot = {
             console.log(err);
         }
     },
-    google: async() => {
+    /*google: async() => {
         search.Google(bot.bd.message, bot.bd.args);
-    },
+    },*/
     goose: async() => {
         try {
             let s = await n.sfw.goose();
@@ -601,7 +601,7 @@ const bot = {
                 let h = await rf.fetch({
                     type: 'custom',
                     total: 1,
-                    subreddit: ["holo","hololiveyuri"]
+                    subreddit: ["holo", "hololiveyuri"]
                 });
                 ref.embed(bot.bd.message, "Holo", "", h[0].image);
             }
@@ -617,7 +617,7 @@ const bot = {
             } else {
                 let s = await n.sfw.hug();
                 let pe = bot.bd.message.mentions.members.first();
-		pe = pe ? pe.user.username : bot.bd.args.join(" ");
+                pe = pe ? pe.user.username : bot.bd.args.join(" ");
                 ref.embed(bot.bd.message, `${bot.bd.message.author.username} hugged ${pe} tightly ♥️`, "", s.url);
             }
         } catch (err) {
@@ -664,7 +664,7 @@ const bot = {
         }
     },
     kick: () => {
-        mod.Kick(bot.bd.message,bot.bd.args);
+        mod.Kick(bot.bd.message, bot.bd.args);
     },
     kitty: async() => {
         try {
@@ -693,7 +693,7 @@ const bot = {
     kuni: async() => {
         try {
             if (bot.bd.message.channel.nsfw) {
-                ref.embedDes(bot.bd.message, "Sorrrryyy....","This command is under maintenence and will be up from 31 January 2021", "Sorry for inconvinence");
+                ref.embedDes(bot.bd.message, "Sorrrryyy....", "This command is under maintenence and will be up from 31 January 2021", "Sorry for inconvinence");
             } else {
                 ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
@@ -841,11 +841,11 @@ const bot = {
                 let pe = bot.bd.message.mentions.members.first();
                 if (pe != undefined) {
                     pe = pe.user.username;
-                } else if(args.length){
+                } else if (args.length) {
                     pe = bot.bd.args.join(" ");
-                } else{
-		    pe = "Plubin's";
-		}
+                } else {
+                    pe = "Plubin's";
+                }
                 ref.embed(bot.bd.message, `${bot.bd.message.author.username} is patting ${pe}'s head litely`, "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
             }
         } catch (err) {
@@ -949,16 +949,16 @@ const bot = {
         bot.red();
     },
     say: () => {
-	try{
-            if(!bot.bd.args.length){
+        try {
+            if (!bot.bd.args.length) {
                 bot.bd.message.channel.send("Nothing to say");
-	    }else{
-	        let t = bot.bd.args.join(" ");
-	        bot.bd.message.channel.send(t);
-	    }
-	}catch(err){
-	    console.log(err);
-	}
+            } else {
+                let t = bot.bd.args.join(" ");
+                bot.bd.message.channel.send(t);
+            }
+        } catch (err) {
+            console.log(err);
+        }
     },
     server: async() => {
         server.server(bot.bd.message, bot.bd.args, bot.bd.client);
@@ -1004,7 +1004,7 @@ const bot = {
     solo: async() => {
         try {
             if (bot.bd.message.channel.nsfw) {
-		let h = await rf.fetch({
+                let h = await rf.fetch({
                     type: 'custom',
                     total: 1,
                     subreddit: ["solo"]
@@ -1120,7 +1120,7 @@ const bot = {
         }
     },
     tits: async() => {
-	bot.boob();
+        bot.boob();
     },
     trap: async() => {
         try {
@@ -1128,7 +1128,7 @@ const bot = {
                 let h = await rf.fetch({
                     type: 'custom',
                     total: 1,
-                    subreddit: ["traphentai","trapgifs"]
+                    subreddit: ["traphentai", "trapgifs"]
                 });
                 ref.embed(bot.bd.message, "Wanna join ?", "", h[0].image);
             } else {
@@ -1221,7 +1221,7 @@ const helpMessage = {
         "\n**Image and Gif:**\n**SFW**\n`baka ` `cat ` `catgirl ` `cuddle ` `dog ` `fox ` `foxgirl ` `goose ` `hug ` `kitty ` `lizard ` `meme ` `memes ` `meow ` `neko ` `pat ` `puppy ` `slap ` `tickle ` `waifu ` `wallpaper ` `woof ` `wp `\n" +
         "\n**NSFW**\n`anal ` `asian ` `asians ` `bbc ` `bdsm ` `bj ` `black ` `blonde ` `blowjob ` `boob ` `boobs ` `butt ` `butts ` `catgirl ` `celebrity ` `christmas ` `classic ` `cs ` `cumslut ` `cumsluts ` `dickgirl ` `dickgirls ` `ebony ` `ero ` `erotic ` `feet ` `femdom ` `filipino ` `gasm ` `glass ` `glasses ` `hal ` `halloween ` `hardcore ` `heel ` `heels ` `hentai ` `holo ` `indian ` `japanese ` `korean ` `kuni  ` `lewd ` `long ` `longhair ` `milf ` `milfs ` `mom ` `moms ` `neko ` `oil `  `orgasm ` `pawg ` `pussy ` `red ` `redhead ` `redheads ` `short ` `shorthair ` `spank ` `tan ` `tentacle ` `tentacles ` `thick ` `tits ` `tiny ` `trap ` `xmas ` `yaoi ` `yuri `\n" +
         "\n" +
-        "\n**Search:**\n`anime ` `comic ` `define ` `google ` `lyrics ` `manga `\n" +
+        "\n**Search:**\n`anime ` `comic ` `define ` `lyrics ` `manga `\n" +
         "\n" +
         "\n**Maintenance:**\n`avatar ` `emojis ` `help / h ` `invite ` `ping ` `server `\n" +
         "\n" +
