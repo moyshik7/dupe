@@ -69,7 +69,7 @@
         "name": "Search",
         "content": "`anime ` `comic ` `define ` `lyrics ` `manga `",
         "usage": "`. <Command Name>`",
-        "example": "`.define hell`"
+        "example": " `.define hell`"
     },
     "default": {
         "name": "",
