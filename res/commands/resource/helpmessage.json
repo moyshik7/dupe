@@ -1,21 +1,21 @@
 {
     "help": {
         "name": "Help",
-        "content": "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands catagories:\n\n**MODERATION\nMEMES\nSEARCH\nANIME\nMANGA\nCOMIC/MANGA\nPETS\nIMAGES\nNSFW\nOTHERS",
+        "content": "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands catagories:\n\n**MODERATION\nMEMES\nSEARCH\nANIME\nMANGA\nCOMIC/MANGA\nPETS\nIMAGES\nSEARCH\nNSFW\nOTHERS",
         "usage": "`.help` `<Command Catagory>`",
         "example": "`.help anime`"
     },
     "anime": {
         "name": "Anime",
         "content": "Search an Anime or get a random anime suggestion",
-        "usage": "For a random anime: `.anime`\nTo search an anime: `.anime` `<Search Term>`",
+        "usage": "For a random anime: `.anime`\nTo search an anime: `.anime` `<Name of Anime>`",
         "example": "`.anime Kimi No Na Wa`"
     },
     "comic": {
         "name": "Comic",
-        "content": "",
-        "usage": "",
-        "example": ""
+        "content": "Search for a comic",
+        "usage": "To search a comic: `.comic` `<Name of Comic>`",
+        "example": "`.comic Freaking Romance`"
     },
     "images": {
         "name": "Images",
@@ -25,9 +25,9 @@
     },
     "manga": {
         "name": "Manga",
-        "content": "",
-        "usage": "",
-        "example": ""
+        "content": "Search for a Manga (comic)",
+        "usage": "To search a manga: `.manga` `<Name Of Manga>`",
+        "example": "`.manga unOrdinary`"
     },
     "meme": {
         "name": "Meme",
@@ -54,6 +54,12 @@
         "example": ""
     },
     "pets": {
+        "name": "Pets",
+        "content": "",
+        "usage": "",
+        "example": ""
+    },
+    "search": {
         "name": "Pets",
         "content": "",
         "usage": "",
