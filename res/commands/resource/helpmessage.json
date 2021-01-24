@@ -1,0 +1,9 @@
+{
+    "help": {
+        "name": "Help",
+        "content": "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands catagories:\n\n**MODERATION\nMEMES\nSEARCH\nANIME\nMANGA\nCOMIC/MANGA\nPETS\nIMAGES\nNSFW\nOTHERS",
+        "usage": "`.help` `<Command Catagory>`",
+        "example": "`.help anime`"
+    }
+
+}

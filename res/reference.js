@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const qs = require('querystring');
 
 const color = require("./color.json");
 
@@ -73,32 +72,32 @@ const ref = {
         return (Math.floor(Math.random() * (max - min + 1)) + min);
     },
     Sanitize: (str) => {
-        if(!str.length){
-	    return(" ");
-	}else{
-	    let sanitized = "";
-	    let escaped = ["'", "$", "&", "@", "?", "*", ";", ":", "`", "•", "%"]; //Add the oposite of `
-	    for(let i=0; i<str.length; i++){
-		if(escaped.indexOf(str[i]) == -1){
-		    sanitized += str[i];
-		}
-	    }
-	    return(sanitized);
-	}
+        if (!str.length) {
+            return (" ");
+        } else {
+            let sanitized = "";
+            let escaped = ["'", "$", "&", "@", "?", "*", ";", ":", "`", "•", "%"]; //Add the oposite of `
+            for (let i = 0; i < str.length; i++) {
+                if (escaped.indexOf(str[i]) == -1) {
+                    sanitized += str[i];
+                }
+            }
+            return (sanitized);
+        }
     },
     SanitizeArray: (arr) => {
-	if(!arr.length){
-	    return([]);
-	} else {
-	    let sanitized = [];
-	    for(let i=0; i<arr.length; i++){
-		let s = ref.Sanitize(arr[i]);
-		if(s.length){
-		    sanitized.push(s);
-		}
-	    }
-	    return(sanitized);
-	}
+        if (!arr.length) {
+            return ([]);
+        } else {
+            let sanitized = [];
+            for (let i = 0; i < arr.length; i++) {
+                let s = ref.Sanitize(arr[i]);
+                if (s.length) {
+                    sanitized.push(s);
+                }
+            }
+            return (sanitized);
+        }
     }
 }
 module.exports = ref;
