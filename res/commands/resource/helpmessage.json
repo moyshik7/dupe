@@ -1,7 +1,7 @@
 {
     "help": {
         "name": "Help",
-        "content": "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands catagories:\n\n**MODERATION\nMEMES\nSEARCH\nANIME\nMANGA\nCOMIC/MANGA\nPETS\nIMAGES\nSEARCH\nNSFW\nOTHERS",
+        "content": "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands catagories:\n\n**ANIME\nMANGA** aka **COMIC\nMEMES\nPETS\nIMAGES\nSEARCH\nMAINTENANCE\nMODERATION\nOTHERS\nNSFW** aka **PORN**",
         "usage": "`.help` `<Command Catagory>`",
         "example": "`.help anime`"
     },
@@ -19,6 +19,12 @@
     },
     "images": {
         "name": "Images",
+        "content": "",
+        "usage": "",
+        "example": ""
+    },
+    "maintenance": {
+        "name": "Maintenance",
         "content": "",
         "usage": "",
         "example": ""
@@ -49,9 +55,9 @@
     },
     "nsfw": {
         "name": "NSFW",
-        "content": "",
-        "usage": "",
-        "example": ""
+        "content": "`anal ` `asian ` `asians ` `bbc ` `bdsm ` `bj ` `black ` `blonde ` `blowjob ` `boob ` `boobs ` `butt ` `butts ` `catgirl ` `celebrity ` `christmas ` `classic ` `cs ` `cumslut ` `cumsluts ` `dickgirl ` `dickgirls ` `ebony ` `ero ` `erotic ` `feet ` `femdom ` `filipino ` `gasm ` `glass ` `glasses ` `hal ` `halloween ` `hardcore ` `heel ` `heels ` `hentai ` `holo ` `indian ` `japanese ` `korean ` `kuni  ` `lewd ` `long ` `longhair ` `milf ` `milfs ` `mom ` `moms ` `neko ` `oil `  `orgasm ` `pawg ` `pussy ` `red ` `redhead ` `redheads ` `short ` `shorthair ` `spank ` `tan ` `tentacle ` `tentacles ` `thick ` `tits ` `tiny ` `trap ` `xmas ` `yaoi ` `yuri `",
+        "usage": "`. <Command Name>`",
+        "example": "`.anal"
     },
     "pets": {
         "name": "Pets",
