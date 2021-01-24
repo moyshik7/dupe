@@ -10,7 +10,6 @@ const qrc = require("./commands/qr.js");
 const fun = require("./commands/fun.js");
 const server = require("./commands/server");
 const mod = require("./commands/mod");
-const search = require("./commands/google");
 
 const n = new nLife();
 
