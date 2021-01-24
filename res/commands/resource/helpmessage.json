@@ -4,6 +4,59 @@
         "content": "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands catagories:\n\n**MODERATION\nMEMES\nSEARCH\nANIME\nMANGA\nCOMIC/MANGA\nPETS\nIMAGES\nNSFW\nOTHERS",
         "usage": "`.help` `<Command Catagory>`",
         "example": "`.help anime`"
+    },
+    "anime": {
+        "name": "Anime",
+        "content": "Search an Anime or get a random anime suggestion",
+        "usage": "For a random anime: `.anime`\nTo search an anime: `.anime` `<Search Term>`",
+        "example": "`.anime Kimi No Na Wa`"
+    },
+    "comic": {
+        "name": "Comic",
+        "content": "",
+        "usage": "",
+        "example": ""
+    },
+    "images": {
+        "name": "Images",
+        "content": "",
+        "usage": "",
+        "example": ""
+    },
+    "manga": {
+        "name": "Manga",
+        "content": "",
+        "usage": "",
+        "example": ""
+    },
+    "meme": {
+        "name": "Meme",
+        "content": "",
+        "usage": "",
+        "example": ""
+    },
+    "memes": {
+        "name": "Memes",
+        "content": "",
+        "usage": "",
+        "example": ""
+    },
+    "moderation": {
+        "name": "Moderation",
+        "content": "",
+        "usage": "",
+        "example": ""
+    },
+    "nsfw": {
+        "name": "NSFW",
+        "content": "",
+        "usage": "",
+        "example": ""
+    },
+    "pets": {
+        "name": "Pets",
+        "content": "",
+        "usage": "",
+        "example": ""
     }
-
 }

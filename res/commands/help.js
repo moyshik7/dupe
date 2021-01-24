@@ -16,7 +16,7 @@ const app = {
         }
 
         let emb = new Discord.MessageEmbed()
-            .setColor("#FD0061")
+            .setColor("fd0061")
             .setTitle(ho.name)
             .setDescription(ho.content)
             .addFields({ name: "\u200B", value: "\u200B" }, { name: "__**Usage**__", value: `${ho.usage || "N/A" }` }, { name: "__**Example**__", value: `${ho.example || "N/A"}` })
