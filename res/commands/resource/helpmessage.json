@@ -19,9 +19,9 @@
     },
     "images": {
         "name": "Images",
-        "content": "",
-        "usage": "",
-        "example": ""
+        "content": "`baka ` `catgirl ` `cuddle ` `foxgirl ` `hug ` `neko ` `pat ` `slap ` `tickle ` `waifu ` `wallpaper ` `woof ` `wp `",
+        "usage": "`.neko`",
+        "example": "`.wallpaper`"
     },
     "maintenance": {
         "name": "Maintenance",
@@ -37,21 +37,21 @@
     },
     "meme": {
         "name": "Meme",
-        "content": "",
-        "usage": "",
-        "example": ""
+        "content": "Get a meme",
+        "usage": "`.meme`",
+        "example": "`.meme`"
     },
     "memes": {
         "name": "Memes",
-        "content": "",
-        "usage": "",
-        "example": ""
+        "content": "Get a meme",
+        "usage": "`.meme`",
+        "example": "`.meme`"
     },
     "moderation": {
         "name": "Moderation",
-        "content": "",
-        "usage": "",
-        "example": ""
+        "content": "`.kick`",
+        "usage": "`. <Command Name>`",
+        "example": "`.kick @user`"
     },
     "nsfw": {
         "name": "NSFW",
@@ -61,7 +61,7 @@
     },
     "pets": {
         "name": "Pets",
-        "content": "",
+        "content": "`.cat ` `.dog ` `.goose ` `fox ` `.kitty ` `.meow ` `.lizard ` `.puppy `",
         "usage": "",
         "example": ""
     },
