@@ -8,12 +8,13 @@ const all = {
             let timeTaken = Date.now() - message.createdTimestamp;
             let a = message.guild.createdAt;
             let cat = a.getMonth() + "/" + a.getDate() + "/" + a.getFullYear() + "  " + a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
-	    let owner;
-	    let ooo = await client.users.fetch(message.guild.ownerID).then((gg) => {
-		owner = gg;
-	    });
+            let owner;
+            let ooo = await client.users.fetch(message.guild.ownerID).then((gg) => {
+                owner = gg;
+            });
             let embb = new Discord.MessageEmbed()
                 .setTitle(`${message.guild.name}`)
+                .setColor("fd0061")
                 .setThumbnail(`${message.guild.iconURL()}`)
                 .addFields({
                     name: '\u200B',
@@ -26,19 +27,23 @@ const all = {
                     value: `\t${message.guild.memberCount || "N/A"}`
                 }, {
                     name: "<a:earth:779933308468461599> Server region:",
-                    value: `\t${message.guild.region || "N/A"}`
+                    value: `\t${message.guild.region || "N/A"}`,
+                    inline: true
                 }, {
                     name: "<a:blob:779938621687201812> Description:",
-                    value: `\t${message.guild.description || "Not Provided"}`
+                    value: `\t${message.guild.description || "Not Provided"}`,
+                    inline: true
                 }, {
                     name: "👑 Owner:",
                     value: `\t${owner.username || "N/A"}`
                 }, {
                     name: "💬 Total channels:",
-                    value: `\t${message.guild.channels.cache.size || "N/A"}`
+                    value: `\t${message.guild.channels.cache.size || "N/A"}`,
+                    inline: true
                 }, {
                     name: "🏓 Ping :",
-                    value: `\t${timeTaken} ms`
+                    value: `\t${timeTaken} ms`,
+                    inline: true
                 }, {
                     name: '\u200B',
                     value: '\u200B'
