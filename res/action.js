@@ -312,6 +312,18 @@ const bot = {
             console.log(err);
         }
     },
+    dank: async() => {
+        try {
+            let h = await rf.fetch({
+                type: 'custom',
+                total: 1,
+                subreddit: ["dankmemes"]
+            });
+            ref.embed(bot.bd.message, h[0].title, "", h[0].image);
+        } catch (err) {
+            console.log(err);
+        }
+    },
     define: async() => {
         dic.define(bot.bd.message, bot.bd.args);
     },
@@ -760,9 +772,6 @@ const bot = {
         } catch (err) {
             console.log(err);
         }
-    },
-    memes: async() => {
-        bot.meme();
     },
     meow: async() => {
         bot.cat();

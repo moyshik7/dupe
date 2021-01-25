@@ -43,7 +43,7 @@
     },
     "memes": {
         "name": "Memes",
-        "content": "Get a meme",
+        "content": "Get a meme from the following catagory\n`.meme` Get a meme\n`.dank` Get a Dank meme",
         "usage": "`.meme`",
         "example": "`.meme`"
     },
