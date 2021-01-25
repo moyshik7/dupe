@@ -23,8 +23,12 @@ const all = {
                     name: "<a:open:779937488188735531> Created on:",
                     value: `\t${cat}`
                 }, {
+                    name: '\u200B',
+                    value: '\u200B'
+                }, {
                     name: "<a:headbump:760437043938852885> Members:",
-                    value: `\t${message.guild.memberCount || "N/A"}`
+                    value: `\t${message.guild.memberCount || "N/A"}`,
+                    inline: true
                 }, {
                     name: "<a:earth:779933308468461599> Server region:",
                     value: `\t${message.guild.region || "N/A"}`,
@@ -34,8 +38,12 @@ const all = {
                     value: `\t${message.guild.description || "Not Provided"}`,
                     inline: true
                 }, {
+                    name: '\u200B',
+                    value: '\u200B'
+                }, {
                     name: "👑 Owner:",
-                    value: `\t${owner.username || "N/A"}`
+                    value: `\t${owner.username || "N/A"}`,
+                    inline: true
                 }, {
                     name: "💬 Total channels:",
                     value: `\t${message.guild.channels.cache.size || "N/A"}`,
