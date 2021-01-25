@@ -10,6 +10,7 @@ const qrc = require("./commands/qr.js");
 const fun = require("./commands/fun.js");
 const server = require("./commands/server");
 const mod = require("./commands/mod");
+const help = require("./commands/help");
 
 const n = new nLife();
 
@@ -565,11 +566,7 @@ const bot = {
         bot.heel();
     },
     help: () => {
-        try {
-            ref.embedDes(bot.bd.message, "Welcome mortals", helpMessage.normal);
-        } catch (err) {
-            console.log(err);
-        }
+        help.Help(bot.bd.message, bot.bd.args);
     },
     hentai: async() => {
         try {
