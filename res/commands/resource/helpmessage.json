@@ -65,6 +65,12 @@
         "usage": "",
         "example": ""
     },
+    "porn": {
+        "name": "Porn",
+        "content": "Generates a random ||Porn|| image\n\n(*This is the .porn command. If you want the PORN COMMAND LIST then type *`.nsfw`)",
+        "usage": "`.porn`",
+        "example": "`.porn`"
+    },
     "search": {
         "name": "Search",
         "content": "`anime ` `comic ` `define ` `lyrics ` `manga `",
