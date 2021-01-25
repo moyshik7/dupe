@@ -893,6 +893,22 @@ const bot = {
             console.log(err);
         }
     },
+    porn: async() => {
+        try {
+            if (bot.bd.message.channel.nsfw) {
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 1,
+                    subreddit: ["porn"]
+                });
+                ref.embed(bot.bd.message, "Pervert..", "", h[0].image);
+            } else {
+                ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    },
     pp: () => {
         fun.pp(bot.bd.message, bot.bd.args);
     },
