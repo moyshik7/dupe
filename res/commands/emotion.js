@@ -16,7 +16,7 @@ const app = {
 		user1 = message.author.username;
 		user2 = args.join(" ");
 	    }else if(message.mentions.members.first()){
-		user1 = message.author.user.username;
+		user1 = message.author.username;
 		user2 = message.mentions.members.first().user.username;
 	    }else{
 		user1 = "Plubin";
