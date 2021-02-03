@@ -16,7 +16,7 @@ const app = {
                 ho = helpMessage["help"];
             }
 
-            let emb = new Discord.MessageEmbed()
+            let emb = new MessageEmbed()
                 .setColor("fd0061")
                 .setTitle(ho.name)
                 .setDescription(ho.content)
