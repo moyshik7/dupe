@@ -11,6 +11,7 @@ const fun = require("./commands/fun.js");
 const server = require("./commands/server");
 const mod = require("./commands/mod");
 const help = require("./commands/help");
+const {Pat} = require("./commands/emotion.js");
 
 const n = new nLife();
 
@@ -837,25 +838,7 @@ const bot = {
         bot.gasm();
     },
     pat: async() => {
-        try {
-            if (!bot.bd.args.length) {
-                let s = await n.sfw.pat();
-                ref.embed(bot.bd.message, "P A T", "", s.url);
-            } else {
-                let s = await n.sfw.pat();
-                let pe = bot.bd.message.mentions.members.first();
-                if (pe != undefined) {
-                    pe = pe.user.username;
-                } else if (args.length) {
-                    pe = bot.bd.args.join(" ");
-                } else {
-                    pe = "Plubin's";
-                }
-                ref.embed(bot.bd.message, `${bot.bd.message.author.username} is patting ${pe}'s head litely`, "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
-            }
-        } catch (err) {
-            console.log(err);
-        }
+        Pat(bot.bd.message, bot.bd.args);
     },
     pawg: async() => {
         try {
