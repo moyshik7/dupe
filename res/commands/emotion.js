@@ -15,10 +15,12 @@ const app = {
 	    }else if(!message.mentions.members.first() && args.length){
 		user1 = message.author.username;
 		user2 = args.join(" ");
-	    }else{
+	    }else if(message.mentions.members.first()){
 		user1 = message.author.user.username;
-		user2 = await message.mentions.members.first();
-		user2 = user2.user.username;
+		user2 = message.mentions.members.first().user.username;
+	    }else{
+		user1 = "Plubin";
+		user2 = message.author.username;
 	    }
 	    let text = `${user1} pats ${user2}'s head lightly`;
 	    let uri = await neko.sfw.hug();
