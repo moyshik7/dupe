@@ -23,7 +23,7 @@ const app = {
 		user2 = message.author.username;
 	    }
 	    let text = `${user1} pats ${user2}'s head lightly`;
-	    let uri = await neko.sfw.hug();
+	    let uri = await neko.sfw.pat();
 	    uri = uri.url;
 	    ref.embed(message,text, "Please vote us. (Use .vote)", uri);
 	} catch (err){
