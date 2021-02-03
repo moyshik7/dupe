@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 const helpList = require("./resource/helplist.json");
 const helpMessage = require("./resource/helpmessage.json");
 
