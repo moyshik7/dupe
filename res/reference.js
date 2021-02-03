@@ -11,13 +11,13 @@ const ref = {
                     .setColor(ref.randArr(color))
                     .setTitle(Title)
                     .setImage(ImageArray)
-                    .setFooter("Support us on Patreon", "https://i.imgur.com/RKVSeIv.png")
+                    .setFooter("Please Leave us a vote. [Use .vote]")
             } else if (typeof(ImageArray) === "object") {
                 a = new Discord.MessageEmbed()
                     .setColor(ref.randArr(color))
                     .setTitle(Title)
                     .setImage(ref.randArr(ImageArray))
-                    .setFooter("Support us on Patreon", "https://i.imgur.com/RKVSeIv.png")
+                    .setFooter("Please Leave us a vote. [Use .vote]")
             } else {}
             message.channel.send(a);
         } catch (err) {
