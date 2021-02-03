@@ -17,7 +17,8 @@ const app = {
 		user2 = args.join(" ");
 	    }else{
 		user1 = message.author.user.username;
-		user2 = message.mentions.members.first().username;
+		user2 = await message.mentions.members.first();
+		user2 = user2.user.username;
 	    }
 	    let text = `${user1} pats ${user2}'s head lightly`;
 	    let uri = await neko.sfw.hug();
