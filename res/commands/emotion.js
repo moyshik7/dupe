@@ -4,6 +4,28 @@ const nLife = require("nekos.life");
 const neko = new nLife();
 
 const app = {
+    Feed: async (message, args) => {
+        try {
+            let user1;
+            let user2;
+            if (!args.length) {
+                user1 = "Plubin"
+                user2 = message.author.username;
+            } else if (!message.mentions.members.first() && args.length) {
+                user1 = message.author.username;
+                user2 = args.join(" ");
+            } else {
+                user1 = message.author.username;
+                user2 = message.mentions.members.first().user.username;
+            }
+            let text = `${user1} feeds ${user2}`;
+            let uri = await neko.sfw.kiss();
+            uri = uri.url;
+            ref.embed(message, text, "", uri);
+        } catch (err) {
+            console.log(err);
+        }
+    },
     Hug: async (message, args) => {
         try {
             let user1;
