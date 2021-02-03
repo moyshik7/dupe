@@ -135,6 +135,28 @@ const app = {
         } catch (err) {
             console.log(err);
         }
+    },
+    Tickle: async (message, args) => {
+        try {
+            let user1;
+            let user2;
+            if (!args.length) {
+                user1 = "Plubin"
+                user2 = message.author.username;
+            } else if (!message.mentions.members.first() && args.length) {
+                user1 = message.author.username;
+                user2 = args.join(" ");
+            } else {
+                user1 = message.author.username;
+                user2 = message.mentions.members.first().user.username;
+            }
+            let text = `${user1} tickles ${user2}. ${user2} dies of laughing`;
+            let uri = await neko.sfw.tickle();
+            uri = uri.url;
+            ref.embed(message, text, "", uri);
+        } catch (err) {
+            console.log(err);
+        }
     }
 }
 
