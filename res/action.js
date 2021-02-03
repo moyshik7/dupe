@@ -1160,7 +1160,7 @@ const bot = {
         }
     },
     vote: () => {
-        let VoteList = "[DiscordBotList.com](https://discordbotlist.com/bots/plubin)\n[Top.gg](https://top.gg/bot/748160981766635540/vote)\n[Discord.Bots.gg](https://discord.bots.gg/bots/748160981766635540)";
+        let VoteList = "[Top.gg](https://top.gg/bot/748160981766635540/vote)\nIt really helps us a lot";
         ref.embedDes(bot.bd.message, "Please leave me a vote", VoteList);
     },
     waifu: async() => {
