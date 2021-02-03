@@ -11,7 +11,7 @@ const fun = require("./commands/fun.js");
 const server = require("./commands/server");
 const mod = require("./commands/mod");
 const help = require("./commands/help");
-const {Pat} = require("./commands/emotion.js");
+const {Baka, Cuddle, Feed, Hug, Kiss, Pat, Poke, Tickle} = require("./commands/emotion.js");
 
 const n = new nLife();
 
@@ -79,12 +79,7 @@ const bot = {
         mod.Avatar(bot.bd.message);
     },
     baka: async() => {
-        try {
-            let s = await n.sfw.baka();
-            ref.embed(bot.bd.message, "Baka", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
-        } catch (err) {
-            console.log(err);
-        }
+	Baka(bot.bd.message,bot.bd.args);
     },
     bbc: async() => {
         try {
@@ -281,18 +276,7 @@ const bot = {
         bot.cumsluts();
     },
     cuddle: async() => {
-        try {
-            if (!bot.bd.args.length) {
-                let s = await n.sfw.cuddle();
-                ref.embed(bot.bd.message, `${bot.bd.message.author.username} is cuddling me`, "", s.url);
-            } else {
-                let s = await n.sfw.cuddle();
-                let pe = bot.bd.message.mentions.members.first().user.username || bot.bd.args.join(" ");
-                ref.embed(bot.bd.message, `${bot.bd.message.author.username} cuddled ${pe}`, "", s.url);
-            }
-        } catch (err) {
-            console.log(err);
-        }
+        Cuddle(bot.bd.message, bot.bd.args);
     },
     cumslut: async() => {
         bot.cumsluts(bot.bd.message, bot.bd.args);
@@ -410,6 +394,9 @@ const bot = {
     },
     erotic: () => {
         bot.ero(bot.bd.message, bot.bd.args);
+    },
+    feed: async() => {
+	Feed(bot.bd.message,bot.bd.args);
     },
     feet: async() => {
         try {
@@ -619,19 +606,7 @@ const bot = {
         }
     },
     hug: async() => {
-        try {
-            if (!bot.bd.args.length) {
-                let s = await n.sfw.hug();
-                ref.embed(bot.bd.message, "H U G", "", s.url);
-            } else {
-                let s = await n.sfw.hug();
-                let pe = bot.bd.message.mentions.members.first();
-                pe = pe ? pe.user.username : bot.bd.args.join(" ");
-                ref.embed(bot.bd.message, `${bot.bd.message.author.username} hugged ${pe} tightly ♥️`, "", s.url);
-            }
-        } catch (err) {
-            console.log(err);
-        }
+        Hug(bot.bd.message,bot.bd.args);
     },
     indian: async() => {
         try {
@@ -674,6 +649,9 @@ const bot = {
     },
     kick: () => {
         mod.Kick(bot.bd.message, bot.bd.args);
+    },
+    kiss: async() => {
+	Kiss(bot.bd.message,bot.bd.args);
     },
     kitty: async() => {
         try {
@@ -867,23 +845,7 @@ const bot = {
         bot.pp();
     },
     poke: async() => {
-        try {
-            if (!bot.bd.args.length) {
-                let s = await n.sfw.poke();
-                ref.embed(bot.bd.message, "Poke", "", s.url);
-            } else {
-                let s = await n.sfw.poke();
-                let pe = bot.bd.message.mentions.members.first();
-                if (pe != undefined) {
-                    pe = pe.user.username;
-                } else {
-                    pe = bot.bd.args.join(" ");
-                }
-                ref.embed(bot.bd.message, `${bot.bd.message.author.username} keeps poking ${pe}`, "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
-            }
-        } catch (err) {
-            console.log(err);
-        }
+        Poke(bot.bd.message,bot.bd.args);
     },
     porn: async() => {
         try {
@@ -1089,23 +1051,7 @@ const bot = {
         }
     },
     tickle: async() => {
-        try {
-            if (!bot.bd.args.length) {
-                let s = await n.sfw.tickle();
-                ref.embed(bot.bd.message, "Tickle", "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
-            } else {
-                let s = await n.sfw.tickle();
-                let pe = bot.bd.message.mentions.members.first();
-                if (pe != undefined) {
-                    pe = pe.user.username;
-                } else {
-                    pe = bot.bd.args.join(" ");
-                }
-                ref.embed(bot.bd.message, `${bot.bd.message.author.username} keeps tickling ${pe}`, "[Support us on Patreon](https://www.patreon.com/plubin)", s.url);
-            }
-        } catch (err) {
-            console.log(err);
-        }
+        Tickle(bot.bd.message,bot.bd.args);
     },
     tiny: async() => {
         try {
