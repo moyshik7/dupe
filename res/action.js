@@ -7,7 +7,7 @@ const anime = require("./commands/anime.js");
 const lyric = require("./commands/lyrics.js");
 const dic = require("./commands/define.js");
 const qrc = require("./commands/qr.js");
-const {PP} = require("./commands/fun.js");
+const {PP, Gay} = require("./commands/fun.js");
 const server = require("./commands/server");
 const mod = require("./commands/mod");
 const help = require("./commands/help");
@@ -477,6 +477,9 @@ const bot = {
         } catch (err) {
             console.log(err);
         }
+    },
+    gay: () => {
+	Gay(bot.bd.message, bot.bd.args);
     },
     glass: () => {
         bot.glasses(bot.bd.message, bot.bd.args);
