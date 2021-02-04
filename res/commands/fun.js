@@ -1,8 +1,7 @@
-const Discord = require('discord.js');
 const ref = require('./../reference.js');
 
 let app = {
-    pp: (message, args) => {
+    PP: (message, args) => {
         try {
             let ym = ref.randInt(0, 12);
             let yp = "8";
