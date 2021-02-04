@@ -58,11 +58,15 @@ client.on('ready', () => {
 
 client.on("guildCreate", guild => {
     console.log(`Joined Guild : ${guild.name}`);
-})
+});
+
+client.on("guildDelete", guild => {
+    console.log(`Left Guild : ${guild.name}`);
+});
 
 dbl.on('error', e => {
     console.log(`Oops! ${e}`);
-})
+});
 
 server.all('/', (req, res) => {
     res.send('Plubin is up');
