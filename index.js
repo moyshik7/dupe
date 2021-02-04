@@ -47,7 +47,6 @@ client.on("message", (message) => {
     }
 });
 client.login(process.env.BOT_TOKEN);
-//Just adding a comment
 
 client.on('ready', () => {
     setInterval(() => {
@@ -60,15 +59,21 @@ client.on('ready', () => {
 });
 
 client.on("guildCreate", guild => {
-    console.log(`Joined Guild : ${guild.name}`);
-    let c = client.channels.cache.get('806905770393993246');
-    c.send(`Joined guild : ${guild.name}\nID : ${guild.id}`);
+    try {
+        let c = client.channels.cache.get('806905770393993246');
+        c.send(`Joined guild : ${guild.name}\nID : ${guild.id}`);
+    } catch (err) {
+        console.log(err);
+    }
 });
 
 client.on("guildDelete", guild => {
-    console.log(`Left Guild : ${guild.name}`);
-    let c = client.channels.cache.get('806905770393993246');
-    c.send(`Left guild : ${guild.name}\nID : ${guild.id}`);
+    try {
+        let c = client.channels.cache.get('806905770393993246');
+        c.send(`Left guild : ${guild.name}\nID : ${guild.id}`);
+    } catch (err) {
+        console.log(err);
+    }
 });
 
 dbl.on('error', e => {
