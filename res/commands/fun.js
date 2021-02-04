@@ -35,7 +35,7 @@ let app = {
     Gay : (message, args) => {
 	try{
 	    let g = ref.randInt(0,100);
-	    ref.embedDes(message, `${message.author.username} is ${g}% gay`, "Gay meter" 
+	    ref.embedDes(message, `${message.author.username} is ${g}% gay`, "Gay meter");
 	} catch(err){
 	    console.log(err);
 	}
