@@ -21,7 +21,10 @@ client.once("ready", () => {
 client.on("message", (message) => {
     try {
         if (message.author.bot || (!message.guild && message.author.id != 584309117380853770)) {
-            return (false);
+            if (!message.guild) {
+                message.channel.send("Commands are only workable at Servers / Guilds\nNo DM commands for security purposes");
+            }
+            return(false);
         } else {
             let msg = message.content;
             if (msg[0] === token) {
