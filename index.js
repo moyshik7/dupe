@@ -49,12 +49,17 @@ client.login(process.env.BOT_TOKEN);
 client.on('ready', () => {
     setInterval(() => {
         try {
-            dbl.postStats(client.guilds.size /*, client.shards.Id, client.shards.total*/ );
+            dbl.postStats(client.guilds.size /*, client.shards.Id, client.shards.total*/);
         } catch (err) {
             console.log(err);
         }
     }, 300000);
 });
+
+client.on("guildCreate", guild => {
+    console.log(`Joined Guild : ${guild.name}`);
+})
+
 dbl.on('error', e => {
     console.log(`Oops! ${e}`);
 })
