@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 const ref = require("./../reference");
 
 const all = {
-    server: async(message, args, client) => {
+    Server: async(message, args, client) => {
         try {
             let timeTaken = Date.now() - message.createdTimestamp;
             let a = message.guild.createdAt;
