@@ -1,17 +1,20 @@
 const Discord = require("discord.js");
 const rf = require("reddit-image-fetcher");
-const ref = require("./reference.js");
+const ref = require("./reference");
 const nLife = require("nekos.life");
 
-const anime = require("./commands/anime.js");
-const lyric = require("./commands/lyrics.js");
-const dic = require("./commands/define.js");
-const qrc = require("./commands/qr.js");
-const {PP, Gay} = require("./commands/fun.js");
-const server = require("./commands/server");
+const anime = require("./commands/anime");
+const lyric = require("./commands/lyrics");
+const dic = require("./commands/define");
+const qrc = require("./commands/qr");
+const {
+    PP,
+    Gay
+} = require("./commands/fun");
+const {Server} = require("./commands/server");
 const mod = require("./commands/mod");
 const help = require("./commands/help");
-const {Baka, Cuddle, Feed, Hug, Kiss, Pat, Poke, Tickle} = require("./commands/emotion.js");
+const {Baka,Cuddle,Feed,Hug,Kiss,Pat,Poke,Tickle} = require("./commands/emotion");
 
 const n = new nLife();
 
@@ -79,7 +82,7 @@ const bot = {
         mod.Avatar(bot.bd.message);
     },
     baka: async() => {
-	Baka(bot.bd.message,bot.bd.args);
+        Baka(bot.bd.message, bot.bd.args);
     },
     bbc: async() => {
         try {
@@ -396,7 +399,7 @@ const bot = {
         bot.ero(bot.bd.message, bot.bd.args);
     },
     feed: async() => {
-	Feed(bot.bd.message,bot.bd.args);
+        Feed(bot.bd.message, bot.bd.args);
     },
     feet: async() => {
         try {
@@ -479,7 +482,7 @@ const bot = {
         }
     },
     gay: () => {
-	Gay(bot.bd.message, bot.bd.args);
+        Gay(bot.bd.message, bot.bd.args);
     },
     glass: () => {
         bot.glasses(bot.bd.message, bot.bd.args);
@@ -609,7 +612,7 @@ const bot = {
         }
     },
     hug: async() => {
-        Hug(bot.bd.message,bot.bd.args);
+        Hug(bot.bd.message, bot.bd.args);
     },
     indian: async() => {
         try {
@@ -654,7 +657,7 @@ const bot = {
         mod.Kick(bot.bd.message, bot.bd.args);
     },
     kiss: async() => {
-	Kiss(bot.bd.message,bot.bd.args);
+        Kiss(bot.bd.message, bot.bd.args);
     },
     kitty: async() => {
         try {
@@ -848,7 +851,7 @@ const bot = {
         bot.pp();
     },
     poke: async() => {
-        Poke(bot.bd.message,bot.bd.args);
+        Poke(bot.bd.message, bot.bd.args);
     },
     porn: async() => {
         try {
@@ -930,7 +933,7 @@ const bot = {
         }
     },
     server: async() => {
-        server.server(bot.bd.message, bot.bd.args, bot.bd.client);
+        Server(bot.bd.message, bot.bd.args, bot.bd.client);
     },
     short: async() => {
         try {
@@ -1054,7 +1057,7 @@ const bot = {
         }
     },
     tickle: async() => {
-        Tickle(bot.bd.message,bot.bd.args);
+        Tickle(bot.bd.message, bot.bd.args);
     },
     tiny: async() => {
         try {
@@ -1171,15 +1174,15 @@ module.exports = bot;
 
 const helpMessage = {
     normal: "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands:\n" +
-        "\n**Image and Gif:**\n**SFW**\n`baka ` `cat ` `catgirl ` `cuddle ` `dog ` `fox ` `foxgirl ` `goose ` `hug ` `kitty ` `lizard ` `meme ` `memes ` `meow ` `neko ` `pat ` `puppy ` `slap ` `tickle ` `waifu ` `wallpaper ` `woof ` `wp `\n" +
-        "\n**NSFW**\n`anal ` `asian ` `asians ` `bbc ` `bdsm ` `bj ` `black ` `blonde ` `blowjob ` `boob ` `boobs ` `butt ` `butts ` `catgirl ` `celebrity ` `christmas ` `classic ` `cs ` `cumslut ` `cumsluts ` `dickgirl ` `dickgirls ` `ebony ` `ero ` `erotic ` `feet ` `femdom ` `filipino ` `gasm ` `glass ` `glasses ` `hal ` `halloween ` `hardcore ` `heel ` `heels ` `hentai ` `holo ` `indian ` `japanese ` `korean ` `kuni  ` `lewd ` `long ` `longhair ` `milf ` `milfs ` `mom ` `moms ` `neko ` `oil `  `orgasm ` `pawg ` `pussy ` `red ` `redhead ` `redheads ` `short ` `shorthair ` `spank ` `tan ` `tentacle ` `tentacles ` `thick ` `tits ` `tiny ` `trap ` `xmas ` `yaoi ` `yuri `\n" +
-        "\n" +
-        "\n**Search:**\n`anime ` `comic ` `define ` `lyrics ` `manga `\n" +
-        "\n" +
-        "\n**Maintenance:**\n`avatar ` `emojis ` `help / h ` `invite ` `ping ` `server `\n" +
-        "\n" +
-        "\n**Fun:**\n`peanus ` `penis ` `pp `\n" +
-        "\n" +
-        "\n**Others:**\n `qr `\n" +
-        "\n\nNote: NSFW commands are for NSFW channels only"
+    "\n**Image and Gif:**\n**SFW**\n`baka ` `cat ` `catgirl ` `cuddle ` `dog ` `fox ` `foxgirl ` `goose ` `hug ` `kitty ` `lizard ` `meme ` `memes ` `meow ` `neko ` `pat ` `puppy ` `slap ` `tickle ` `waifu ` `wallpaper ` `woof ` `wp `\n" +
+    "\n**NSFW**\n`anal ` `asian ` `asians ` `bbc ` `bdsm ` `bj ` `black ` `blonde ` `blowjob ` `boob ` `boobs ` `butt ` `butts ` `catgirl ` `celebrity ` `christmas ` `classic ` `cs ` `cumslut ` `cumsluts ` `dickgirl ` `dickgirls ` `ebony ` `ero ` `erotic ` `feet ` `femdom ` `filipino ` `gasm ` `glass ` `glasses ` `hal ` `halloween ` `hardcore ` `heel ` `heels ` `hentai ` `holo ` `indian ` `japanese ` `korean ` `kuni  ` `lewd ` `long ` `longhair ` `milf ` `milfs ` `mom ` `moms ` `neko ` `oil `  `orgasm ` `pawg ` `pussy ` `red ` `redhead ` `redheads ` `short ` `shorthair ` `spank ` `tan ` `tentacle ` `tentacles ` `thick ` `tits ` `tiny ` `trap ` `xmas ` `yaoi ` `yuri `\n" +
+    "\n" +
+    "\n**Search:**\n`anime ` `comic ` `define ` `lyrics ` `manga `\n" +
+    "\n" +
+    "\n**Maintenance:**\n`avatar ` `emojis ` `help / h ` `invite ` `ping ` `server `\n" +
+    "\n" +
+    "\n**Fun:**\n`peanus ` `penis ` `pp `\n" +
+    "\n" +
+    "\n**Others:**\n `qr `\n" +
+    "\n\nNote: NSFW commands are for NSFW channels only"
 };
