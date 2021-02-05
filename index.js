@@ -25,7 +25,7 @@ client.on("message", (message) => {
                 message.channel.send("The message has been delivered to the owner");
                 if(message.content.length <= 1800){
                     let c = client.channels.cache.get('807175797340504114');
-                    c.send(`DM by : ${message.author}\n>>> ${message.content}`);
+                    c.send(`DM by : ${message.author} / ${message.author.username}\n>>> ${message.content}`);
                 }
             }
             return(false);
