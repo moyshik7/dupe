@@ -21,11 +21,11 @@ client.once("ready", () => {
 client.on("message", (message) => {
     try {
         if (message.author.bot || (!message.guild && message.author.id != 584309117380853770)) {
-            if (!message.guild) {
+            if (!message.guild && !message.author.bot) {
                 message.channel.send("The message has been delivered to the owner");
                 if(message.content.length <= 1800){
                     let c = client.channels.cache.get('807175797340504114');
-                    c.send(`DM by : ${message.author}\n >>> ${message.content}`);
+                    c.send(`DM by : ${message.author}\n>>> ${message.content}`);
                 }
             }
             return(false);
