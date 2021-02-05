@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 
 const ref = require("./../reference");
 
@@ -12,7 +12,7 @@ const all = {
             let ooo = await client.users.fetch(message.guild.ownerID).then((gg) => {
                 owner = gg;
             });
-            let embb = new Discord.MessageEmbed()
+            let embb = new MessageEmbed()
                 .setTitle(`${message.guild.name}`)
                 .setColor("fd0061")
                 .setThumbnail(`${message.guild.iconURL()}`)
@@ -61,6 +61,34 @@ const all = {
         } catch (err) {
             console.log(err);
         }
+    },
+    Status : (message,client) => {
+        try{
+            if(message.author.id == "584309117380853770"){
+                let totalServers = 0;
+                let totalUsers = 0;
+                client.guilds.cache.forEach(a => {
+                    totalServers++;
+                    totalUsers += a.memberCount || 0;
+                });
+                let emb = new MessageEmbed()
+                    .setTitle("Plubin's Status :")
+                    .setColor("fd0061")
+                    .addFields({
+                        name: "Status :",
+                        value: "Online (Idle)"
+                    },{
+                        name: "Servers :",
+                        value: `${totalServers}`
+                    },{
+                        name: "Users :",
+                        value: `${totalUsers}`
+                    });
+                message.channel.send(emb);
+            }
+        } catch (err){
+            console.log(err);
+        }
     }
-}
+};
 module.exports = all;

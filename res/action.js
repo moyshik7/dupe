@@ -7,11 +7,8 @@ const anime = require("./commands/anime");
 const lyric = require("./commands/lyrics");
 const dic = require("./commands/define");
 const qrc = require("./commands/qr");
-const {
-    PP,
-    Gay
-} = require("./commands/fun");
-const {Server} = require("./commands/server");
+const {PP,Gay} = require("./commands/fun");
+const {Server,Status} = require("./commands/server");
 const mod = require("./commands/mod");
 const help = require("./commands/help");
 const {Baka,Cuddle,Feed,Hug,Kiss,Pat,Poke,Tickle} = require("./commands/emotion");
@@ -26,7 +23,7 @@ const bot = {
     },
     allservers: () => {
         try {
-            if (bot.bd.message.author.id == 584309117380853770) {
+            if (bot.bd.message.author.id == "584309117380853770") {
                 let totalServers = 0;
                 let totalUsers = 0;
                 bot.bd.client.guilds.cache.forEach(a => {
@@ -1004,6 +1001,9 @@ const bot = {
         } catch (err) {
             console.log(err);
         }
+    },
+    status: () => {
+        Status(bot.bd.message, bot.bd.client);
     },
     tan: async() => {
         try {
