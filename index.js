@@ -61,7 +61,7 @@ client.on('ready', () => {
 client.on("guildCreate", guild => {
     try {
         let c = client.channels.cache.get('806905770393993246');
-        c.send(`Joined guild : ${guild.name}\nID : ${guild.id}`);
+        c.send(`Joined guild : ${guild.name}\nID : ${guild.id}\nMembers : ${guild.memberCount}`);
     } catch (err) {
         console.log(err);
     }
@@ -70,7 +70,7 @@ client.on("guildCreate", guild => {
 client.on("guildDelete", guild => {
     try {
         let c = client.channels.cache.get('806905770393993246');
-        c.send(`Left guild : ${guild.name}\nID : ${guild.id}`);
+        c.send(`Left guild : ${guild.name}\nID : ${guild.id}\nMembers : ${guild.memberCount}`);
     } catch (err) {
         console.log(err);
     }
