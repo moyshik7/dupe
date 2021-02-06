@@ -30,6 +30,9 @@ client.on("message", (message) => {
             }
             return(false);
         } else {
+	    if (message.mentions.has(client.user.id)) {
+                message.channel.send("Sup, human?\nMy prefix for this server is `.`\nUse `.help` to continue");
+            };
             let msg = message.content;
             if (msg[0] === token) {
                 let command = msg.slice(1);
