@@ -30,6 +30,9 @@ client.on("message", (message) => {
             }
             return(false);
         } else {
+	    if (message.content.includes("@here") || message.content.includes("@everyone")){
+		return(false);
+	    }
 	    if (message.mentions.has(client.user.id)) {
                 message.channel.send("Sup, human?\nMy prefix for this server is `.`\nUse `.help` to continue");
             };
