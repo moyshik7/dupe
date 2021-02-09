@@ -1,7 +1,7 @@
 {
     "help": {
         "name": "Help",
-        "content": "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands catagories:\n\n**🟣 ANIME\n\n🟢 MANGA** aka **COMIC\n\n⚪ MEMES\n\n🟤 PETS\n\n⚫ IMAGES\n\n🟠 SEARCH\n\n🟡 MAINTENANCE\n\n🔵 MODERATION\n\n🔴 OTHERS\n\n🟥🟥 NSFW** aka **PORN** 😈",
+        "content": "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands catagories:\n\n**🟣 ANIME\n\n🟢 MANGA** aka **COMIC\n\n⚪ MEMES\n\n🟤 PETS\n\n⚫ IMAGES\n\n🟠 SEARCH\n\n🟡 MAINTENANCE\n\n🔵 MODERATION\n\n🔴 OTHERS\n\n♥️  NSFW** aka  ||PORN|| 😈",
         "usage": "`.help` `<Command Catagory>`",
         "example": "`.help anime`"
     },
@@ -63,7 +63,8 @@
         "name": "NSFW",
         "content": "__**STYLE**__\nanal\nblowjob / bj\nboob / boobs\nbutt / butts\nhardcore\nmilf / milfs\n mom / moms\npussy\nthick\ntits\n\n__**KINKS**__\nbdsm\nneko / catgirl\nclassic\ncumslut / cs\ndickgirl / dickgirls\nfeet\nfemdom\nglass / glasses\nheel / heels\nholo\nlonghair / long\noil\norgasm / gasm\npawg\nredhead / red\nshorthair / short\nspank\ntan\ntentacle / tentacles\ntiny\ntrap\nyaoi\nyuri\n\n__**RACES**__\nasian / asians\nbbc\nblack\nblonde\nebony\nfilipino\nindian\njapanese\nkorean\n\n__**SPECIAL :**__\ncelebrity\nerotic / ero\nhentai\nkuni\nlewd\n\n__**HOLIDAY**__\nchrismas / xmas\nhalloween / hal\n\n**NSFW commands are for NSFW channels only**",
         "usage": "`. <Command Name>`",
-        "example": "`.hentai`"
+        "example": "`.hentai`",
+	"nsfw": "true"
     },
     "pets": {
         "name": "Pets",
@@ -75,7 +76,8 @@
         "name": "Porn",
         "content": "Generates a random ||Porn|| image\n\n(*This is the .porn command. If you want the PORN COMMAND LIST then type *`.nsfw`)",
         "usage": "`.porn`",
-        "example": "`.porn`"
+        "example": "`.porn`",
+	"nsfw": "true"
     },
     "search": {
         "name": "Search",
