@@ -541,7 +541,7 @@ const bot = {
                     total: 1,
                     subreddit: ["nsfwhardcore"]
                 });
-                ref.embed(bot.bd.message, "Asian", "", h[0].image);
+                ref.embed(bot.bd.message, "Hardcore", "", h[0].image);
             } else {
                 ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
             }
