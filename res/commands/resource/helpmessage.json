@@ -1,7 +1,7 @@
 {
     "help": {
         "name": "Help",
-        "content": "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands catagories:\n\n**🟣 ANIME\n`.help anime`\n\n🟢 MANGA** aka **COMIC\n`.help manga`\n\n⚪ MEMES\n\`help  memes` \n\n🟤 PET\n`.help pets`\n\n⚫ IMAGES\n`.help images`\n\n🟠SEARCH\n`.help search`\n\n🟡 MAINTENANCE\n`.help maintenance`\n\n🔵 MODERATION\n`.help moderation`\n\n🔴 OTHERS\n`.help others`\n\n♥️  NSFW** aka  ||PORN|| 😈\n`.help nsfw`",
+        "content": "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands catagories:\n\n**🟣 ANIME\n`.help anime`\n\nMANGA** aka **COMIC\n`.help manga`n\nMEMES\n`help  memes` \n\nPET\n`.help pets`\n\nIMAGES\n`.help images`\n\nSEARCH\n`.help search`\n\nMAINTENANCE\n`.help maintenance`\n\nMODERATION\n`.help moderation`\n\nOTHERS\n`.help others`\n\nNSFW** aka  ||PORN|| 😈\n`.help nsfw`",
         "usage": "`.help` `<Command Catagory>`",
         "example": "`.help anime`"
     },
