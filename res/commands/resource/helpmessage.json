@@ -50,7 +50,7 @@
     "memes": {
         "name": "Memes",
         "content": "Get a meme from the following catagory\n`.meme` \t\t:Get a meme\n`.dank` \t\t:Get a Dank meme",
-        "usage": "`.meme`",
+        "usage": "`.<Command Name>`",
         "example": "`.meme`"
     },
     "moderation": {
