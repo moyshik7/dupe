@@ -1,7 +1,7 @@
 {
     "help": {
         "name": "Help",
-        "content": "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands catagories:\n\n**🟣 ANIME\n\n🟢 MANGA** aka **COMIC\n\n⚪ MEMES\n\n🟤 PETS\n\n⚫ IMAGES\n\n🟠 SEARCH\n\n🟡 MAINTENANCE\n\n🔵 MODERATION\n\n🔴 OTHERS\n\n♥️  NSFW** aka  ||PORN|| 😈",
+        "content": "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands catagories:\n\n**🟣 ANIME\n`.help anime`\n\n🟢 MANGA** aka **COMIC\n`.help manga`\n\n⚪ MEMES\n\`help  memes` \n\n🟤 PET\n`.help pets`\n\n⚫ IMAGES\n`.help images`\n\n🟠SEARCH\n`.help search`\n\n🟡 MAINTENANCE\n`.help maintenance`\n\n🔵 MODERATION\n`.help moderation`\n\n🔴 OTHERS\n`.help others`\n\n♥️  NSFW** aka  ||PORN|| 😈\n`.help nsfw`",
         "usage": "`.help` `<Command Catagory>`",
         "example": "`.help anime`"
     },
@@ -24,10 +24,10 @@
         "example": "`.neko`"
     },
     "fun" : {
-	"name" : "Fun",
-	"content" : "`pp ` `peanus ` `gay `",
-	"usage" : "`. <Command Name>`",
-	"example": "`.neko`"
+        "name" : "Fun",
+        "content" : "`pp ` `peanus ` `gay `",
+        "usage" : "`. <Command Name>`",
+        "example": "`.neko`"
     },
     "maintenance": {
         "name": "Maintenance",
@@ -64,7 +64,7 @@
         "content": "__**STYLE**__\nanal\nblowjob / bj\nboob / boobs\nbutt / butts\nhardcore\nmilf / milfs\n mom / moms\npussy\nthick\ntits\n\n__**KINKS**__\nbdsm\nneko / catgirl\nclassic\ncumslut / cs\ndickgirl / dickgirls\nfeet\nfemdom\nglass / glasses\nheel / heels\nholo\nlonghair / long\noil\norgasm / gasm\npawg\nredhead / red\nshorthair / short\nspank\ntan\ntentacle / tentacles\ntiny\ntrap\nyaoi\nyuri\n\n__**RACES**__\nasian / asians\nbbc\nblack\nblonde\nebony\nfilipino\nindian\njapanese\nkorean\n\n__**SPECIAL :**__\ncelebrity\nerotic / ero\nhentai\nkuni\nlewd\n\n__**HOLIDAY**__\nchrismas / xmas\nhalloween / hal\n\n**NSFW commands are for NSFW channels only**",
         "usage": "`. <Command Name>`",
         "example": "`.hentai`",
-	"nsfw": "true"
+        "nsfw": "true"
     },
     "pets": {
         "name": "Pets",
@@ -77,7 +77,7 @@
         "content": "Generates a random ||Porn|| image\n\n(*This is the .porn command. If you want the PORN COMMAND LIST then type *`.nsfw`)",
         "usage": "`.porn`",
         "example": "`.porn`",
-	"nsfw": "true"
+        "nsfw": "true"
     },
     "search": {
         "name": "Search",
