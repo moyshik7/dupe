@@ -13,7 +13,7 @@ const ref = require("./res/reference");
 
 client.once("ready", () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity('.h or .help', {
+    client.user.setActivity('Ping me for help', {
         type: "LISTENING"
     });
     client.user.setStatus('idle');
