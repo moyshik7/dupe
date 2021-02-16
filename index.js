@@ -60,13 +60,15 @@ client.login(process.env.BOT_TOKEN);
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setPresence({
+    /*client.user.setPresence({
         game:{
             name: "Ping me for help",
 	    type: 0
         },
         status:'idle'
-    });
+    });*/
+    client.user.setActivity('Ping me for help');
+    client.user.setStatus('idle');
     setInterval(() => {
         try {
             dbl.postStats(client.guilds.size /*, client.shards.Id, client.shards.total*/);
@@ -77,13 +79,6 @@ client.on('ready', () => {
     }, 300000);
 });
 
-/*setInterval( () => {
-    client.user.setActivity('Ping me for help', {
-	    type : "PLAYING"
-    })
-    client.user.setStatus('idle');
-}, 3000);
-*/
 client.on("guildCreate", guild => {
     try {
         let c = client.channels.cache.get('806905770393993246');
