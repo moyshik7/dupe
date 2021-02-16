@@ -68,7 +68,7 @@
     },
     "pets": {
         "name": "Pets",
-        "content": "cat\t\t:Gives a cat / kitty image\ndog\t\t:Gives a dog / puppy image\ngoose\t\t:You like gooses ?\nfox\t\t:Foxes are cute right ?\nkitty\t\t:Gives a kitty / cat image\nmeow\t\t:Same as `cat` or `kitty`\nlizard\t\t:Don't use this\npuppy\t\tGives a puppy image",
+        "content": "cat\t\t\t:Gives a cat / kitty image\ndog\t\t\t:Gives a dog / puppy image\ngoose\t\t\t:You like gooses ?\nfox\t\t:Foxes are cute right ?\nkitty\t\t\t:Gives a kitty / cat image\nmeow\t\t\t:Same as `cat` or `kitty`\nlizard\t\t\t:Don't use this\npuppy\t\t\t:Gives a puppy image",
         "usage": "`. <Command Name>`",
         "example": "`.cat`"
     },
