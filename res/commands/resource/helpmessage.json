@@ -1,7 +1,7 @@
 {
     "help": {
         "name": "Help",
-        "content": "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands catagories:\n\n<:rem_straight_face:810855685892866068> **ANIME**\n`.help anime`\n\n<:fujoshi_yay:810855588703240193> **MANGA** aka **COMIC**\n`.help manga`\n\n<a:pepe_joy:811150091045437461> **MEMES**\n`help  memes` \n\n<:cool_puppy:810855567455027230> **PETS**\n`.help pets`\n\n**IMAGES**\n`.help images`\n\nSEARCH\n`.help search`\n\n<:settings:810855545811632128> **MAINTENANCE**\n`.help maintenance`\n\n<:pc_ram:811150068785872937> **MODERATION**\n`.help moderation`\n\n<:eggplant_joker:811150110611996673> **OTHERS**\n`.help others`\n\n<:devil:810855626519478282> **NSFW** aka  ||\tPORN\t||\n`.help nsfw`",
+        "content": "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands catagories:\n\n<:rem_straight_face:810855685892866068> **ANIME**\n`.help anime`\n\n<:fujoshi_yay:810855588703240193> **MANGA** aka **COMIC**\n`.help manga`\n\n<a:pepe_joy:811150091045437461> **MEMES**\n`.help  memes` \n\n<:cool_puppy:810855567455027230> **PETS**\n`.help pets`\n\n**IMAGES**\n`.help images`\n\n**SEARCH**\n`.help search`\n\n<:settings:810855545811632128> **MAINTENANCE**\n`.help maintenance`\n\n<:pc_ram:811150068785872937> **MODERATION**\n`.help moderation`\n\n<:eggplant_joker:811150110611996673> **OTHERS**\n`.help others`\n\n<:devil:810855626519478282> **NSFW** aka  ||\tPORN\t||\n`.help nsfw`",
         "usage": "`.help` `<Command Catagory>`",
         "example": "`.help anime`"
     },
