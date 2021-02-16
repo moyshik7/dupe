@@ -11,13 +11,13 @@ const cList = require("./res/commands.json");
 const bot = require("./res/action");
 const ref = require("./res/reference");
 
-client.once("ready", () => {
+/*client.once("ready", () => {
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setActivity('Ping me for help', {
         type: "PLAYING"
     });
     client.user.setStatus('idle');
-});
+});*/
 client.on("message", (message) => {
     try {
         if (message.author.bot || (!message.guild && message.author.id != 584309117380853770)) {
@@ -59,14 +59,23 @@ client.on("message", (message) => {
 client.login(process.env.BOT_TOKEN);
 
 client.on('ready', () => {
+    console.log(`Logged in as ${client.user.tag}!`);
     setInterval(() => {
         try {
             dbl.postStats(client.guilds.size /*, client.shards.Id, client.shards.total*/);
         } catch (err) {
+            console.log("DBL error");
             console.log(err);
         }
     }, 300000);
 });
+
+setInterval( () => {
+    client.user.setActivity('Ping me for help', {
+	    type : "PLAYING"
+    })
+    client.user.setStatus('idle');
+}, 3000);
 
 client.on("guildCreate", guild => {
     try {
