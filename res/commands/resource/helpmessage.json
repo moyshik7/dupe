@@ -1,7 +1,7 @@
 {
     "help": {
         "name": "Help",
-        "content": "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands catagories:\n\n**ANIME\n`.help anime`\n\nMANGA** aka **COMIC\n`.help manga`\n\nMEMES\n`help  memes` \n\nPET\n`.help pets`\n\nIMAGES\n`.help images`\n\nSEARCH\n`.help search`\n\nMAINTENANCE\n`.help maintenance`\n\nMODERATION\n`.help moderation`\n\nOTHERS\n`.help others`\n\nNSFW** aka  ||PORN|| 😈\n`.help nsfw`",
+        "content": "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands catagories:\n\n<:rem_straight_face:810855685892866068> **ANIME**\n`.help anime`\n\n<:fujoshi_yay:810855588703240193> **MANGA** aka **COMIC**\n`.help manga`\n\n**MEMES**\n`help  memes` \n\n<:cool_puppy:810855567455027230> **PETS**\n`.help pets`\n\n**IMAGES**\n`.help images`\n\nSEARCH\n`.help search`\n\n<:settings:810855545811632128> **MAINTENANCE**\n`.help maintenance`\n\n**MODERATION**\n`.help moderation`\n\n**OTHERS**\n`.help others`\n\n<:devil:810855626519478282> **NSFW** aka  ||\tPORN\t||\n`.help nsfw`",
         "usage": "`.help` `<Command Catagory>`",
         "example": "`.help anime`"
     },
@@ -61,14 +61,14 @@
     },
     "nsfw": {
         "name": "NSFW",
-        "content": "__**STYLE**__\nanal\nblowjob / bj\nboob / boobs\nbutt / butts\nhardcore\nmilf / milfs\n mom / moms\npussy\nthick\ntits\n\n__**KINKS**__\nbdsm\nneko / catgirl\nclassic\ncumslut / cs\ndickgirl / dickgirls\nfeet\nfemdom\nglass / glasses\nheel / heels\nholo\nlonghair / long\noil\norgasm / gasm\npawg\nredhead / red\nshorthair / short\nspank\ntan\ntentacle / tentacles\ntiny\ntrap\nyaoi\nyuri\n\n__**RACES**__\nasian / asians\nbbc\nblack\nblonde\nebony\nfilipino\nindian\njapanese\nkorean\n\n__**SPECIAL :**__\ncelebrity\nerotic / ero\nhentai\nkuni\nlewd\n\n__**HOLIDAY**__\nchrismas / xmas\nhalloween / hal\n\n**NSFW commands are for NSFW channels only**",
+        "content": "__**STYLE**__\nanal\nblowjob / bj\nboob / boobs\nbutt / butts\nhardcore\nmilf / milfs\nmom / moms\npussy\nthick\ntits\n\n__**KINKS**__\nbdsm\nneko / catgirl\nclassic\ncumslut / cs\ndickgirl / dickgirls\nfeet\nfemdom\nglass / glasses\nheel / heels\nholo\nlonghair / long\noil\norgasm / gasm\npawg\nredhead / red\nshorthair / short\nspank\ntan\ntentacle / tentacles\ntiny\ntrap\nyaoi\nyuri\n\n__**RACES**__\nasian / asians\nbbc\nblack\nblonde\nebony\nfilipino\nindian\njapanese\nkorean\n\n__**SPECIAL :**__\ncelebrity\nerotic / ero\nhentai\nkuni\nlewd\n\n__**HOLIDAY**__\nchrismas / xmas\nhalloween / hal\n\n**NSFW commands are for NSFW channels only**",
         "usage": "`. <Command Name>`",
         "example": "`.hentai`",
         "nsfw": "true"
     },
     "pets": {
         "name": "Pets",
-        "content": "`.cat ` `.dog ` `.goose ` `fox ` `.kitty ` `.meow ` `.lizard ` `.puppy `",
+        "content": "cat\t\t:Gives a cat / kitty image\ndog\t\t:Gives a dog / puppy image\ngoose\t\t:You like gooses ?\nfox\t\t:Foxes are cute right ?\nkitty\t\t:Gives a kitty / cat image\nmeow\t\t:Same as `cat` or `kitty`\nlizard\t\t:Don't use this\npuppy\t\tGives a puppy image",
         "usage": "`. <Command Name>`",
         "example": "`.cat`"
     },
