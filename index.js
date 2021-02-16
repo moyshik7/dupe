@@ -67,7 +67,9 @@ client.on('ready', () => {
         },
         status:'idle'
     });*/
-    client.user.setActivity('Ping me for help');
+    client.user.setActivity('Ping me for help')
+	.then(console.log)
+	.catch(console.log)
     client.user.setStatus('idle');
     setInterval(() => {
         try {
