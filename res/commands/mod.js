@@ -14,6 +14,7 @@ let app = {
         try{
             if(!message.member.hasPermission("KICK_MEMBERS")){
 		ref.embedDes(message, "Permission Error","You don\'t have the __KICK USER__ permission", "No one kicked");
+		return(false);
 	    }
 	    if(!args.length){
 		ref.embedDes(message, "No user to kick","__**USAGE**__\n `.kick` ` <mention_user> ` ` [Reason(optional)] `\nOr,\n `.kick` ` <User ID> ` ` [Reason(optional)] `", "No one kicked");
@@ -33,7 +34,7 @@ let app = {
 		    return(false);
 		}
 	    } 
-	    if(message.guild.me.hasPermission("KICK_MEMBERS")){
+	    if(message.guild.me.hasPermission("KICK_MEMBERS") && message.member.hasPermission("KICK_MEMBERS")){
 		if(args.length > 1){
 		    args = args.slice(1);
 		}else{
