@@ -60,17 +60,14 @@ client.login(process.env.BOT_TOKEN);
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    /*client.user.setPresence({
-        game:{
+    client.user.setPresence({
+        activity: {
             name: "Ping me for help",
-	    type: 0
-        },
-        status:'idle'
-    });*/
-    client.user.setActivity('Ping me for help')
-	.then(console.log)
-	.catch(console.log)
-    client.user.setStatus('idle');
+	    type: "STREAMING"
+	},
+	status: "online",
+	afk: false
+    });
     setInterval(() => {
         try {
             dbl.postStats(client.guilds.size /*, client.shards.Id, client.shards.total*/);
