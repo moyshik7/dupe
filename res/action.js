@@ -382,7 +382,7 @@ const bot = {
                 let h = await rf.fetch({
                     type: 'custom',
                     total: 1,
-                    subreddit: ["nsfw_plowcam"]
+                    subreddit: ["nsfw_plowcam","porn","pornpics","blowjobs","milf","pov"]
                 });
                 ref.embed(bot.bd.message, "Erotic !?", "", h[0].image);
             } else {
@@ -856,7 +856,7 @@ const bot = {
                 let h = await rf.fetch({
                     type: 'custom',
                     total: 1,
-                    subreddit: ["porn"]
+                    subreddit: ["porn", "porngifs", "pornpics","blowjobs","milf","pov"]
                 });
                 ref.embed(bot.bd.message, "Pervert..", "", h[0].image);
             } else {
