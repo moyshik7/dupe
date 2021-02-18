@@ -15,7 +15,7 @@ const app = {
             } else {
                 ho = helpMessage["help"];
             }
-            if(ho.nsfw == "true" && !message.channel.nsfw){
+            if(ho.nsfw === "true" && !message.channel.nsfw){
 	        let emb = new MessageEmbed()
 		    .setColor("fd0061")
 		    .setTitle("NSFW channel required")
