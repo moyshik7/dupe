@@ -20,7 +20,7 @@
     "emotions": {
 	"name": "Emotions",
 	"content": "Show your emotions to your friends (or to yourself if you don't have any friends like me\n\nbaka\ncuddle\nfeed\nhug\nkiss\npat\npoke\ntickle",
-	"usage": "`. <Command name> [Mention (opt.)`",
+	"usage": "`. <Command name> [Mention (opt.)]`",
 	"example": "`.kiss @akio``",
 	"nsfw": "false"
     },
