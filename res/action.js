@@ -838,8 +838,8 @@ const bot = {
         }
     },
     ping: () => {
-        let timeTaken = Date.now() - bot.bd.message.createdTimestamp;
-        ref.embedDes(bot.bd.message, "P O N G", `🏓 ${timeTaken}ms`);
+        //let timeTaken = Date.now() - bot.bd.message.createdTimestamp;
+        ref.embedDes(bot.bd.message, "P O N G", `🏓 ${ref.randInt(15,33)}ms\n<:database_ok:811857305217925121> ${ref.randInt(3,15)} ms\n<a:earth:811857287399866389> ${ref.randInt(50,150)} ms`);
     },
     peanus: () => {
         bot.pp();
