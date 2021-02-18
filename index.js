@@ -11,13 +11,6 @@ const cList = require("./res/commands.json");
 const bot = require("./res/action");
 const ref = require("./res/reference");
 
-/*client.once("ready", () => {
-    console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity('Ping me for help', {
-        type: "PLAYING"
-    });
-    client.user.setStatus('idle');
-});*/
 client.on("message", (message) => {
     try {
         if (message.author.bot || (!message.guild && message.author.id != 584309117380853770)) {
