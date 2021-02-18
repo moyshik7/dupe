@@ -1,7 +1,7 @@
 {
     "help": {
         "name": "Help",
-        "content": "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands catagories:\n\n\n\n<:rem_straight_face:810855685892866068> **ANIME**\n`.help anime`\n\n<:fujoshi_yay:810855588703240193> **MANGA** aka **COMIC**\n`.help manga`\n\n<a:pepe_joy:811150091045437461> **MEMES**\n`.help  memes` \n\n<:cool_puppy:810855567455027230> **PETS**\n`.help pets`\n\n<:Irizchu_wow:811201267593379860> **IMAGES**\n`.help images`\n\n<a:searching:811199860698251284> **SEARCH**\n`.help search`\n\n<:settings:810855545811632128> **MAINTENANCE**\n`.help maintenance`\n\n<:pc_ram:811150068785872937> **MODERATION**\n`.help moderation`\n\n<:eggplant_joker:811150110611996673> **OTHERS**\n`.help others`\n\n<:devil:810855626519478282> **NSFW** aka  ||\tPORN\t||\n`.help nsfw`",
+        "content": "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands catagories:\n\n\n\n<:rem_straight_face:810855685892866068> **ANIME**\n`.help anime`\n\n<:fujoshi_yay:810855588703240193> **MANGA** aka **COMIC**\n`.help manga`\n\n<a:pepe_joy:811150091045437461> **MEMES**\n`.help  memes` \n\n<:cool_puppy:810855567455027230> **PETS**\n`.help pets`\n\n<:Irizchu_wow:811201267593379860> **IMAGES**\n`.help images`\n\n<a:searching:811199860698251284> **SEARCH**\n`.help search`\n\n<:settings:810855545811632128> **MAINTENANCE**\n`.help maintenance`\n\n<:pc_ram:811150068785872937> **MODERATION**\n`.help moderation`\n\n<:eggplant_joker:811150110611996673> **OTHERS**\n`.help others`\n\n**EMOTIONS**\n`.help emotions`\n\n<:devil:810855626519478282> **NSFW** aka  ||\tPORN\t||\n`.help nsfw`",
         "usage": "`.help` `<Command Catagory>`",
         "example": "`.help anime`"
     },
@@ -17,9 +17,16 @@
         "usage": "To search a comic: `.comic` `<Name of Comic>`",
         "example": "`.comic Freaking Romance`"
     },
+    "emotions": {
+	"name": "Emotions",
+	"content": "Show your emotions to your friends (or to yourself if you don't have any friends like me\n\nbaka\cuddle\nfeed\nhug\nkiss\npat\npoke\ntickle",
+	"usage": "`. <Command name> [Mention (opt.)`",
+	"example": "`.kiss @akio``",
+	"nsfw": "true"
+    },
     "images": {
         "name": "Images",
-        "content": "`baka ` `catgirl ` `cuddle ` `foxgirl ` `hug ` `neko ` `pat ` `slap ` `tickle ` `waifu ` `wallpaper ` `woof ` `wp `",
+        "content": "Will give you a random image\n\ncatgirl / neko\nfoxgirl\nneko\nwaifu\nwallpaper / wp\nwoof",
         "usage": "`. <Command Name>``",
         "example": "`.neko`"
     },
