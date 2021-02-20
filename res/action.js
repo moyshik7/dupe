@@ -7,11 +7,11 @@ const anime = require("./commands/anime");
 const lyric = require("./commands/lyrics");
 const dic = require("./commands/define");
 const qrc = require("./commands/qr");
-const {PP,Gay} = require("./commands/fun");
-const {Server,Status} = require("./commands/server");
+const { PP, Gay } = require("./commands/fun");
+const { Server, Status } = require("./commands/server");
 const mod = require("./commands/mod");
 const help = require("./commands/help");
-const {Baka,Cuddle,Feed,Hug,Kiss,Pat,Poke,Tickle} = require("./commands/emotion");
+const { Baka, Cuddle, Feed, Hug, Kiss, Pat, Poke, Smug, Tickle } = require("./commands/emotion");
 
 const n = new nLife();
 
@@ -382,7 +382,7 @@ const bot = {
                 let h = await rf.fetch({
                     type: 'custom',
                     total: 1,
-                    subreddit: ["nsfw_plowcam","porn","pornpics","blowjobs","milf","pov"]
+                    subreddit: ["nsfw_plowcam", "porn", "pornpics", "blowjobs", "milf", "pov"]
                 });
                 ref.embed(bot.bd.message, "Erotic !?", "", h[0].image);
             } else {
@@ -856,7 +856,7 @@ const bot = {
                 let h = await rf.fetch({
                     type: 'custom',
                     total: 1,
-                    subreddit: ["porn", "porngifs", "pornpics","blowjobs","milf","pov"]
+                    subreddit: ["porn", "porngifs", "pornpics", "blowjobs", "milf", "pov"]
                 });
                 ref.embed(bot.bd.message, "Pervert..", "", h[0].image);
             } else {
@@ -969,6 +969,9 @@ const bot = {
         } catch (err) {
             console.log(err);
         }
+    },
+    smug: () => {
+        Smug(bot.bd.message, bot.bd.args);
     },
     solo: async() => {
         try {
@@ -1174,15 +1177,15 @@ module.exports = bot;
 
 const helpMessage = {
     normal: "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands:\n" +
-    "\n**Image and Gif:**\n**SFW**\n`baka ` `cat ` `catgirl ` `cuddle ` `dog ` `fox ` `foxgirl ` `goose ` `hug ` `kitty ` `lizard ` `meme ` `memes ` `meow ` `neko ` `pat ` `puppy ` `slap ` `tickle ` `waifu ` `wallpaper ` `woof ` `wp `\n" +
-    "\n**NSFW**\n`anal ` `asian ` `asians ` `bbc ` `bdsm ` `bj ` `black ` `blonde ` `blowjob ` `boob ` `boobs ` `butt ` `butts ` `catgirl ` `celebrity ` `christmas ` `classic ` `cs ` `cumslut ` `cumsluts ` `dickgirl ` `dickgirls ` `ebony ` `ero ` `erotic ` `feet ` `femdom ` `filipino ` `gasm ` `glass ` `glasses ` `hal ` `halloween ` `hardcore ` `heel ` `heels ` `hentai ` `holo ` `indian ` `japanese ` `korean ` `kuni  ` `lewd ` `long ` `longhair ` `milf ` `milfs ` `mom ` `moms ` `neko ` `oil `  `orgasm ` `pawg ` `pussy ` `red ` `redhead ` `redheads ` `short ` `shorthair ` `spank ` `tan ` `tentacle ` `tentacles ` `thick ` `tits ` `tiny ` `trap ` `xmas ` `yaoi ` `yuri `\n" +
-    "\n" +
-    "\n**Search:**\n`anime ` `comic ` `define ` `lyrics ` `manga `\n" +
-    "\n" +
-    "\n**Maintenance:**\n`avatar ` `emojis ` `help / h ` `invite ` `ping ` `server `\n" +
-    "\n" +
-    "\n**Fun:**\n`peanus ` `penis ` `pp `\n" +
-    "\n" +
-    "\n**Others:**\n `qr `\n" +
-    "\n\nNote: NSFW commands are for NSFW channels only"
+        "\n**Image and Gif:**\n**SFW**\n`baka ` `cat ` `catgirl ` `cuddle ` `dog ` `fox ` `foxgirl ` `goose ` `hug ` `kitty ` `lizard ` `meme ` `memes ` `meow ` `neko ` `pat ` `puppy ` `slap ` `tickle ` `waifu ` `wallpaper ` `woof ` `wp `\n" +
+        "\n**NSFW**\n`anal ` `asian ` `asians ` `bbc ` `bdsm ` `bj ` `black ` `blonde ` `blowjob ` `boob ` `boobs ` `butt ` `butts ` `catgirl ` `celebrity ` `christmas ` `classic ` `cs ` `cumslut ` `cumsluts ` `dickgirl ` `dickgirls ` `ebony ` `ero ` `erotic ` `feet ` `femdom ` `filipino ` `gasm ` `glass ` `glasses ` `hal ` `halloween ` `hardcore ` `heel ` `heels ` `hentai ` `holo ` `indian ` `japanese ` `korean ` `kuni  ` `lewd ` `long ` `longhair ` `milf ` `milfs ` `mom ` `moms ` `neko ` `oil `  `orgasm ` `pawg ` `pussy ` `red ` `redhead ` `redheads ` `short ` `shorthair ` `spank ` `tan ` `tentacle ` `tentacles ` `thick ` `tits ` `tiny ` `trap ` `xmas ` `yaoi ` `yuri `\n" +
+        "\n" +
+        "\n**Search:**\n`anime ` `comic ` `define ` `lyrics ` `manga `\n" +
+        "\n" +
+        "\n**Maintenance:**\n`avatar ` `emojis ` `help / h ` `invite ` `ping ` `server `\n" +
+        "\n" +
+        "\n**Fun:**\n`peanus ` `penis ` `pp `\n" +
+        "\n" +
+        "\n**Others:**\n `qr `\n" +
+        "\n\nNote: NSFW commands are for NSFW channels only"
 };
