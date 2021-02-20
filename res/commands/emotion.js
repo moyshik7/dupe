@@ -4,18 +4,14 @@ const nLife = require("nekos.life");
 const neko = new nLife();
 
 const app = {
-    Baka: async (message, args) => {
+    Baka: async(message, args) => {
         try {
-            let user1;
             let user2;
             if (!args.length) {
-                user1 = "Plubin"
                 user2 = message.author.username;
             } else if (!message.mentions.members.first() && args.length) {
-                user1 = message.author.username;
                 user2 = args.join(" ");
             } else {
-                user1 = message.author.username;
                 user2 = message.mentions.members.first().user.username;
             }
             let text = `${user2} wa bakadesu (${user2} is an idiot)`;
@@ -26,7 +22,7 @@ const app = {
             console.log(err);
         }
     },
-    Cuddle: async (message, args) => {
+    Cuddle: async(message, args) => {
         try {
             let user1;
             let user2;
@@ -40,7 +36,7 @@ const app = {
                 user1 = message.author.username;
                 user2 = message.mentions.members.first().user.username;
             }
-            let text = `${user1} is cuddling ${user2}.Awwww how cute`;
+            let text = `${user1} is cuddling ${user2}. Awwww how cute`;
             let uri = await neko.sfw.cuddle();
             uri = uri.url;
             ref.embed(message, text, "", uri);
@@ -48,7 +44,7 @@ const app = {
             console.log(err);
         }
     },
-    Feed: async (message, args) => {
+    Feed: async(message, args) => {
         try {
             let user1;
             let user2;
@@ -70,7 +66,7 @@ const app = {
             console.log(err);
         }
     },
-    Hug: async (message, args) => {
+    Hug: async(message, args) => {
         try {
             let user1;
             let user2;
@@ -92,7 +88,7 @@ const app = {
             console.log(err);
         }
     },
-    Kiss: async (message, args) => {
+    Kiss: async(message, args) => {
         try {
             let user1;
             let user2;
@@ -114,7 +110,7 @@ const app = {
             console.log(err);
         }
     },
-    Pat: async (message, args) => {
+    Pat: async(message, args) => {
         try {
             let user1;
             let user2;
@@ -136,7 +132,7 @@ const app = {
             console.log(err);
         }
     },
-    Poke: async (message, args) => {
+    Poke: async(message, args) => {
         try {
             let user1;
             let user2;
@@ -158,7 +154,17 @@ const app = {
             console.log(err);
         }
     },
-    Tickle: async (message, args) => {
+    Smug: async(message, args) => {
+        try {
+            let text = "(￣ー￣)";
+            let uri = await neko.sfw.smug();
+            uri = uri.url;
+            ref.embed(message, text, "", uri);
+        } catch (err) {
+            console.log(err);
+        }
+    },
+    Tickle: async(message, args) => {
         try {
             let user1;
             let user2;
