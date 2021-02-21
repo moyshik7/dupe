@@ -11,7 +11,7 @@ const { PP, Gay } = require("./commands/fun");
 const { Server, Status } = require("./commands/server");
 const mod = require("./commands/mod");
 const help = require("./commands/help");
-const { Baka, Cuddle, Feed, Hug, Kiss, Pat, Poke, Smug, Tickle } = require("./commands/emotion");
+const { Baka, Cuddle, Feed, Hug, Kill, Kiss, Pat, Poke, Smug, Tickle } = require("./commands/emotion");
 
 const n = new nLife();
 
@@ -652,6 +652,9 @@ const bot = {
     },
     kick: () => {
         mod.Kick(bot.bd.message, bot.bd.args);
+    },
+    kill: async() => {
+        Kill(bot.bd.message, bot.bd.args);
     },
     kiss: async() => {
         Kiss(bot.bd.message, bot.bd.args);

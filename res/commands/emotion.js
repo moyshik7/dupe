@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 const ref = require("./../reference.js");
 const nLife = require("nekos.life");
 const neko = new nLife();
+const kill = require("./resource/kill.json");
 
 const app = {
     Baka: async(message, args) => {
@@ -84,6 +85,26 @@ const app = {
             let uri = await neko.sfw.hug();
             uri = uri.url;
             ref.embed(message, text, "", uri);
+        } catch (err) {
+            console.log(err);
+        }
+    },
+    Kill: async(message, args) => {
+        try {
+            let user1;
+            let user2;
+            if (!args.length) {
+                user1 = "Plubin"
+                user2 = message.author.username;
+            } else if (!message.mentions.members.first() && args.length) {
+                user1 = message.author.username;
+                user2 = args.join(" ");
+            } else {
+                user1 = message.author.username;
+                user2 = message.mentions.members.first().user.username;
+            }
+            let text = `${user1} killed ${user2}. Call the cops`;
+            ref.embed(message, text, "", kill);
         } catch (err) {
             console.log(err);
         }
