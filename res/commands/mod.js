@@ -9,6 +9,59 @@ let app = {
             .setImage(user.avatarURL({ size: 512, format: "png", dynamic: true }))
         message.channel.send(avatarEmbed);
     },
+    Ban: (message, args) => {
+        try {
+            if (!message.member.hasPermission("BAN_MEMBERS")) {
+                ref.embedDes(message, "Permission Error", "You don\'t have the __BAN MEMBERS__ permission", "No one was banned");
+                return (false);
+            }
+            if (!args.length) {
+                ref.embedDes(message, "No user to ban", "__**USAGE**__\n `.ban` ` <mention_user> ` ` [Reason(optional)] `\nOr,\n `.ban` ` <User ID> ` ` [Reason(optional)] `", "No one was banned");
+                return (false);
+            }
+            if (!message.member.highestRole.comparePositionTo(message.mentions.members.first().highestRole) > 0) {
+                //member dosen't have higher role then first mentioned member
+                ref.embedDes(message, "Mentioned user has higher role than you", "You can't ban your senpai, baka!", "No one was banned");
+                return (false);
+            }
+            let k = message.mentions.members.first();
+            if (!k) {
+                if (!parseInt(args[0])) {
+                    ref.embedDes(message, "Invalid User ID or mention", "Invalid User ID provided", "No one was banned");
+                    return (false);
+                } else {
+                    k = message.guild.members.cache.get(`${args[0]}`);
+                    console.log(args[0]);
+                }
+                if (!k) {
+                    ref.embedDes(message, "Invalid User ID or mention", "Invalid User ID provided", "No one was banned");
+                    return (false);
+                }
+            }
+            if (message.guild.me.hasPermission("BAN_MEMBERS") && message.member.hasPermission("BAN_MEMBERS")) {
+                if (args.length > 1) {
+                    args = args.slice(1);
+                } else {
+                    args = [];
+                }
+                let reason = args.join(" ");
+                if (!reason.length || reason.length >= 1000) {
+                    reason = "No valid reason specified";
+                }
+                let kName = k.user.username;
+                k.ban({
+                        reason: `${reason}`
+                    })
+                    .then(() => {
+                        ref.embedDes(message, `${kName} was Banned`, `__REASON :__  ${reason}`, "User removed from server");
+                    })
+            } else {
+                ref.embedDes(message, "Permission Error", "I don\'t have the __BAN MEMBERS__ permission", "No one was banned");
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    },
     Kick: (message, args) => {
         try {
             if (!message.member.hasPermission("KICK_MEMBERS")) {
