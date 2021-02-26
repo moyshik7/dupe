@@ -93,10 +93,6 @@ client.on("guildDelete", guild => {
     }
 });
 
-dbl.on('error', e => {
-    console.log(`Oops! ${e}`);
-});
-
 server.all('/', (req, res) => {
     res.send('Plubin is up');
 });
