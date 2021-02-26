@@ -3,9 +3,10 @@ const express = require("express");
 const server = new express();
 const token = ".";
 const client = new Discord.Client();
-const DBL = require("dblapi.js");
-const dbl = new DBL(process.env.TOP_GG_TOKEN, client);
 const PORT = process.env.PORT || 3000;
+
+const Topgg = require('@top-gg/sdk');
+const api = new Topgg.Api(process.env.TOP_GG_TOKEN);
 
 const cList = require("./res/commands.json");
 const bot = require("./res/action");
@@ -16,17 +17,17 @@ client.on("message", (message) => {
         if (message.author.bot || (!message.guild && message.author.id != 584309117380853770)) {
             if (!message.guild && !message.author.bot) {
                 message.channel.send("The message has been delivered to the owner");
-                if(message.content.length <= 1800){
+                if (message.content.length <= 1800) {
                     let c = client.channels.cache.get('807175797340504114');
                     c.send(`DM by : ${message.author} / ${message.author.username}\n>>> ${message.content}`);
                 }
             }
-            return(false);
+            return (false);
         } else {
-	    if (message.content.includes("@here") || message.content.includes("@everyone")){
-		return(false);
-	    }
-	    if (message.mentions.has(client.user.id)) {
+            if (message.content.includes("@here") || message.content.includes("@everyone")) {
+                return (false);
+            }
+            if (message.mentions.has(client.user.id)) {
                 message.channel.send("Sup, human?\nMy prefix for this server is `.`\nUse `.help` to continue");
             };
             let msg = message.content;
@@ -56,16 +57,19 @@ client.on('ready', () => {
     client.user.setPresence({
         activity: {
             name: "Ping me for help",
-	    type: "STREAMING"
-	},
-	status: "online",
-	afk: false
+            type: "STREAMING"
+        },
+        status: "online",
+        afk: false
     });
     setInterval(() => {
         try {
-            dbl.postStats(client.guilds.size /*, client.shards.Id, client.shards.total*/);
+            api.postStats({
+                serverCount: client.guilds.cache.size //,
+                    //shardId: client.shard.ids[0],
+                    //shardCount: client.options.shardCount
+            })
         } catch (err) {
-            console.log("DBL error");
             console.log(err);
         }
     }, 300000);
