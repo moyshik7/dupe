@@ -8,6 +8,10 @@ const an = require("./anime.json");
 const all = {
     anime: async(message, args) => {
         try {
+	    if(message.channel.nsfw){
+		message.channel.send("Please use this command in any NSFW marked channel for safety");
+		return(false);
+	    }
             let te;
             if (!args.length) {
                 te = ref.randArr(an.sfw);
@@ -80,6 +84,10 @@ const all = {
     manga: async(message,
         args) => {
         try {
+	    if(message.channel.nsfw){
+		message.channel.send("Please use this command in any NSFW marked channel for security");
+		return(false);
+	    }
             let te;
             te = args.join(" ");
             kitsu.getManga(te,
