@@ -87,7 +87,7 @@ const all = {
 	    if(!message.channel.nsfw){
 		let emb = new Discord.MessageEmbed()
 		    .setColor("#ff6f61")
-		    .setDescription("Sorry this command can be only used in NSFW channels cuz some mangas are ..... you know .....\n\nIf you don't know how to turn NSFW on then ask a mod or do this")
+		    .setDescription("Sorry this command can be only used in NSFW channels cuz some mangas are ..... you know .....\n\nIf you don't know how to turn NSFW on then ask a mod or do this in channel settings")
 		    .setImage("https://www.dropbox.com/s/7lopda45w600bwg/ezgif-4-84b641c8db9a.gif?dl=1")
 		message.channel.send(emb);
 		emb = "";
