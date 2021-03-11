@@ -14,47 +14,53 @@ const ref = require("./res/reference");
 
 client.on("message", (message) => {
     try {
-        if (message.author.bot || (!message.guild && message.author.id != 584309117380853770)) {
-            if (!message.guild && !message.author.bot) {
-                message.channel.send("The message has been delivered to the owner");
-                if (message.content.length <= 1800) {
-                    let c = client.channels.cache.get('807175797340504114');
-                    c.send(`DM by : ${message.author} / ${message.author.username}\n>>> ${message.content}`);
-                }
-            }
+	if(message.author.bot){
+	    return(false);
+	}
+	if(!message.guild && message.author.id != "584309117380853770"){
+	    if(message.content.length <= 1800){
+		let channel = client.channels.cache.get("807175797340504114");
+		if(channel){
+		    channel.send(`DM by ${message.author.id} -- ${message.author.username}\n\`\`\`bruh\n${message.content}\n\`\`\``).then(msg => {
+			message.channel.send("Delivered to Developers");
+		    }
+		}
+	    }else{
+		message.channel.send("Message too long to send");
+	    }
+	    return(false);
+	}
+        if (message.content.includes("@here") || message.content.includes("@everyone")) {
             return (false);
-        } else {
-            if (message.content.includes("@here") || message.content.includes("@everyone")) {
-                return (false);
-            }
-            if (message.mentions.has(client.user.id)) {
-                message.channel.send("Sup, human?\nMy prefix for this server is `.`\nUse `.help` to continue");
-            };
-            let msg = message.content;
-            if (msg[0] === token) {
-                let command = msg.slice(1);
-                command = ref.formatArr(command.split(" "));
-                args = command.slice(1);
-                command = command[0];
-                if (cList.indexOf(command) != -1) {
-                    console.log(`${command} requested by ${message.author.tag} at server ${message.guild || "DM"}`);
-                    bot.bd.message = message;
-                    bot.bd.args = args;
-                    bot.bd.client = client;
-                    let myf = bot[command];
-                    myf();
-                }
+        }
+        if (message.mentions.has(client.user.id)){
+            message.channel.send("Sup, human?\nMy prefix for this server is `.`\nUse `.help` to continue");
+        };
+        let msg = message.content;
+        if(msg[0] === token) {
+            let command = msg.slice(1);
+            command = ref.formatArr(command.split(" "));
+            args = command.slice(1);
+            command = command[0];
+            if(cList.indexOf(command) != -1) {
+                console.log(`${command} requested by ${message.author.tag} at server ${message.guild || "DM"}`);
+                bot.bd.message = message;
+                bot.bd.args = args;
+                bot.bd.client = client;
+                let action = bot[command];
+                action();
             }
         }
     } catch (err) {
         console.log(err);
     }
 });
-client.login(process.env.BOT_TOKEN);
+
+client.login(process.env.BOT_TOKEN); //Login with bot token stored in env. variable
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setPresence({
+    client.user.setPresence({ //Sets detailed presence
         activity: {
             name: "Ping me for help",
             type: "STREAMING"
@@ -62,12 +68,12 @@ client.on('ready', () => {
         status: "online",
         afk: false
     });
-    setInterval(() => {
+    setInterval(() => { //Sent servercount to top.gg
         try {
             api.postStats({
-                serverCount: client.guilds.cache.size //,
-                    //shardId: client.shard.ids[0],
-                    //shardCount: client.options.shardCount
+                serverCount: client.guilds.cache.size /*,
+                    shardId: client.shard.ids[0],
+                    shardCount: client.options.shardCount*/
             })
         } catch (err) {
             console.log(err);
@@ -96,6 +102,6 @@ client.on("guildDelete", guild => {
 server.all('/', (req, res) => {
     res.send('Plubin is up');
 });
-server.listen(PORT, (a) => {
+server.listen(PORT, a => {
     console.log(`Server is up on port : ${PORT}`);
 });
