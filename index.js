@@ -23,7 +23,7 @@ client.on("message", (message) => {
 		if(channel){
 		    channel.send(`DM by ${message.author.id} -- ${message.author.username}\n\`\`\`bruh\n${message.content}\n\`\`\``).then(msg => {
 			message.channel.send("Delivered to Developers");
-		    }
+		    });
 		}
 	    }else{
 		message.channel.send("Message too long to send");
