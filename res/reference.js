@@ -62,6 +62,15 @@ const ref = {
         a = a.trim();
         return (a);
     },
+    NoNSFW: (message) => {
+	let emb = new Discord.MessageEmbed()
+	    .setColor("#ff6f61")
+	    .setDescription("Sorry this command can be only used in NSFW channels cuz some mangas ar\n\nIf you don't know how to turn NSFW on then ask a mod or turn on **NSFW Channen** in channel settings")
+	    .setImage("https://www.dropbox.com/s/7lopda45w600bwg/ezgif-4-84b641c8db9a.gif?dl=1")
+	message.channel.send(emb);
+	emb = "";
+	return(true);
+    },
     randArr: (givenArray) => {
         return (givenArray[Math.floor(Math.random() * givenArray.length)]);
     },
