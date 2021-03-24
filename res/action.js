@@ -47,7 +47,7 @@ const bot = {
                 });
                 ref.embed(bot.bd.message, "The Backdoor", "", h[0].image);
             } else {
-                ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel`);
+                ref.NoNSFW(message);
             }
         } catch (err) {
             console.log(err);
