@@ -47,7 +47,7 @@ const bot = {
                 });
                 ref.embed(bot.bd.message, "The Backdoor", "", h[0].image);
             } else {
-                ref.NoNSFW(message);
+                ref.NoNSFW(bot.bd.message);
             }
         } catch (err) {
             console.log(err);
