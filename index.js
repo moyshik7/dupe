@@ -11,6 +11,7 @@ const api = new Topgg.Api(process.env.TOP_GG_TOKEN);
 const cList = require("./res/commands.json");
 const bot = require("./res/action");
 const ref = require("./res/reference");
+const AllPrefix = require("./res/prefix.json");
 
 client.on("message", (message) => {
     try {
@@ -33,11 +34,15 @@ client.on("message", (message) => {
         if (message.content.includes("@here") || message.content.includes("@everyone")) {
             return (false);
         }
+	Prefix = AllPrefix[message.guild.id];
+	if(!Prefix){
+	    Prefix = ".";
+	}
         if (message.mentions.has(client.user.id)){
-            message.channel.send("Sup, human?\nMy prefix for this server is `.`\nUse `.help` to continue");
+            message.channel.send(`Sup, human?\nMy prefix for this server is \`${Prefix}\`\nUse \`${Prefix}help\` to continue`);
         };
         let msg = message.content;
-        if(msg[0] === token) {
+        if(message.content.startsWith(Prefix)) {
             let command = msg.slice(1);
             command = ref.formatArr(command.split(" "));
             args = command.slice(1);
