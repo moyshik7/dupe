@@ -42,8 +42,8 @@ client.on("message", (message) => {
             message.channel.send(`Sup, human?\nMy prefix for this server is \`${Prefix}\`\nUse \`${Prefix}help\` to continue`);
         };
         let msg = message.content;
-        if(message.content.startsWith(Prefix)) {
-            let command = msg.slice(1);
+        if(msg.startsWith(Prefix)) {
+            let command = msg.slice(Prefix.length);
             command = ref.formatArr(command.split(" "));
             args = command.slice(1);
             command = command[0];
