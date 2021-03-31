@@ -746,7 +746,7 @@ const bot = {
     manga: async() => {
         anime.manga(bot.bd.message, bot.bd.args);
     },
-    massporn: async() {
+    massporn: async() => {
         try {
             if (bot.bd.message.channel.nsfw) {
                 let h = await rf.fetch({
