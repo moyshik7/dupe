@@ -755,7 +755,7 @@ const bot = {
                     subreddit: ["porn", "porngifs", "pornpics", "blowjobs", "milf", "pov"]
                 });
                 for(let x = 0; x < h.length; x++){
-                    ref.embed(bot.bd.message, `# ${x+1}`, "", h[x].image);
+                    await ref.embed(bot.bd.message, `# ${x+1}`, "", h[x].image);
                 }
                 //ref.embed(bot.bd.message, "Pervert..", "", h[0].image);
             } else {
