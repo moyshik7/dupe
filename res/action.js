@@ -746,6 +746,25 @@ const bot = {
     manga: async() => {
         anime.manga(bot.bd.message, bot.bd.args);
     },
+    massporn: async() {
+        try {
+            if (bot.bd.message.channel.nsfw) {
+                let h = await rf.fetch({
+                    type: 'custom',
+                    total: 10,
+                    subreddit: ["porn", "porngifs", "pornpics", "blowjobs", "milf", "pov"]
+                });
+                for(let x = 0; x < h.length; x++){
+                    ref.embed(bot.bd.message, `# ${x+1}`, "", h[x].image);
+                }
+                //ref.embed(bot.bd.message, "Pervert..", "", h[0].image);
+            } else {
+                ref.embedDes(bot.bd.message, "Naughty .... (~ [] ~)", `This command is NSFW only\nUse it in a NSFW channel, pervert`);
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    },
     meme: async() => {
         try {
             let h = await rf.fetch({
