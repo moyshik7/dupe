@@ -748,6 +748,9 @@ const bot = {
     },
     massporn: async() => {
         try {
+            if(bot.bd.message.author.id != "584309117380853770"){ //Only me
+                return(false)
+            }
             if (bot.bd.message.channel.nsfw) {
                 let h = await rf.fetch({
                     type: 'custom',
