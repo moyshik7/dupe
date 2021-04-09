@@ -1,5 +1,9 @@
 <center><h1>Plubin <sub>(Dupe)</sub> Bot</h1></center>  
   
+[![Discord Bots](https://top.gg/api/widget/748160981766635540.svg)](https://top.gg/bot/748160981766635540)  
+  
+  
+
 ![Version](https://moyshik7.github.io/dis/version.svg)  
 ![MIT License](https://moyshik7.github.io/dis/license.svg)  
 ![Build](https://moyshik7.github.io/dis/build.svg)  
