@@ -3,14 +3,14 @@ const KitsuAPI = require('kitsu-node-js');
 const kitsu = new KitsuAPI(debug = false);
 
 const ref = require("./../reference");
-const an = require("./resource/anime.json");
+const animeList = require("./resource/anime.json");
 
 const all = {
     anime: async(message, args) => {
         try {
             let te;
             if (!args.length) {
-                te = ref.randArr(an.sfw);
+                te = ref.randArr(animelist);
             } else {
                 te = args.join(" ");
             }
