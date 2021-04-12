@@ -6,7 +6,7 @@ const nLife = require("nekos.life");
 const anime = require("./commands/anime");
 const lyric = require("./commands/lyrics");
 const dic = require("./commands/define");
-const qrc = require("./commands/qr");
+//onstt qrc = require("./commands/qr");
 const { PP, Gay } = require("./commands/fun");
 const { Server, Status } = require("./commands/server");
 const mod = require("./commands/mod");
@@ -917,9 +917,9 @@ const bot = {
             console.log(err);
         }
     },
-    qr: async() => {
+    /*qr: async() => {
         qrc.qr(bot.bd.message, bot.bd.args);
-    },
+    },*/
     red: async() => {
         try {
             if (bot.bd.message.channel.nsfw) {

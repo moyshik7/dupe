@@ -1,4 +1,4 @@
-const qr = require("qrcode");
+/*const qr = require("qrcode");
 const Discord = require("discord.js");
 
 let app = {
@@ -18,4 +18,4 @@ let app = {
         }
     }
 }
-module.exports = app;
+module.exports = app;*/
