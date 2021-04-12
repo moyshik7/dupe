@@ -67,7 +67,7 @@ const all = {
                                 value: '\u200B'
                             })
                             .setImage(a.attributes.posterImage.large)
-                            .setFooter("Support us on Patreon", "https://i.imgur.com/RKVSeIv.png")
+                            .setFooter("Support us on Patreon", "https://i.imgur.com/RKVSeIv.png");
                         message.channel.send(emb);
                     },
                     err => {
