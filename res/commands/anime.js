@@ -3,7 +3,7 @@ const KitsuAPI = require('kitsu-node-js');
 const kitsu = new KitsuAPI(debug = false);
 
 const ref = require("./../reference");
-const animeList = require("./resource/anime.json");
+const animelist = require("./resource/anime.json");
 
 const all = {
     anime: async(message, args) => {
