@@ -1,7 +1,7 @@
 {
     "help": {
         "name": "Help",
-        "content": "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands catagories:\n\n\n\n<:rem_straight_face:810855685892866068> [ANIME](https://moyshik7.github.io/plubin/anime)\n`.help anime`\n\n<:fujoshi_yay:810855588703240193> [MANGA aka COMIC](https://moyshik7.github.io/plubin/anime)\n`.help manga`\n\n<a:pepe_joy:811150091045437461> [MEMES](https://moyshik7.github.io/plubin/memes)\n`.help  memes` \n\n<:cool_puppy:810855567455027230> [PETS](https://moyshik7.github.io/plubin/pets)\n`.help pets`\n\n<:Irizchu_wow:811201267593379860> [IMAGES](https://moyshik7.github.io/plubin/image)\n`.help images`\n\n<a:searching:811199860698251284> [SEARCH](https://moyshik7.github.io/plubin/search)\n`.help search`\n\n<:settings:810855545811632128> [MAINTENANCE](https://moyshik7.github.io/plubin/maintenance)\n`.help maintenance`\n\n<:pc_ram:811150068785872937> [MODERATION](https://moyshik7.github.io/plubin/moderation)\n`.help moderation`\n\n<:eggplant_joker:811150110611996673> **OTHERS**\n`.help others`\n\n  [EMOTIONS](https://moyshik7.github.io/plubin/emotions)\n`.help emotions`\n\n<:devil:810855626519478282> [NSFW aka PORN](https://moyshik7.github.io/plubin/nsfw)\n`.help nsfw`",
+        "content": "Take a look\n\nMy prefix for this server is  `.` \n\nHere are my commands catagories:\n\n\n\n<:rem_straight_face:810855685892866068> [ANIME](https://moyshik7.github.io/plubin/anime)\n`.help anime`\n\n<:fujoshi_yay:810855588703240193> [MANGA aka COMIC](https://moyshik7.github.io/plubin/anime)\n`.help manga`\n\n<a:pepe_joy:811150091045437461> [MEMES](https://moyshik7.github.io/plubin/memes)\n`.help  memes` \n\n<:icon_pet:832940429653180466> [PETS](https://moyshik7.github.io/plubin/pets)\n`.help pets`\n\n<:icon_image:832945579600117780> [IMAGES](https://moyshik7.github.io/plubin/image)\n`.help images`\n\n<a:searching:811199860698251284> [SEARCH](https://moyshik7.github.io/plubin/search)\n`.help search`\n\n<:settings:810855545811632128> [SETTINGS](https://moyshik7.github.io/plubin/maintenance)\n`.help settings`\n\n<:icon_admin:832946756047732747> [MODERATION](https://moyshik7.github.io/plubin/moderation)\n`.help moderation`\n\n<:eggplant_joker:811150110611996673> **OTHERS**\n`.help others`\n\n<:icon_emotions:832940705617936394> [EMOTIONS](https://moyshik7.github.io/plubin/emotions)\n`.help emotions`\n\n<:devil:810855626519478282> [NSFW aka PORN](https://moyshik7.github.io/plubin/nsfw)\n`.help nsfw`",
         "usage": "`.help` `<Command Catagory>`\n\nOr siply click on the blue links for detailed help",
         "example": "`.help anime`"
     },
@@ -36,7 +36,7 @@
         "usage": "`. <Command Name>`",
         "example": "`.neko`"
     },
-    "maintenance": {
+    "settings": {
         "name": "Maintenance",
         "content": "`avatar ` `emojis ` `help ` `h ` `invite ` `ping ` `server `",
         "usage": "`. <Command Name>`",
