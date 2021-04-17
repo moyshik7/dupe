@@ -15,7 +15,7 @@ const app = {
             } else {
                 user2 = message.mentions.members.first().user.username;
             }
-            let text = `${user2} wa bakadesu (${user2} is an idiot)`;
+            let text = `${user2} Baka! Baka! Baka!!`;
             let uri = await neko.sfw.baka();
             uri = uri.url;
             ref.embed(message, text, "", uri);
