@@ -19,7 +19,7 @@ let app = {
                 ref.embedDes(message, "No user to ban", "__**USAGE**__\n `.ban` ` <mention_user> ` ` [Reason(optional)] `\nOr,\n `.ban` ` <User ID> ` ` [Reason(optional)] `", "No one was banned");
                 return (false);
             }
-            if (!message.member.highestRole.comparePositionTo(message.mentions.members.first().highestRole) > 0) {
+            if (!message.member.roles.highest.comparePositionTo(message.mentions.members.first().roles.highest)> 0) {
                 //member dosen't have higher role then first mentioned member
                 ref.embedDes(message, "Mentioned user has higher role than you", "You can't ban your senpai, baka!", "No one was banned");
                 return (false);
@@ -72,6 +72,7 @@ let app = {
                 ref.embedDes(message, "No user to kick", "__**USAGE**__\n `.kick` ` <mention_user> ` ` [Reason(optional)] `\nOr,\n `.kick` ` <User ID> ` ` [Reason(optional)] `", "No one kicked");
                 return (false);
             }
+            console.log(message);
             if (!message.member.highestRole.comparePositionTo(message.mentions.members.first().highestRole) > 0) {
                 //member dosen't have higher role then first mentioned member
                 ref.embedDes(message, "Mentioned user has higher role than you", "You can't kick your senpai, baka!", "No one was kicked");
