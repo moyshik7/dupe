@@ -19,7 +19,7 @@
         "querystring": "^0.2.1",
         "reddit-image-fetcher": "^2.0.6",
         "slyrics": "^0.1.42",
-        "urban-dictionary": "^2.2.1",
+        "urban-dictionary": "^3.0.0",
         "ytdl-core": "^4.5.0"
     },
     "scripts": {
