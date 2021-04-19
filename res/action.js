@@ -57,6 +57,18 @@ const bot = {
     anime: async() => {
         anime.anime(bot.bd.message, bot.bd.args);
     },
+    animeme: async() => {
+        try {
+            let h = await rf.fetch({
+                type: 'custom',
+                total: 1,
+                subreddit: ["goodanimemes"]
+            });
+            ref.embed(bot.bd.message, h[0].title, "", h[0].image);
+        } catch (err) {
+            console.log(err);
+        }
+    },
     asian: async() => {
         try {
             if (bot.bd.message.channel.nsfw) {
