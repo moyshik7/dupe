@@ -642,7 +642,7 @@ const bot = {
     },
     invite: () => {
         try {
-            ref.embedDes(bot.bd.message, "Invite me to your server", "[Invite Link : https://discord.com/oauth2/authorize?client_id=748160981766635540&scope=bot&permissions=51200](https://discord.com/oauth2/authorize?client_id=748160981766635540&scope=bot&permissions=51200)", "Use .help to get started");
+            ref.embedDes(bot.bd.message, "Invite me to your server", "__**Invite Link:**__\n[Without Slash Commands](https://discord.com/oauth2/authorize?client_id=748160981766635540&scope=bot&permissions=51200)", "Use .help to get started");
         } catch (err) {
             console.log(err);
         }
