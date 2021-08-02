@@ -25,8 +25,9 @@ client.on("message", (message) => {
 		        channel.send(`DM by ${message.author.id} -- ${message.author.username}#${message.author.discriminator}\n\`\`\`bruh\n${message.content}\n\`\`\``).then(msg => {
                     const emb = new Discord.MessageEmbed()
                         .setTitle("Sowwy... ° ^ °")
-                        .setDescription(`Commands of this bot has been made **Guild only**\nSorry for that \nBut you can add plubin to your server.\nFor that just [add Plubin to your server by clicking this link](https://discord.com/api/oauth2/authorize?client_id=748160981766635540&scope=applications.commands%20bot&permissions=51200)\nOwO\n\nOr you can [join our support server by clicking this link](https://discord.gg/UDZqY4xJ6J)\nUwU`)
+                        .setDescription(`Commands of this bot has been made **Server only** (Discord ToS)\nSorry for that \nBut you can add plubin to your server.\nFor that just [add Plubin to your server by clicking this link](https://discord.com/api/oauth2/authorize?client_id=748160981766635540&scope=applications.commands%20bot&permissions=51200)\n\nOr you can [join our support server by clicking this link](https://discord.gg/UDZqY4xJ6J)\n\nUwU`)
                         .setColor('RANDOM')
+                        .setImage("https://i.imgur.com/SV4cFKe.jpg")
                     message.channel.send(emb);
 		        });
 		    }
@@ -44,7 +45,7 @@ client.on("message", (message) => {
 	}
         if (message.mentions.has(client.user.id)){
             message.channel.send(`Sup, human?\nMy prefix for this server is \`${Prefix}\`\nUse \`${Prefix}help\` to continue`);
-        };
+        }
         let msg = message.content;
         if(msg.startsWith(Prefix)) {
             let command = msg.slice(Prefix.length);
