@@ -18,16 +18,20 @@ client.on("message", (message) => {
 	if(message.author.bot){
 	    return(false);
 	}
-	if(!message.guild && message.author.id != "584309117380853770"){
+	if(!message.guild /*&& message.author.id != "584309117380853770"*/){
 	    if(message.content.length <= 1800){
-		let channel = client.channels.cache.get("807175797340504114");
-		if(channel){
-		    channel.send(`DM by ${message.author.id} -- ${message.author.username}\n\`\`\`bruh\n${message.content}\n\`\`\``).then(msg => {
-			message.channel.send("Delivered to Developers");
-		    });
-		}
+		    let channel = client.channels.cache.get("807175797340504114");
+		    if(channel){
+		        channel.send(`DM by ${message.author.id} -- ${message.author.username}#${message.author.discriminator}\n\`\`\`bruh\n${message.content}\n\`\`\``).then(msg => {
+                    const emb = new Discord.MessageEmbed()
+                        .setTitle("Sowwy... ° ^ °")
+                        .setDescription(`Commands of this bot has been made **Guild only**\nSorry for that \nBut you can add plubin to your server.\nFor that just [add Plubin to your server by clicking this link](https://discord.com/api/oauth2/authorize?client_id=748160981766635540&scope=applications.commands%20bot&permissions=51200)\nOwO\n\nOr you can [join our support server by clicking this link](https://discord.gg/UDZqY4xJ6J)\nUwU`)
+                        .setColor('RANDOM')
+                    message.channel.send(emb);
+		        });
+		    }
 	    }else{
-		message.channel.send("Message too long to send");
+		    message.channel.send("Message too long to send");
 	    }
 	    return(false);
 	}
