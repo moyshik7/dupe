@@ -7,7 +7,7 @@
         "node": ">=14.0.0"
     },
     "dependencies": {
-        "@top-gg/sdk": "^3.0.7",
+        "@top-gg/sdk": "^3.1.2",
         "dblapi.js": "^2.4.1",
         "discord.js": "^12.5.1",
         "express": "^4.17.1",
@@ -19,7 +19,7 @@
         "reddit-image-fetcher": "^2.0.6",
         "slyrics": "^0.1.42",
         "urban-dictionary": "^2.2.1",
-        "ytdl-core": "^4.5.0"
+        "ytdl-core": "^4.9.0"
     },
     "scripts": {
         "start": "node .",
