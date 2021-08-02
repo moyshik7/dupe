@@ -3,11 +3,6 @@
 [![Discord Bots](https://top.gg/api/widget/748160981766635540.svg)](https://top.gg/bot/748160981766635540)  
   
   
-
-![Version](https://moyshik7.github.io/dis/version.svg)  
-![MIT License](https://moyshik7.github.io/dis/license.svg)  
-![Build](https://moyshik7.github.io/dis/build.svg)  
-![Dependencies](https://moyshik7.github.io/dis/dependency.svg)  
 ![Change log](https://moyshik7.github.io/dis/changelog.svg)  
 [![Patreon](https://moyshik7.github.io/dis/patreon.svg)](https://www.patreon.com/plubin)  
   
