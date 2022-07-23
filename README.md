@@ -1,41 +1,20 @@
-<center><h1>Plubin <sub>(Dupe)</sub> Bot</h1></center>  
+<center><h1>Plubin Discord bot</h1></center>  
   
-[![Discord Bots](https://top.gg/api/widget/748160981766635540.svg)](https://top.gg/bot/748160981766635540)  
-  
-  
-![Change log](https://moyshik7.github.io/dis/changelog.svg)  
-[![Patreon](https://moyshik7.github.io/dis/patreon.svg)](https://www.patreon.com/plubin)  
+> Note: This code is not in used anymore and this repository has been archived. This does not reflect my current coding knowledge at all  
   
   
+This bot has been made with discord.js v12 and it stopped working with the release of Text in Voice feature by discord. So, this code does not work anymore.  
   
-<hr/>
-## Commands
-  
-### Image and Gif
-  
-#### SFW
-
-`baka ` `cat ` `catgirl ` `cuddle ` `dog ` `fox ` `foxgirl ` `goose ` `hug ` `kitty ` `lizard ` `meme ` `memes ` `meow ` `neko ` `pat ` `puppy ` `slap ` `tickle ` `waifu ` `wallpaper ` `woof ` `wp `  
-  
-#### NSFW
-
-`anal ` `asian ` `asians ` `avatar ` `bbc ` `bj ` `black ` `blowjob ` `boob ` `boobs ` `butt ` `butts ` `catgirl ` `celebrity ` `christmas ` `classic ` `cs ` `cumslut ` `cumsluts ` `dickgirl ` `dickgirls ` `ebony ` `ero ` `erotic ` `feet ` `femdom ` `filipino ` `gasm ` `glass ` `glasses ` `hal ` `halloween ` `hardcore ` `hentai ` `holo ` `indian ` `japanese ` `korean ` `kuni  ` `lewd ` `long ` `longhair ` `milf ` `milfs ` `neko ` `oil `  `orgasm ` `pussy ` `short ` `shorthair ` `spank ` `tan ` `thick ` `tits ` `tiny ` `trap ` `xmas ` `yaoi ` `yuri `  
-  
-#### Search
-
-`anime ` `comic ` `define ` `google ` `lyrics ` `manga `
-  
-#### Maintenance
-
-`emoji ` `h ` `help ` `invite ` `ping ` `server `  
-  
-#### Fun
-
-`peanus ` `penis ` `pp `  
-  
-#### Others
-
-`qr `  
+## Plubin an anime and hentai discord bot  
+With 130+ commands now works all across anime, memes, watchlist, waifu, hentai, doujin and much more.  
+18+ use at your own risk  
   
   
-<h3 style="color:red;">Note: NSFW commands are for NSFW channels only and no loli</h3>
+  
+  
+This is MIT licensed so do the fuck you want with it just don't sue me.  
+Sayonara weeb  
+  
+  
+  
+January 1, 2022 End of lifecycle: This code has moved to an advanced typescript based repo and so I'm making this old shitty code public.  
